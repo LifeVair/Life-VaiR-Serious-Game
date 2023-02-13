@@ -1,18 +1,28 @@
 {
-	"FileVersion": 3,
-	"EngineAssociation": "5.1",
-	"Category": "",
-	"Description": "",
-	"Plugins": [
-		{
-			"Name": "ResonanceAudio",
-			"Enabled": true
-		},
-		{
-			"Name": "OpenXR",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
+  "FileVersion": 3,
+  "EngineAssociation": "5.1",
+  "Category": "",
+  "Description": "",
+  "Modules": [
+    {
+      "Name": "LifeVair",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "AdditionalDependencies": [
+        "Engine"
+      ]
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "ResonanceAudio",
+      "Enabled": true
+    },
+    {
+      "Name": "OpenXR",
+      "Enabled": true,
+      "SupportedTargetPlatforms": [
+        "Win64",
 				"Linux",
 				"Android"
 			]
