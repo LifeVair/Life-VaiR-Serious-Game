@@ -23,11 +23,37 @@
       "Enabled": true,
       "SupportedTargetPlatforms": [
         "Win64",
-				"Linux",
-				"Android"
-			]
-		}
-	],
+        "Linux",
+        "Android"
+      ]
+    },
+    {
+      "Name": "GPULightmass",
+      "Enabled": true
+    },
+    {
+      "Name": "ModelingToolsEditorMode",
+      "Enabled": true
+    },
+    {
+      "Name": "VaRest",
+      "Enabled": true,
+      "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e47be161e7a24e928560290abd5dcc4f"
+    },
+    {
+      "Name": "RuntimeFilesDownloader",
+      "Enabled": false,
+      "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e7e6df6d6e9c46f0ae35163eab67ff9a"
+    },
+    {
+      "Name": "SQLiteSupport",
+      "Enabled": true
+    },
+    {
+      "Name": "SQLiteCore",
+      "Enabled": true
+    }
+  ],
 	"TargetPlatforms": [
 		"Android",
 		"PS4",
