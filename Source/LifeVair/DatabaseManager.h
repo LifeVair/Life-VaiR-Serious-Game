@@ -14,5 +14,4 @@ class LIFEVAIR_API UDatabaseManager : public UBlueprintFunctionLibrary
 public:
 	UFUNCTION(BlueprintCallable, meta=(CompactNodeTitle=""), Category="SQLite DB Manager ")
 	static TArray<FString>& getData(const FString Path);
-	
 };

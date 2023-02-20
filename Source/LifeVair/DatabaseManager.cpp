@@ -8,6 +8,7 @@ TArray<FString>& UDatabaseManager::getData(const FString Path)
 	SQLiteDB->Open(*Path, ESQLiteDatabaseOpenMode::ReadOnly);
 	static TArray<FString> ResultColumns;
 	UE_LOG(LogTemp, Warning, TEXT("Error while trying to access the DB"))
+
 	
 	if(SQLiteDB->IsValid())
 	{

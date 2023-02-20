@@ -42,7 +42,7 @@
     },
     {
       "Name": "RuntimeFilesDownloader",
-      "Enabled": false,
+      "Enabled": true,
       "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e7e6df6d6e9c46f0ae35163eab67ff9a"
     },
     {
@@ -54,13 +54,13 @@
       "Enabled": true
     }
   ],
-	"TargetPlatforms": [
-		"Android",
-		"PS4",
-		"PS5",
-		"WindowsNoEditor",
-		"Switch",
-		"XboxOne",
-		"XSX"
-	]
+  "TargetPlatforms": [
+    "Android",
+    "PS4",
+    "PS5",
+    "WindowsNoEditor",
+    "Switch",
+    "XboxOne",
+    "XSX"
+  ]
 }
