@@ -22,11 +22,17 @@ TArray<FString>& UDatabaseManager::getData(const FString Path)
 		//IsSuccessful = LoadStatement.IsValid();
 		
 		ResultColumns = LoadStatement.GetColumnNames();
+		
+		
+		for(FString Column : ResultColumns)
+		{
+			//We build our table/JSON/whatever here using
+		}
 
 		LoadStatement.ClearBindings();
 		LoadStatement.Destroy();
 		//TODO. Do some checks to avoid crash
-		SQLiteDB->Close();
+		SQLiteDB->Close();  
 		delete SQLiteDB;
 		
 		return ResultColumns;
