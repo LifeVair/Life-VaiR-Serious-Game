@@ -55,12 +55,26 @@ bool UDB_ConnectionsBPLibrary::SQLiteOpen(const FString DB_Path, TEnumAsByte<SQL
     }
 }
 
-void UDB_ConnectionsBPLibrary::SQLiteClose(USQLite_Connection* InSQLiteConnection)
+bool UDB_ConnectionsBPLibrary::SQLiteClose(USQLite_Connection* InSQLiteConnection)
 {
+    
     if (IsValid(InSQLiteConnection) == true)
     {
-        InSQLiteConnection->SQLiteDB->Close();
-        delete InSQLiteConnection->SQLiteDB;
+        if(const bool IsClosed = InSQLiteConnection->SQLiteDB->Close())
+        {
+            
+            delete InSQLiteConnection->SQLiteDB;
+            return IsClosed;
+        }
+        else
+        {
+            GEngine->AddOnScreenDebugMessage(-1, 50.0f, FColor::Red, TEXT("Unable to close database connection"));
+		    return !IsClosed;
+        }
+    }
+    else
+    {
+        return false;
     }
 }
 

@@ -70,7 +70,7 @@ class UDB_ConnectionsBPLibrary : public UBlueprintFunctionLibrary
 	static bool SQLiteOpen(const FString DB_Path, TEnumAsByte<SQLiteOpenType> OpenType, USQLite_Connection*& OutSQLiteConnection);
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Close", ToolTip = "Description", Keywords = "sqlite, close"), Category = "DB Connections")
-	static void SQLiteClose(USQLite_Connection* InSQLiteConnection);
+	static bool SQLiteClose(USQLite_Connection* InSQLiteConnection);
 	
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get Columns Names", ToolTip = "Description", Keywords = "sqlite, column, names, get"), Category = "DB Connections")
 	static bool SQLiteGetColumnsNames(USQLite_Connection* InSQLiteConnection, const FString TableName, TArray<FString>& OutColumnsNames);
