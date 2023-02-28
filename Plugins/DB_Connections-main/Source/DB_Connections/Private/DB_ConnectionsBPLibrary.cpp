@@ -185,7 +185,39 @@ bool UDB_ConnectionsBPLibrary::SQLiteGetAllRowValues(USQLite_Connection* InSQLit
     return false;
 }
 
-bool UDB_ConnectionsBPLibrary::SQLiteGetAllTableContents(USQLite_Connection* InSQLiteConnection, const FString TableName, const FString QueryCondition, TMap<FString, FRowValuesStruct>& TableContents)
+bool UDB_ConnectionsBPLibrary::SQLiteGetAllTableContents(USQLite_Connection* InSQLiteConnection, const FString TableName, TMap<FString, FRowValuesStruct>& TableContents)
+{
+    if (IsValid(InSQLiteConnection) == true)
+    {
+        if (InSQLiteConnection->SQLiteDB->IsValid() == true)
+        {
+            // Create SQLite query.
+            const FString Query = TEXT("SELECT * from ") + TableName;
+
+            // Get column names.
+            TArray<FString> ColumnNames;
+            SQLiteGetColumnsNames(InSQLiteConnection, TableName, ColumnNames);
+
+            FRowValuesStruct STR_RowValues;
+            for (int32 ColumnIndex = 0; ColumnIndex < ColumnNames.Num(); ColumnIndex++)
+            {
+                TArray<FString> RowValues;
+                SQLiteGetAllRowValues(InSQLiteConnection, Query, ColumnNames[ColumnIndex], RowValues);
+                STR_RowValues.ColumnValues = RowValues;
+
+                TableContents.Add(ColumnNames[ColumnIndex], STR_RowValues);
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    return false;
+}
+
+bool UDB_ConnectionsBPLibrary::SQLiteGetConditionedTableContents(USQLite_Connection* InSQLiteConnection, const FString TableName, const FString QueryCondition, TMap<FString, FRowValuesStruct>& TableContents)
 {
     if (IsValid(InSQLiteConnection) == true)
     {
