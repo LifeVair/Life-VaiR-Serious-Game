@@ -78,11 +78,17 @@ class UDB_ConnectionsBPLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get Single Row Value", ToolTip = "Description", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
 	static bool SQLiteGetSingleRowValue(USQLite_Connection* InSQLiteConnection, const FString TableName, const FString IDColumn, const FString IDIndex, const FString ColumnName, FString& ColumnValue);
 
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get All Rows", ToolTip = "Sample: select * from repository where id > 0", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
+	static bool SQLiteGetAllRows(USQLite_Connection* InSQLiteConnection, const FString TableName, TMap<FString, FRowValuesStruct>& TableContents);
+
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get All Row Values", ToolTip = "Sample: select * from repository where id > 0", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
 	static bool SQLiteGetAllRowValues(USQLite_Connection* InSQLiteConnection, const FString Query, const FString ColumnName, TArray<FString>& ColumnValues);
 
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get Table Contents", ToolTip = "Description.", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
-	static bool SQLiteGetAllTableContents(USQLite_Connection* InSQLiteConnection, const FString TableName, const FString QueryCondition, TMap<FString, FRowValuesStruct>& TableContents);
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get All Table Contents", ToolTip = "This node allows to retrieve all data from a table", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
+	static bool SQLiteGetAllTableContents(USQLite_Connection* InSQLiteConnection, const FString TableName, TMap<FString, FRowValuesStruct>& TableContents);
+
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get Conditionned Table Contents", ToolTip = "This node allows to retrieve all data from a row with a 'where' condition", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
+	static bool SQLiteGetConditionedTableContents(USQLite_Connection* InSQLiteConnection, const FString TableName, const FString QueryCondition, TMap<FString, FRowValuesStruct>& TableContents);
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Write Value", ToolTip = "Description.", Keywords = "sqlite, write, value"), Category = "DB Connections")
 	static bool SQLiteWriteValue(USQLite_Connection* InSQLiteConnection, const FString TableName, const FString ColumnName, const FString InValue);
