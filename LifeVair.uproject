@@ -60,25 +60,40 @@
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
 			"SupportedTargetPlatforms": [
 				"Win64",
-				"Android"
-			]
-		},
-		{
-			"Name": "JWT",
-			"Enabled": true
-		},
-		{
-			"Name": "JsonBlueprintUtilities",
-			"Enabled": true
-		}
-	],
+              "Android"
+            ]
+        },
+      {
+        "Name": "JWT",
+        "Enabled": true
+      },
+      {
+        "Name": "JsonBlueprintUtilities",
+        "Enabled": true
+      },
+      {
+        "Name": "VRExpansionPlugin",
+        "Enabled": true,
+        "SupportedTargetPlatforms": [
+          "Win64",
+          "Linux",
+          "Android",
+          "HoloLens"
+        ]
+      },
+      {
+        "Name": "OpenVRExpansionPlugin",
+        "Enabled": true
+      }
+    ],
 	"TargetPlatforms": [
-		"Android",
-		"PS4",
-		"PS5",
-		"WindowsNoEditor",
-		"Switch",
-		"XboxOne",
-		"XSX"
-	]
+      "Android",
+      "PS4",
+      "PS5",
+      "WindowsNoEditor",
+      "Switch",
+      "XboxOne",
+      "XSX",
+      "HoloLens"
+    ]
 }
