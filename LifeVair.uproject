@@ -50,19 +50,19 @@
 			"Name": "SQLiteSupport",
 			"Enabled": true
 		},
-		{
-			"Name": "SQLiteCore",
-			"Enabled": true
-		},
-		{
-			"Name": "OculusXR",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
-			"SupportedTargetPlatforms": [
-				"Win64",
-              "Android"
-            ]
-        },
+      {
+        "Name": "SQLiteCore",
+        "Enabled": true
+      },
+      {
+        "Name": "OculusXR",
+        "Enabled": true,
+        "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
+        "SupportedTargetPlatforms": [
+          "Win64",
+          "Android"
+        ]
+      },
       {
         "Name": "JWT",
         "Enabled": true
@@ -83,17 +83,17 @@
       },
       {
         "Name": "OpenVRExpansionPlugin",
-        "Enabled": true
+        "Enabled": false
       }
     ],
-	"TargetPlatforms": [
-      "Android",
-      "PS4",
-      "PS5",
-      "WindowsNoEditor",
-      "Switch",
-      "XboxOne",
-      "XSX",
-      "HoloLens"
-    ]
+  "TargetPlatforms": [
+    "Android",
+    "PS4",
+    "PS5",
+    "WindowsNoEditor",
+    "Switch",
+    "XboxOne",
+    "XSX",
+    "HoloLens"
+  ]
 }
