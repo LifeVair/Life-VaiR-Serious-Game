@@ -50,50 +50,54 @@
 			"Name": "SQLiteSupport",
 			"Enabled": true
 		},
-      {
-        "Name": "SQLiteCore",
-        "Enabled": true
-      },
-      {
-        "Name": "OculusXR",
-        "Enabled": true,
-        "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
-        "SupportedTargetPlatforms": [
-          "Win64",
-          "Android"
-        ]
-      },
-      {
-        "Name": "JWT",
-        "Enabled": true
-      },
-      {
-        "Name": "JsonBlueprintUtilities",
-        "Enabled": true
-      },
-      {
-        "Name": "VRExpansionPlugin",
-        "Enabled": true,
-        "SupportedTargetPlatforms": [
-          "Win64",
-          "Linux",
-          "Android",
-          "HoloLens"
-        ]
-      },
-      {
-        "Name": "OpenVRExpansionPlugin",
-        "Enabled": false
-      }
-    ],
-  "TargetPlatforms": [
-    "Android",
-    "PS4",
-    "PS5",
-    "WindowsNoEditor",
-    "Switch",
-    "XboxOne",
-    "XSX",
-    "HoloLens"
-  ]
+		{
+			"Name": "SQLiteCore",
+			"Enabled": true
+		},
+		{
+			"Name": "OculusXR",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Android"
+			]
+		},
+		{
+			"Name": "JWT",
+			"Enabled": true
+		},
+		{
+			"Name": "JsonBlueprintUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "VRExpansionPlugin",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android",
+				"HoloLens"
+			]
+		},
+		{
+			"Name": "OpenVRExpansionPlugin",
+			"Enabled": false
+		},
+		{
+			"Name": "HDRIBackdrop",
+			"Enabled": true
+		}
+	],
+	"TargetPlatforms": [
+		"Android",
+		"PS4",
+		"PS5",
+		"WindowsNoEditor",
+		"Switch",
+		"XboxOne",
+		"XSX",
+		"HoloLens"
+	]
 }
