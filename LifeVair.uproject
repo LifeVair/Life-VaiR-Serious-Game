@@ -92,12 +92,7 @@
 	],
 	"TargetPlatforms": [
 		"Android",
-		"PS4",
-		"PS5",
 		"WindowsNoEditor",
-		"Switch",
-		"XboxOne",
-		"XSX",
-		"HoloLens"
+		"XSX"
 	]
 }
