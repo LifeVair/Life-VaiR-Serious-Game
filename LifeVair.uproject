@@ -93,6 +93,9 @@
 	"TargetPlatforms": [
 		"Android",
 		"WindowsNoEditor",
-		"XSX"
+		"XSX",
+		"HoloLens",
+		"Windows",
+		"Linux"
 	]
 }
