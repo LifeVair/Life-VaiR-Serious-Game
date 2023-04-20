@@ -74,14 +74,14 @@ class UDB_ConnectionsBPLibrary : public UBlueprintFunctionLibrary
 	
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get Columns Names", ToolTip = "Description", Keywords = "sqlite, column, names, get"), Category = "DB Connections")
 	static bool SQLiteGetColumnsNames(USQLite_Connection* InSQLiteConnection, const FString TableName, TArray<FString>& OutColumnsNames);
-
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get Single Row Value", ToolTip = "Description", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
+	
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get Single Row Value", ToolTip = "Retrieve a specific value from a row.", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
 	static bool SQLiteGetSingleRowValue(USQLite_Connection* InSQLiteConnection, const FString TableName, const FString IDColumn, const FString IDIndex, const FString ColumnName, FString& ColumnValue);
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get All Rows", ToolTip = "Sample: select * from repository where id > 0", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
 	static bool SQLiteGetAllRows(USQLite_Connection* InSQLiteConnection, const FString TableName, TMap<FString, FRowValuesStruct>& TableContents);
-
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get All Row Values", ToolTip = "Sample: select * from repository where id > 0", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
+	
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get All Row Values", ToolTip = "Retrieve all values of a specific column. Sample: select * from repository where id > 0", Keywords = "sqlite, column, values, get"), Category = "DB Connections")
 	static bool SQLiteGetAllRowValues(USQLite_Connection* InSQLiteConnection, const FString Query, const FString ColumnName, TArray<FString>& ColumnValues);
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SQLite Get All Table Contents", ToolTip = "This node allows to retrieve all data from a table", Keywords = "sqlite, column, values, get"), Category = "DB Connections")

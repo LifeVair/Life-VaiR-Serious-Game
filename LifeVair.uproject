@@ -70,15 +70,32 @@
 		{
 			"Name": "JsonBlueprintUtilities",
 			"Enabled": true
+		},
+		{
+			"Name": "VRExpansionPlugin",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android",
+				"HoloLens"
+			]
+		},
+		{
+			"Name": "OpenVRExpansionPlugin",
+			"Enabled": false
+		},
+		{
+			"Name": "HDRIBackdrop",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
 		"Android",
-		"PS4",
-		"PS5",
 		"WindowsNoEditor",
-		"Switch",
-		"XboxOne",
-		"XSX"
+		"XSX",
+		"HoloLens",
+		"Windows",
+		"Linux"
 	]
 }
