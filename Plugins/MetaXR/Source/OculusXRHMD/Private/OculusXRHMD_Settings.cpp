@@ -40,14 +40,13 @@ FSettings::FSettings() :
 	Flags.bHMDEnabled = true;
 	Flags.bUpdateOnRT = true;
 	Flags.bHQBuffer = false;
+	Flags.bCompositeDepth = true;
 #if PLATFORM_ANDROID
-	Flags.bCompositeDepth = false;
 	Flags.bsRGBEyeBuffer = true;
 	//oculus mobile is always-on stereo, no need for enableStereo codepaths
 	Flags.bStereoEnabled = true;
 	CurrentShaderPlatform = EShaderPlatform::SP_VULKAN_ES3_1_ANDROID;
 #else
-	Flags.bCompositeDepth = true;
 	Flags.bsRGBEyeBuffer = false;
 	Flags.bStereoEnabled = false;
 	CurrentShaderPlatform = EShaderPlatform::SP_PCD3D_SM5;

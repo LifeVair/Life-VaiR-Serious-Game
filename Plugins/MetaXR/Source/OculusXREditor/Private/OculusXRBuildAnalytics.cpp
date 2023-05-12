@@ -106,10 +106,6 @@ void FOculusBuildAnalytics::OnLauncherWorkerStarted(ILauncherWorkerPtr LauncherW
 				TArray<TEnumAsByte<EOculusMobileDevice::Type>> TargetOculusDevices = Settings->PackageForOculusMobile;
 				TArray<FString> Devices;
 
-				if (TargetOculusDevices.Contains(EOculusMobileDevice::Quest))
-				{
-					Devices.Add("quest");
-				}
 				if (TargetOculusDevices.Contains(EOculusMobileDevice::Quest2))
 				{
 					Devices.Add("quest2");

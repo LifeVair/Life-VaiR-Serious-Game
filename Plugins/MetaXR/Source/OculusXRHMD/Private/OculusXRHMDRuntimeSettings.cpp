@@ -41,6 +41,9 @@ UOculusXRHMDRuntimeSettings::UOculusXRHMDRuntimeSettings(const FObjectInitialize
 	bSupportExperimentalFeatures = DefaultSettings.bSupportExperimentalFeatures;
 	bAnchorSupportEnabled = DefaultSettings.Flags.bAnchorSupportEnabled;
 
+	// Default this to false, FSettings doesn't have a separate composite depth flag for mobile
+	bCompositeDepthMobile = false;
+
 #else
 	// Some set of reasonable defaults, since blueprints are still available on non-Oculus platforms.
 	bSupportsDash = false;
@@ -55,6 +58,7 @@ UOculusXRHMDRuntimeSettings::UOculusXRHMDRuntimeSettings(const FObjectInitialize
 	PixelDensityMin = 0.8f;
 	PixelDensityMax = 1.2f;
 	bDynamicResolution = false;
+	bCompositeDepthMobile = false;
 	bFocusAware = true;
 	XrApi = EOculusXRXrApi::OVRPluginOpenXR;
 	bLateLatching = false;
@@ -73,7 +77,6 @@ UOculusXRHMDRuntimeSettings::UOculusXRHMDRuntimeSettings(const FObjectInitialize
 #endif
 
 	LoadFromIni();
-	RenameProperties();
 }
 
 #if WITH_EDITOR
@@ -145,6 +148,12 @@ void UOculusXRHMDRuntimeSettings::PostEditChangeProperty(struct FPropertyChanged
 }
 #endif // WITH_EDITOR
 
+void UOculusXRHMDRuntimeSettings::PostInitProperties()
+{
+	Super::PostInitProperties();
+	RenameProperties();
+}
+
 void UOculusXRHMDRuntimeSettings::LoadFromIni()
 {
 	const TCHAR* OculusSettings = TEXT("Oculus.Settings");
@@ -206,8 +215,8 @@ void UOculusXRHMDRuntimeSettings::RenameProperties()
 		{
 			FoveatedRenderingLevel = EOculusXRFoveatedRenderingLevel::HighTop;
 		}
-		// Use UEnum::GetDisplayValueAsText().ToString() here because UEnum::GetValueAsString() includes the type name as well
-		GConfig->SetString(OculusSettings, GET_MEMBER_NAME_STRING_CHECKED(UOculusXRHMDRuntimeSettings, FoveatedRenderingLevel), *UEnum::GetDisplayValueAsText(FoveatedRenderingLevel).ToString(), GetDefaultConfigFilename());
+		// Use GetNameStringByValue() here because GetValueAsString() includes the type name as well
+		GConfig->SetString(OculusSettings, GET_MEMBER_NAME_STRING_CHECKED(UOculusXRHMDRuntimeSettings, FoveatedRenderingLevel), *StaticEnum<EOculusXRFoveatedRenderingLevel>()->GetNameStringByValue((int64)FoveatedRenderingLevel), GetDefaultConfigFilename());
 		GConfig->RemoveKey(OculusSettings, TEXT("FFRLevel"), GetDefaultConfigFilename());
 	}
 
@@ -218,5 +227,48 @@ void UOculusXRHMDRuntimeSettings::RenameProperties()
 		bDynamicFoveatedRendering = v;
 		GConfig->SetBool(OculusSettings, GET_MEMBER_NAME_STRING_CHECKED(UOculusXRHMDRuntimeSettings, bDynamicFoveatedRendering), bDynamicFoveatedRendering, GetDefaultConfigFilename());
 		GConfig->RemoveKey(OculusSettings, TEXT("FFRDynamic"), GetDefaultConfigFilename());
+	}
+
+	const TCHAR* AndroidSettings = TEXT("/Script/AndroidRuntimeSettings.AndroidRuntimeSettings");
+	const FString Quest = TEXT("Quest");
+
+	TArray<FString> PackageList;
+	const TCHAR* PackageForMobileKey = TEXT("+PackageForOculusMobile");
+	if (GConfig->GetArray(AndroidSettings, PackageForMobileKey, PackageList, GetDefaultConfigFilename()))
+	{
+		const FString Quest2 = TEXT("Quest2");
+		if (PackageList.Contains(Quest))
+		{
+			PackageList.Remove(Quest);
+			if (!PackageList.Contains(Quest2))
+			{
+				PackageList.Add(Quest2);
+			}
+			GConfig->SetArray(AndroidSettings, PackageForMobileKey, PackageList, GetDefaultConfigFilename());
+		}
+	}
+
+	TArray<FString> DeviceList;
+	const TCHAR* SupportedDevicesKey = TEXT("+SupportedDevices");
+	if (GConfig->GetArray(OculusSettings, SupportedDevicesKey, DeviceList, GetDefaultConfigFilename()))
+	{
+		const EOculusXRSupportedDevices LastSupportedDevice = EOculusXRSupportedDevices::Quest2;
+		const FString LastSupportedDeviceString = StaticEnum<EOculusXRSupportedDevices>()->GetNameStringByValue((int64)LastSupportedDevice);
+		if (DeviceList.Contains(Quest))
+		{
+			DeviceList.Remove(Quest);
+			if (!DeviceList.Contains(LastSupportedDeviceString))
+			{
+				DeviceList.Add(LastSupportedDeviceString);
+			}
+			GConfig->SetArray(OculusSettings, SupportedDevicesKey, DeviceList, GetDefaultConfigFilename());
+
+			// Reflect the config changes in the Project Settings UI
+			SupportedDevices.Remove((EOculusXRSupportedDevices)0); // Enums that don't exist just have a value of 0
+			if (!SupportedDevices.Contains(LastSupportedDevice))
+			{
+				SupportedDevices.Add(LastSupportedDevice);
+			}
+		}
 	}
 }

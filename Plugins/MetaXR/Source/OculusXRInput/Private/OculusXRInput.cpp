@@ -774,7 +774,7 @@ void FOculusXRInput::SendControllerEvents()
 									BoneRotation.Normalize();
 									State.BoneRotations[BoneIndex] = BoneRotation;
 								}
-								
+
 								// Update Pinch State and Pinch Strength
 								bool bTracked = (HandState.Status & ovrpHandStatus_HandTracked) != 0;
 								State.TrackingConfidence = FOculusHandTracking::ToEOculusXRTrackingConfidence(HandState.HandConfidence);
@@ -791,7 +791,7 @@ void FOculusXRInput::SendControllerEvents()
 								State.PointerPose.SetRotation(OculusXRHMD::ToFQuat(PointerPose.Orientation));
 
 								State.bIsDominantHand = (HandState.Status & ovrpHandStatus_DominantHand) != 0;
-								
+
 								// Poll for finger confidence
 								for (uint32 FingerIndex = 0; FingerIndex < (int32)EOculusHandAxes::TotalAxisCount; FingerIndex++)
 								{
@@ -1050,21 +1050,17 @@ FName FOculusXRInput::GetMotionControllerDeviceTypeName() const
 	return DefaultName;
 }
 
-struct MotionSourceInfo
-{
-	FName MotionSource;
-	EControllerHand ControllerHand;
-	ovrpNode OvrpNode;
-};
-
-const TMap<FName, MotionSourceInfo> MotionSourceMap
-{
-	{FName("Left"), {FName("Left"), EControllerHand::Left, ovrpNode_HandLeft}},
-	{FName("Right"), {FName("Right"), EControllerHand::Right, ovrpNode_HandRight}},
-	{FName("LeftGrip"), {FName("LeftGrip"), EControllerHand::Left, ovrpNode_HandLeft}},
-	{FName("RightGrip"), {FName("RightGrip"), EControllerHand::Right, ovrpNode_HandRight}},
-	{FName("LeftAim"), {FName("LeftAim"), EControllerHand::Left, ovrpNode_HandLeft}},
-	{FName("RightAim"), {FName("RightAim"), EControllerHand::Right, ovrpNode_HandRight}}
+// Supported motion sources
+const TMap<FName, ovrpNode> MotionSourceMap{
+	{FName("Left"), ovrpNode_HandLeft},
+	{FName("Right"), ovrpNode_HandRight},
+	{FName("LeftGrip"), ovrpNode_HandLeft},
+	{FName("RightGrip"), ovrpNode_HandRight},
+	{FName("LeftAim"), ovrpNode_HandLeft},
+	{FName("RightAim"), ovrpNode_HandRight},
+	// Sometimes we can get an enum as the motion source name
+	{FName("EControllerHand::Left"), ovrpNode_HandLeft},
+	{FName("EControllerHand::Right"), ovrpNode_HandRight}
 };
 
 bool FOculusXRInput::GetControllerOrientationAndPosition(const int32 ControllerIndex, const FName MotionSource, FRotator& OutOrientation, FVector& OutPosition, float WorldToMetersScale) const
@@ -1081,7 +1077,7 @@ bool FOculusXRInput::GetControllerOrientationAndPosition(const int32 ControllerI
 					if (IOculusXRHMDModule::IsAvailable() && FOculusXRHMDModule::GetPluginWrapper().GetInitialized())
 					{
 						OculusXRHMD::FOculusXRHMD* OculusXRHMD = static_cast<OculusXRHMD::FOculusXRHMD*>(GEngine->XRSystem->GetHMDDevice());
-						ovrpNode Node = MotionSourceMap[MotionSource].OvrpNode;
+						ovrpNode Node = MotionSourceMap[MotionSource];
 
 						ovrpBool bResult = true;
 						bool bIsPositionValid = OVRP_SUCCESS(FOculusXRHMDModule::GetPluginWrapper().GetNodePositionValid(Node, &bResult)) && bResult;
@@ -1128,22 +1124,23 @@ bool FOculusXRInput::GetControllerOrientationAndPosition(const int32 ControllerI
 									OculusXRHMD->ConvertPose_Internal(InPoseState.Pose, OutPose, Settings, WorldToMetersScale))
 								{
 									FName FinalMotionSource = MotionSource;
-									if (FinalMotionSource == FName("Left") || FinalMotionSource == FName("Right"))
+									if (MotionSource == FName("Left") || MotionSource == FName("EControllerHand::Left") ||
+										MotionSource == FName("Right") || MotionSource == FName("EControllerHand::Right"))
 									{
 										switch (ControllerPoseAlignment)
 										{
 										case EOculusXRControllerPoseAlignment::Grip:
-											FinalMotionSource = FName(FinalMotionSource.ToString().Append(FString("Grip")));
+											FinalMotionSource = FName(MotionSource.ToString().Append(FString("Grip")));
 											break;
 										case EOculusXRControllerPoseAlignment::Aim:
-											FinalMotionSource = FName(FinalMotionSource.ToString().Append(FString("Aim")));
+											FinalMotionSource = FName(MotionSource.ToString().Append(FString("Aim")));
 											break;
 										case EOculusXRControllerPoseAlignment::Default:
 										default:
 											break;
 										}
 									}
-									
+
 									// TODO: Just pass the pose info to OVRPlugin instead of doing the conversion between poses here
 									if (FinalMotionSource == FName("LeftGrip") || FinalMotionSource == FName("RightGrip"))
 									{
@@ -1165,11 +1162,16 @@ bool FOculusXRInput::GetControllerOrientationAndPosition(const int32 ControllerI
 									}
 
 									auto bSuccess = true;
-									UOculusXRInputFunctionLibrary::HandMovementFilter.Broadcast(
-										MotionSourceMap[FinalMotionSource].ControllerHand,
-										&OutPosition,
-										&OutOrientation,
-										&bSuccess);
+									EControllerHand ControllerHand;
+									if (GetHandEnumForSourceName(MotionSource, ControllerHand))
+									{
+										// TODO: Just use the motion source name here instead of the legacy enum
+										UOculusXRInputFunctionLibrary::HandMovementFilter.Broadcast(
+											ControllerHand,
+											&OutPosition,
+											&OutOrientation,
+											&bSuccess);
+									}
 
 									return bSuccess;
 								}
@@ -1187,6 +1189,7 @@ bool FOculusXRInput::GetControllerOrientationAndPosition(const int32 ControllerI
 	EControllerHand ControllerHand;
 	if (GetHandEnumForSourceName(MotionSource, ControllerHand))
 	{
+		// TODO: Just use the motion source name here instead of the legacy enum
 		UOculusXRInputFunctionLibrary::HandMovementFilter.Broadcast(
 			ControllerHand,
 			&OutPosition,
@@ -1222,7 +1225,7 @@ ETrackingStatus FOculusXRInput::GetControllerTrackingStatus(const int32 Controll
 	{
 		return TrackingStatus;
 	}
-	
+
 	for( const FOculusControllerPair& ControllerPair : ControllerPairs )
 	{
 		if( ControllerPair.UnrealControllerIndex == ControllerIndex )
@@ -1391,7 +1394,7 @@ void FOculusXRInput::SetHapticFeedbackValues(int32 ControllerId, int32 Hand, con
 										SamplesSent,
 										HapticBuffer->SamplesSent + SamplesSent,
 										(EndTimePCM - StartTimePCM) * 1000.0);
-									
+
 									if (BufferToFree)
 									{
 										FMemory::Free(BufferToFree);

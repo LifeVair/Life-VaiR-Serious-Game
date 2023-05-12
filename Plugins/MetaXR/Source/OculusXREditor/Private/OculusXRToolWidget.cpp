@@ -748,7 +748,6 @@ FString SOculusToolWidget::GetConfigPath() const
 FReply SOculusToolWidget::AndroidManifestQuest(bool text)
 {
 	UAndroidRuntimeSettings* Settings = GetMutableDefault<UAndroidRuntimeSettings>();
-	Settings->PackageForOculusMobile.Add(EOculusMobileDevice::Quest);
 	Settings->PackageForOculusMobile.Add(EOculusMobileDevice::Quest2);
 #ifdef WITH_OCULUS_BRANCH
 	Settings->PackageForOculusMobile.Add(EOculusMobileDevice::QuestPro);

@@ -30,12 +30,12 @@
 extern "C" {
 #endif
 
-// The following macros are only defined when building in UE4
+// The following macros are only defined when building in UE4 and UE5
 #if (                                                                                     \
     defined(UE_BUILD_DEBUG) || defined(UE_BUILD_DEVELOPMENT) || defined(UE_BUILD_TEST) || \
     defined(UE_BUILD_SHIPPING)) &&                                                        \
     defined(PLATFORM_ANDROID)
-// OVRPlugin does not support Android system callbacks in UE4.
+// OVRPlugin does not support Android system callbacks in UE4 and UE5.
 // Please use Optional Mobile Features Blueprint Library Plugin or include FAndroidMisc.h in your project
 #define OVRPLUGIN_JNI_LIB_EXCLUDED
 #endif
@@ -418,6 +418,12 @@ OVRP_EXPORT ovrpResult ovrp_SetControllerVibration2(ovrpController controllerMas
 /// Gets the controller state for the given controllers.
 OVRP_EXPORT ovrpResult ovrp_GetControllerState5(ovrpController controllerMask, ovrpControllerState5* controllerState);
 
+
+
+
+
+
+
 /// Sets the vibration state for the specified haptics locations on the given controllers.
 OVRP_EXPORT ovrpResult ovrp_SetControllerLocalizedVibration(
     ovrpController controllerMask,
@@ -500,7 +506,7 @@ OVRP_EXPORT ovrpResult ovrp_GetSystemVSyncCount2(int* systemVSyncCount);
 /// Sets the minimum number of vsyncs to wait after each frame.
 OVRP_EXPORT ovrpResult ovrp_SetSystemVSyncCount2(int systemVSyncCount);
 
-/// OVRPlugin does not support Android system callbacks in UE4.
+/// OVRPlugin does not support Android system callbacks in UE4 and UE5.
 /// Please use Optional Mobile Features Blueprint Library Plugin or include FAndroidMisc.h in your project
 #ifndef OVRPLUGIN_JNI_LIB_EXCLUDED
 /// Gets the current system volume level.
@@ -806,22 +812,23 @@ OVRP_EXPORT ovrpResult ovrp_GetSystemKeyboardDescription(
     ovrpTrackedKeyboardQueryFlags queryFlags,
     ovrpKeyboardDescription* keyboardDescription);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+OVRP_EXPORT ovrpResult ovrp_CreateVirtualKeyboard(const ovrpVirtualKeyboardCreateInfo* createInfo);
+OVRP_EXPORT ovrpResult ovrp_DestroyVirtualKeyboard();
+OVRP_EXPORT ovrpResult
+ovrp_SendVirtualKeyboardInput(const ovrpVirtualKeyboardInputInfo* info, ovrpPosef* interactorRootPose);
+OVRP_EXPORT ovrpResult ovrp_ChangeVirtualKeyboardTextContext(const char* textContext);
+OVRP_EXPORT ovrpResult
+ovrp_CreateVirtualKeyboardSpace(const ovrpVirtualKeyboardSpaceCreateInfo* createInfo, ovrpUInt64* keyboardSpace);
+OVRP_EXPORT ovrpResult ovrp_SuggestVirtualKeyboardLocation(const ovrpVirtualKeyboardLocationInfo* locationInfo);
+OVRP_EXPORT ovrpResult ovrp_GetVirtualKeyboardScale(float* scale);
+OVRP_EXPORT ovrpResult ovrp_GetVirtualKeyboardSound(ovrpVirtualKeyboardSound* sound);
+OVRP_EXPORT ovrpResult ovrp_GetVirtualKeyboardSwipeTrailState(ovrpVirtualKeyboardSwipeTrailState* swipeTrailState);
+OVRP_EXPORT ovrpResult
+ovrp_GetVirtualKeyboardModelAnimationStates(ovrpVirtualKeyboardModelAnimationStates* animationStates);
+OVRP_EXPORT ovrpResult ovrp_GetVirtualKeyboardDirtyTextures(ovrpVirtualKeyboardTextureIds* textureIds);
+OVRP_EXPORT ovrpResult
+ovrp_GetVirtualKeyboardTextureData(ovrpUInt64 textureId, ovrpVirtualKeyboardTextureData* textureData);
+OVRP_EXPORT ovrpResult ovrp_SetVirtualKeyboardModelVisibility(const ovrpVirtualKeyboardModelVisibility* visibility);
 
 
 
@@ -939,7 +946,15 @@ OVRP_EXPORT ovrpResult ovrp_GetFaceTrackingEnabled(ovrpBool* faceTrackingEnabled
 
 OVRP_EXPORT ovrpResult ovrp_GetFaceTrackingSupported(ovrpBool* faceTrackingSupported);
 
+
+
+
+
 OVRP_EXPORT ovrpResult ovrp_GetFaceState(ovrpStep step, int frameIndex, ovrpFaceState* faceState);
+
+
+
+
 
 OVRP_EXPORT ovrpResult ovrp_GetEyeTrackingEnabled(ovrpBool* eyeTrackingEnabled);
 
@@ -1020,6 +1035,7 @@ OVRP_EXPORT ovrpResult ovrp_SetLocalDimming(ovrpBool localDimmingMode);
 OVRP_EXPORT ovrpResult ovrp_GetLocalDimming(ovrpBool* localDimmingMode);
 
 OVRP_EXPORT ovrpResult ovrp_GetCurrentInteractionProfile(ovrpHand hand, ovrpInteractionProfile* interactionProfile);
+
 
 
 

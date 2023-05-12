@@ -1712,6 +1712,7 @@ namespace OculusXRHMD
 			}
 		}
 
+		OutTargetableTexture = OutShaderResourceTexture = nullptr;
 		return false;
 	}
 
@@ -1746,6 +1747,7 @@ namespace OculusXRHMD
 			}
 		}
 
+		OutTargetableTexture = OutShaderResourceTexture = nullptr;
 		return false;
 	}
 
@@ -1780,6 +1782,7 @@ namespace OculusXRHMD
 			}
 		}
 
+		OutTexture = nullptr;
 		return false;
 	}
 
@@ -1830,6 +1833,7 @@ namespace OculusXRHMD
 			}
 		}
 
+		OutTexture = nullptr;
 		return false;
 	}
 #endif // WITH_OCULUS_BRANCH
@@ -1932,7 +1936,9 @@ namespace OculusXRHMD
 		CheckInGameThread();
 
 		uint32 LayerId = NextLayerId++;
-		LayerMap.Add(LayerId, MakeShareable(new FLayer(LayerId, InLayerDesc)));
+		FLayerPtr Layer = MakeShareable(new FLayer(LayerId));
+		LayerMap.Add(LayerId, Layer);
+		Layer->SetDesc(Settings.Get(), InLayerDesc);
 		return LayerId;
 	}
 
@@ -1956,7 +1962,7 @@ namespace OculusXRHMD
 		if (LayerFound)
 		{
 			FLayer* Layer = new FLayer(**LayerFound);
-			Layer->SetDesc(InLayerDesc);
+			Layer->SetDesc(Settings.Get(), InLayerDesc);
 			*LayerFound = MakeShareable(Layer);
 		}
 	}
@@ -2941,13 +2947,15 @@ namespace OculusXRHMD
 			}
 		}
 
+		const bool bCompositeDepth = Settings->Flags.bCompositeDepth;
+
 		if (OVRP_SUCCESS(FOculusXRHMDModule::GetPluginWrapper().CalculateEyeLayerDesc3(
 			Layout,
 			Settings->Flags.bPixelDensityAdaptive ? Settings->PixelDensityMax : Settings->PixelDensity,
 			Settings->Flags.bHQDistortion ? 0 : 1,
 			1, // UNDONE
 			CustomPresent->GetOvrpTextureFormat(CustomPresent->GetDefaultPixelFormat(), Settings->Flags.bsRGBEyeBuffer),
-			(Settings->Flags.bCompositeDepth && bSupportsDepth) ? CustomPresent->GetDefaultDepthOvrpTextureFormat() : ovrpTextureFormat_None,
+			(bCompositeDepth && bSupportsDepth) ? CustomPresent->GetDefaultDepthOvrpTextureFormat() : ovrpTextureFormat_None,
 			MvPixelFormat,
 			MvDepthFormat,
 			1.0f,
@@ -4189,7 +4197,11 @@ namespace OculusXRHMD
 		check(HMDSettings);
 
 		Settings->Flags.bSupportsDash = HMDSettings->bSupportsDash;
+#if PLATFORM_ANDROID
+		Settings->Flags.bCompositeDepth = HMDSettings->bCompositeDepthMobile;
+#else
 		Settings->Flags.bCompositeDepth = HMDSettings->bCompositesDepth;
+#endif
 		Settings->Flags.bHQDistortion = HMDSettings->bHQDistortion;
 		Settings->Flags.bInsightPassthroughEnabled = HMDSettings->bInsightPassthroughEnabled;
 		Settings->Flags.bPixelDensityAdaptive = HMDSettings->bDynamicResolution;
