@@ -3,10 +3,11 @@
 
 ## Description
 Life is a serious game in VR aiming decision makers. The goal is to sensibilise them on how their actions impact air quality.
-## Visuals
+
+Visuals
 --
 
-## Installation
+Installation
 --
 
 ## Authors and acknowledgment

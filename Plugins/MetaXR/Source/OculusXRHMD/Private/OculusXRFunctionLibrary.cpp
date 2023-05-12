@@ -407,25 +407,26 @@ EOculusXRDeviceType UOculusXRFunctionLibrary::GetDeviceType()
 	{
 		if (OculusXRHMD->GetSettings())
 		{
-			switch (OculusXRHMD->GetSettings()->SystemHeadset) {
-			case ovrpSystemHeadset_Oculus_Quest:
-				return EOculusXRDeviceType::OculusQuest;
-			case ovrpSystemHeadset_Oculus_Quest_2:
-				return EOculusXRDeviceType::OculusQuest2;
-			case ovrpSystemHeadset_Meta_Quest_Pro:
-				return EOculusXRDeviceType::MetaQuestPro;
-			case ovrpSystemHeadset_Rift_CV1:
-				return EOculusXRDeviceType::Rift;
-			case ovrpSystemHeadset_Rift_S:
-				return EOculusXRDeviceType::Rift_S;
-			case ovrpSystemHeadset_Oculus_Link_Quest:
-				return EOculusXRDeviceType::Quest_Link;
-			case ovrpSystemHeadset_Oculus_Link_Quest_2:
-				return EOculusXRDeviceType::Quest2_Link;
-			case ovrpSystemHeadset_Meta_Link_Quest_Pro:
-				return EOculusXRDeviceType::MetaQuestProLink;
-			default:
-				break;
+			switch (OculusXRHMD->GetSettings()->SystemHeadset)
+			{
+				case ovrpSystemHeadset_Oculus_Quest:
+					return EOculusXRDeviceType::OculusQuest_Deprecated;
+				case ovrpSystemHeadset_Oculus_Quest_2:
+					return EOculusXRDeviceType::OculusQuest2;
+				case ovrpSystemHeadset_Meta_Quest_Pro:
+					return EOculusXRDeviceType::MetaQuestPro;
+				case ovrpSystemHeadset_Rift_CV1:
+					return EOculusXRDeviceType::Rift;
+				case ovrpSystemHeadset_Rift_S:
+					return EOculusXRDeviceType::Rift_S;
+				case ovrpSystemHeadset_Oculus_Link_Quest:
+					return EOculusXRDeviceType::Quest_Link_Deprecated;
+				case ovrpSystemHeadset_Oculus_Link_Quest_2:
+					return EOculusXRDeviceType::Quest2_Link;
+				case ovrpSystemHeadset_Meta_Link_Quest_Pro:
+					return EOculusXRDeviceType::MetaQuestProLink;
+				default:
+					break;
 			}
 		}
 	}

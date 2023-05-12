@@ -114,10 +114,10 @@ struct OCULUSXRINPUT_API FOculusXRCapsuleCollider
 
 public:
 	UPROPERTY(BlueprintReadOnly, Category = "OculusLibrary|HandTracking")
-	UCapsuleComponent* Capsule;
+	UCapsuleComponent* Capsule = nullptr;
 
 	UPROPERTY(BlueprintReadOnly, Category = "OculusLibrary|HandTracking")
-	EOculusXRBone BoneId;
+	EOculusXRBone BoneId = EOculusXRBone::Wrist_Root;
 };
 
 UCLASS()

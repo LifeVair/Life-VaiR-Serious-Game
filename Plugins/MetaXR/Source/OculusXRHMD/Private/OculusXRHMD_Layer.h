@@ -40,13 +40,14 @@ typedef TSharedPtr<FOvrpLayer, ESPMode::ThreadSafe> FOvrpLayerPtr;
 class FLayer : public TSharedFromThis<FLayer, ESPMode::ThreadSafe>
 {
 public:
-	FLayer(uint32 InId, const IStereoLayers::FLayerDesc& InDesc);
+	FLayer(uint32 InId);
 	FLayer(const FLayer& InLayer);
 	~FLayer();
 
 	uint32 GetId() const { return Id; }
 	int GetOvrpId() const { return OvrpLayerId; }
 	void SetDesc(const IStereoLayers::FLayerDesc& InDesc);
+	void SetDesc(const FSettings* Settings, const IStereoLayers::FLayerDesc& InDesc);
 	const IStereoLayers::FLayerDesc& GetDesc() const { return Desc; }
 	void SetEyeLayerDesc(const ovrpLayerDesc_EyeFov& InEyeLayerDesc);
 	const FXRSwapChainPtr& GetSwapChain() const { return SwapChain; }
@@ -104,7 +105,7 @@ protected:
 
 	struct FPassthroughPokeActor
 	{
-		FPassthroughPokeActor() 
+		FPassthroughPokeActor()
 		{};
 		FPassthroughPokeActor(UProceduralMeshComponent* PokeAHoleComponentPtr, AActor* PokeAHoleActor)
 		:	PokeAHoleComponentPtr(PokeAHoleComponentPtr)
@@ -138,10 +139,11 @@ protected:
 	bool bUpdateTexture;
 	bool bInvertY;
 	bool bHasDepth;
+	bool bSupportDepthComposite;
 
 	UProceduralMeshComponent* PokeAHoleComponentPtr;
 	AActor* PokeAHoleActor;
-   
+
 	FUserDefinedGeometryMapPtr UserDefinedGeometryMap;
 	FPassthroughPokeActorMapPtr PassthroughPokeActorMap;
 };
