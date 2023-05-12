@@ -27,8 +27,10 @@
 #define OVRP_STRINGIFY(x) OVRP_STRINGIFYIMPL(x)
 #endif
 
+// Note: OVRP_MINOR_VERSION == OCULUS_SDK_VERSION + 32
+
 #define OVRP_MAJOR_VERSION 1
-#define OVRP_MINOR_VERSION 82
+#define OVRP_MINOR_VERSION 83
 #define OVRP_PATCH_VERSION 0
 
 #define OVRP_VERSION OVRP_MAJOR_VERSION, OVRP_MINOR_VERSION, OVRP_PATCH_VERSION
@@ -849,6 +851,27 @@ typedef struct {
   float IndexTriggerCurl[2];
   float IndexTriggerSlide[2];
 } ovrpControllerState5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1752,6 +1775,16 @@ typedef enum ovrpFaceExpression_ {
   ovrpFaceExpression_Upper_Lip_Raiser_L = 61,
   ovrpFaceExpression_Upper_Lip_Raiser_R = 62,
   ovrpFaceExpression_Max = 63,
+
+
+
+
+
+
+
+
+
+
   ovrpFaceExpression_EnumSize = 0x7FFFFFFF
 } ovrpFaceExpression;
 
@@ -1764,7 +1797,11 @@ typedef enum ovrpFaceConfidence_ {
 } ovrpFaceConfidence;
 
 typedef enum ovrpFaceConstants_ {
-  ovrpFaceConstants_MaxFaceExpressions = ovrpFaceExpression_Max,
+
+
+
+
+  ovrpFaceConstants_MaxFaceExpressionsWithoutTongue = ovrpFaceExpression_Max,
   ovrpFaceConstants_MaxFaceConfidenceWeights = ovrpFaceConfidence_Max,
   ovrpFaceConstants_EnumSize = 0x7fffffff
 } ovrpFaceConstants;
@@ -1775,11 +1812,20 @@ typedef struct ovrpFaceExpressionStatus_ {
 } ovrpFaceExpressionStatus;
 
 typedef struct ovrpFaceState_ {
-  float ExpressionWeights[ovrpFaceConstants_MaxFaceExpressions];
+  float ExpressionWeights[ovrpFaceConstants_MaxFaceExpressionsWithoutTongue];
   float ExpressionWeightConfidences[ovrpFaceConstants_MaxFaceConfidenceWeights];
   ovrpFaceExpressionStatus Status;
   double Time;
 } ovrpFaceState;
+
+
+
+
+
+
+
+
+
 
 typedef struct ovrpEyeGazeState_ {
   ovrpPosef Pose;
@@ -1943,11 +1989,12 @@ typedef enum ovrpEventType_ {
 
 
 
-
-
-
-
-
+  ovrpEventType_VirtualKeyboardCommitText = 201,
+  ovrpEventType_VirtualKeyboardBackspace = 202,
+  ovrpEventType_VirtualKeyboardEnter = 203,
+  ovrpEventType_VirtualKeyboardShown = 204,
+  ovrpEventType_VirtualKeyboardHidden = 205,
+  ovrpEventType_VirtualKeyboardPlaySound = 206,
 
 
 
@@ -2097,154 +2144,132 @@ typedef enum {
   ovrpRenderModelFlags_EnumSize = 0x7fffffff
 } ovrpRenderModelFlags;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+typedef enum ovrpVirtualKeyboardLocationType_ {
+  ovrpVirtualKeyboardLocationType_Custom = 0,
+  ovrpVirtualKeyboardLocationType_Far = 1,
+  ovrpVirtualKeyboardLocationType_Direct = 2
+} ovrpVirtualKeyboardLocationType;
+
+// Info necessary to help build a virtual keyboard
+typedef struct ovrpVirtualKeyboardCreateInfo_ {
+  float placeholder;
+} ovrpVirtualKeyboardCreateInfo;
+
+typedef struct ovrpVirtualKeyboardSpaceCreateInfo_ {
+  ovrpVirtualKeyboardLocationType locationType;
+  ovrpPosef pose;
+} ovrpVirtualKeyboardSpaceCreateInfo;
+
+typedef struct ovrpVirtualKeyboardLocationInfo_ {
+  ovrpVirtualKeyboardLocationType locationType;
+  ovrpPosef pose;
+  float scale;
+} ovrpVirtualKeyboardLocationInfo;
+
+// When supplying input info, specifies which input device was used.
+// Must match XrVirtualKeyboardInputSourceMETA defined in
+// arvr/projects/xrruntime/mobile/OpenXR/Include/openxr/meta_virtual_keyboard.h
+typedef enum {
+  ovrpVirtualKeyboardInputSource_Invalid = 0,
+  ovrpVirtualKeyboardInputSource_ControllerRayLeft = 1,
+  ovrpVirtualKeyboardInputSource_ControllerRayRight = 2,
+  ovrpVirtualKeyboardInputSource_HandRayLeft = 3,
+  ovrpVirtualKeyboardInputSource_HandRayRight = 4,
+  ovrpVirtualKeyboardInputSource_ControllerDirectLeft = 5,
+  ovrpVirtualKeyboardInputSource_ControllerDirectRight = 6,
+  ovrpVirtualKeyboardInputSource_HandDirectIndexTipLeft = 7,
+  ovrpVirtualKeyboardInputSource_HandDirectIndexTipRight = 8,
+  ovrpVirtualKeyboardInputSource_EnumSize = 0x7FFFFFFF
+} ovrpVirtualKeyboardInputSource;
+
+// Indicates an interaction with a location on the virtual keyboard
+typedef struct ovrpVirtualKeyboardInputInfo_ {
+  ovrpVirtualKeyboardInputSource inputSource;
+  ovrpPosef inputPose;
+  ovrpUInt64 inputState;
+} ovrpVirtualKeyboardInputInfo;
+
+// Should remain synced with XR_MAX_VIRTUAL_KEYBOARD_COMMIT_TEXT_SIZE_META in meta_virtual_keyboard.h
+#define OVRP_MAX_VIRTUAL_KEYBOARD_COMMIT_TEXT_SIZE 3992
+
+
+typedef struct ovrpVirtualKeyboardSound_ {
+  unsigned int soundId;
+  unsigned int channels;
+  unsigned int frequency;
+  unsigned int soundCapacityInput;
+  unsigned int soundCountOutput;
+  float* soundBuffer;
+} ovrpVirtualKeyboardSound;
+
+typedef struct ovrpVirtualKeyboardAnimationState_ {
+  int animationIndex;
+  float fraction;
+} ovrpVirtualKeyboardAnimationState;
+
+typedef struct ovrpVirtualKeyboardModelAnimationStates_ {
+  ovrpUInt64 modelKey;
+  unsigned int stateCapacityInput;
+  unsigned int stateCountOutput;
+  ovrpVirtualKeyboardAnimationState* states;
+} ovrpVirtualKeyboardModelAnimationStates;
+
+typedef struct ovrpVirtualKeyboardTextureIds_ {
+  unsigned int textureIdCapacityInput;
+  unsigned int textureIdCountOutput;
+  ovrpUInt64* textureIds;
+} ovrpVirtualKeyboardTextureIds;
+
+typedef struct ovrpVirtualKeyboardTextureData_ {
+  unsigned int textureCapacityInput;
+  unsigned int textureCountOutput;
+  unsigned int textureWidth;
+  unsigned int textureHeight;
+  unsigned char* textureBuffer;
+} ovrpVirtualKeyboardTextureData;
+
+typedef struct ovrpVirtualKeyboardModelVisibility_ {
+  ovrpUInt64 modelKey;
+  ovrpBool visible;
+} ovrpVirtualKeyboardModelVisibility;
+
+// Events
+typedef struct ovrpEventVirtualKeyboardCommitText_ {
+  ovrpEventType EventType;
+  char Text[OVRP_MAX_VIRTUAL_KEYBOARD_COMMIT_TEXT_SIZE];
+} ovrpEventVirtualKeyboardCommitText;
+
+typedef struct ovrpEventVirtualKeyboardBackspace_ {
+  ovrpEventType EventType;
+} ovrpEventVirtualKeyboardBackspace;
+
+typedef struct ovrpEventVirtualKeyboardEnter_ {
+  ovrpEventType EventType;
+} ovrpEventVirtualKeyboardEnter;
+
+typedef struct ovrpEventVirtualKeyboardShown_ {
+  ovrpEventType EventType;
+} ovrpEventVirtualKeyboardShown;
+
+typedef struct ovrpEventVirtualKeyboardHidden_ {
+  ovrpEventType EventType;
+} ovrpEventVirtualKeyboardHidden;
+
+typedef struct ovrpEventVirtualKeyboardPlaySound_ {
+  ovrpEventType EventType;
+  unsigned int SoundId;
+} ovrpEventVirtualKeyboardPlaySound;
+
+/// UI
+
+typedef struct ovrpVirtualKeyboardSwipeTrailState_ {
+  float lifetimeSeconds;
+  ovrpColorf color;
+  float startWidth;
+  unsigned int shapeCapacityInput;
+  unsigned int shapeCountOutput;
+  ovrpVector3f* shape;
+} ovrpVirtualKeyboardSwipeTrailState;
 
 //-----------------------------------------------------------------
 // Insight Passthrough
@@ -2660,22 +2685,10 @@ typedef enum {
 
 
 
+
+
   ovrpInteractionProfile_EnumSize = 0x7fffffff
 } ovrpInteractionProfile;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

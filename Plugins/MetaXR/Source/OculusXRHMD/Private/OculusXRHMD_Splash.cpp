@@ -40,7 +40,8 @@ FSplash::FSplash(FOculusXRHMD* InOculusXRHMD) :
 		LayerDesc.Priority = 0;
 		LayerDesc.PositionType = IStereoLayers::TrackerLocked;
 		LayerDesc.Texture = nullptr;
-		UELayer = MakeShareable(new FLayer(NextLayerId++, LayerDesc));
+		UELayer = MakeShareable(new FLayer(NextLayerId++));
+		UELayer->SetDesc(LayerDesc);
 	}
 }
 
@@ -538,7 +539,8 @@ void FSplash::DoShow()
 
 		if (SplashLayer.Desc.LoadedTexture)
 		{
-			SplashLayer.Layer = MakeShareable(new FLayer(NextLayerId++, StereoLayerDescFromOculusSplashDesc(SplashLayer.Desc)));
+			SplashLayer.Layer = MakeShareable(new FLayer(NextLayerId++));
+			SplashLayer.Layer->SetDesc(StereoLayerDescFromOculusSplashDesc(SplashLayer.Desc));
 		}
 	}
 
@@ -569,7 +571,8 @@ void FSplash::DoShow()
 		if (UESplashDesc.LoadedTexture != nullptr)
 		{
 			UELayer.Reset();
-			UELayer = MakeShareable(new FLayer(NextLayerId++, StereoLayerDescFromOculusSplashDesc(UESplashDesc)));
+			UELayer = MakeShareable(new FLayer(NextLayerId++));
+			UELayer->SetDesc(StereoLayerDescFromOculusSplashDesc(UESplashDesc));
 			Layers_RenderThread_Input.Add(UELayer->Clone());
 		}
 

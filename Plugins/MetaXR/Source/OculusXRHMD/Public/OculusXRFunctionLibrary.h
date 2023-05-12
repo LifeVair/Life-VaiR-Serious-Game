@@ -169,14 +169,14 @@ enum class EOculusXRDeviceType : uint8
 {
 	//mobile HMDs 
 	OculusMobile_Deprecated0 = 0,
-	OculusQuest,
+	OculusQuest_Deprecated,
 	OculusQuest2,
 	MetaQuestPro,
 
 	//PC HMDs
 	Rift = 100,
 	Rift_S,
-	Quest_Link,
+	Quest_Link_Deprecated,
 	Quest2_Link,
 	MetaQuestProLink,
 

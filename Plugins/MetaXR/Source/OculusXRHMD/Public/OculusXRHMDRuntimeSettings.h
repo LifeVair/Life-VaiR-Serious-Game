@@ -11,9 +11,9 @@
 UENUM()
 enum class EOculusXRSupportedDevices : uint8
 {
-	Quest UMETA(DisplayName = "Meta Quest"),
-	Quest2 UMETA(DisplayName = "Meta Quest 2"),
-	QuestPro UMETA(DisplayName = "Meta Quest Pro"),
+	/** 0 was the deprecated Meta Quest */
+	Quest2 = 1 UMETA(DisplayName = "Meta Quest 2"),
+	QuestPro = 2 UMETA(DisplayName = "Meta Quest Pro"),
 };
 
 /**
@@ -108,6 +108,11 @@ public:
 	UPROPERTY(config, EditAnywhere, Category = "Mobile|Foveated Rendering", meta = (EditCondition = "XrApi == EOculusXRXrApi::OVRPluginOpenXR"))
 	bool bSupportEyeTrackedFoveatedRendering;
 
+	/** Whether the app's depth buffer is shared with the compositor to enable depth testing against other layers.
+	Mobile depth composition has performance overhead both on the engine (for resolving depth) and on the compositor (for depth testing against other layers) */
+	UPROPERTY(config, EditAnywhere, Category = Mobile, meta = (DisplayName = "Composite Depth"))
+	bool bCompositeDepthMobile;
+
 	/** If enabled the app will be focus aware. This will keep the app in foreground when the User presses the oculus button (needs the app to handle input focus loss!) */
 	UPROPERTY(config, EditAnywhere, Category = Mobile, meta = (EditCondition = "false"))
 	bool bFocusAware;
@@ -165,6 +170,7 @@ private:
 	virtual bool CanEditChange(const FProperty* InProperty) const override;
 	virtual void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif // WITH_EDITOR
+	virtual void PostInitProperties() override;
 
 	void LoadFromIni();
 	void RenameProperties();

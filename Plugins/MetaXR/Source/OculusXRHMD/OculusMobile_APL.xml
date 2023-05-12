@@ -10,34 +10,40 @@
 		</isArch>
         <isArch arch="arm64-v8a">
 			<setBool result="bSupported" value="true"/>
-		</isArch>
+        </isArch>
 
-		<!-- remove Oculus Signature Files by default -->
-		<setBool result="bRemoveOSIG" value="true"/>
+        <!-- remove Oculus Signature Files by default -->
+        <setBool result="bRemoveOSIG" value="true"/>
 
-		<!-- determine the XrApi libraries that need to be loaded -->
-		<setStringFromProperty result="XrApi" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="XrApi" default="OVRPluginOpenXR"/>
-		<setBoolIsEqual result="bOVRPluginOpenXR" arg1="$S(XrApi)" arg2="OVRPluginOpenXR"/>
-		<setBoolIsEqual result="bNativeOpenXR" arg1="$S(XrApi)" arg2="NativeOpenXR"/>
+        <!-- determine the XrApi libraries that need to be loaded -->
+        <setStringFromProperty result="XrApi" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings"
+                               property="XrApi" default="OVRPluginOpenXR"/>
+        <setBoolIsEqual result="bOVRPluginOpenXR" arg1="$S(XrApi)" arg2="OVRPluginOpenXR"/>
+        <setBoolIsEqual result="bNativeOpenXR" arg1="$S(XrApi)" arg2="NativeOpenXR"/>
 
-		<setBoolFromProperty 
-			result="bFocusAware" 
-			ini="Engine" 
-			section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bFocusAware" 
-			default="true"/>
+        <setBoolFromProperty
+                result="bFocusAware"
+                ini="Engine"
+                section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bFocusAware"
+                default="true"/>
 
-		<!-- get package for oculus devices from AndroidRuntimeSettings -->
-		<setBoolFromPropertyContains result="bPackageForQuest" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="PackageForOculusMobile" contains="Quest"/>
-		<setBoolFromPropertyContains result="bPackageForQuest2" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="PackageForOculusMobile" contains="Quest2"/>
-		<setBoolFromPropertyContains result="bPackageForQuestPro" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="PackageForOculusMobile" contains="QuestPro"/>
-		<setBoolOr result="bPackageForOculusMobile" arg1="$B(bPackageForQuest)" arg2="$B(bPackageForQuest2)"/>
-		<setBoolOr result="bPackageForOculusMobile" arg1="$B(bPackageForOculusMobile)" arg2="$B(bPackageForQuestPro)"/>
+        <!-- get package for oculus devices from AndroidRuntimeSettings -->
+        <setBoolFromPropertyContains result="bPackageForQuest2" ini="Engine"
+                                     section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings"
+                                     property="PackageForOculusMobile" contains="Quest2"/>
+        <setBoolFromPropertyContains result="bPackageForQuestPro" ini="Engine"
+                                     section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings"
+                                     property="PackageForOculusMobile" contains="QuestPro"/>
+        <setBoolOr result="bPackageForOculusMobile" arg1="$B(bPackageForQuest2)" arg2="$B(bPackageForQuestPro)"/>
 
-		<!-- get supported oculus devices from OculusXRHMDRuntimeSettings -->
-		<setBoolFromPropertyContains result="bSupportMetaQuest" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SupportedDevices" contains="Quest"/>
-		<setBoolFromPropertyContains result="bSupportMetaQuest2" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SupportedDevices" contains="Quest2"/>
-		<setBoolFromPropertyContains result="bSupportMetaQuestPro" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SupportedDevices" contains="QuestPro"/>
-		
+        <!-- get supported oculus devices from OculusXRHMDRuntimeSettings -->
+        <setBoolFromPropertyContains result="bSupportMetaQuest2" ini="Engine"
+                                     section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings"
+                                     property="SupportedDevices" contains="Quest2"/>
+        <setBoolFromPropertyContains result="bSupportMetaQuestPro" ini="Engine"
+                                     section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings"
+                                     property="SupportedDevices" contains="QuestPro"/>
+
 		<setBoolFromProperty result="bShowLaunchImage" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="bShowLaunchImage" default="false"/>
 		<setBoolFromProperty result="bRequiresSystemKeyboard" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bRequiresSystemKeyboard" default="false"/>
 		<setStringFromProperty result="HandTrackingSupport" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="HandTrackingSupport" default="ControllersOnly"/>
@@ -87,7 +93,7 @@
 						</if>
 					</true>
 					<false>
-						<setBool result="bPackageForOculusMobile" value="false"/> 
+                        <setBool result="bPackageForOculusMobile" value="false"/>
 						<log text="Oculus mobile not supported for this architecture, disabled."/>
 					</false>
 				</if>
@@ -270,11 +276,6 @@
 		<loopElements tag="application">
 			<!-- Add SupportedDevices Tag -->
 			<setString result="devicesString" value="" />
-			<if condition="bSupportMetaQuest">
-				<true>
-					<setStringAdd result="devicesString" arg1="$S(devicesString)" arg2="quest|" />
-				</true>
-			</if>
 			<if condition="bSupportMetaQuest2">
 				<true>
 					<setStringAdd result="devicesString" arg1="$S(devicesString)" arg2="quest2|" />
@@ -311,8 +312,8 @@
 					<addElement tag="application" name="supportedDevices"/>
 				</true>
 			</if>
-			
-			<!-- Add Hand Tracking Frequency -->
+
+            <!-- Add Hand Tracking Frequency -->
 			<if condition="bEnableHandTracking">
 				<true>
 					<setElement result="handTrackingFrequency" value="meta-data" />

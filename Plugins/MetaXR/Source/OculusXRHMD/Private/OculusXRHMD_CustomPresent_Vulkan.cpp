@@ -48,23 +48,20 @@ FVulkanCustomPresent::FVulkanCustomPresent(FOculusXRHMD* InOculusXRHMD) :
 	}
 #endif
 
-#if PLATFORM_WINDOWS
-/*
 	switch (GPixelFormats[PF_DepthStencil].PlatformFormat)
 	{
 	case VK_FORMAT_D24_UNORM_S8_UINT:
 		DefaultDepthOvrpTextureFormat = ovrpTextureFormat_D24_S8;
 		break;
 	case VK_FORMAT_D32_SFLOAT_S8_UINT:
-		DefaultDepthOvrpTextureFormat = ovrpTextureFormat_D32_S824_FP;
+		DefaultDepthOvrpTextureFormat = ovrpTextureFormat_D32_FP_S8;
 		break;
 	default:
 		UE_LOG(LogHMD, Error, TEXT("Unrecognized depth buffer format"));
 		break;
 	}
-*/
-#endif
 	bSupportsSubsampled = GetIVulkanDynamicRHI()->RHISupportsEXTFragmentDensityMap2();
+
 }
 
 

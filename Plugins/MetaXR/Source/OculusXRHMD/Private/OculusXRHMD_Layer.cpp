@@ -55,19 +55,19 @@ FOvrpLayer::~FOvrpLayer()
 // FLayer
 //-------------------------------------------------------------------------------------------------
 
-FLayer::FLayer(uint32 InId, const IStereoLayers::FLayerDesc& InDesc) :
+FLayer::FLayer(uint32 InId) :
 	bNeedsTexSrgbCreate(false),
 	Id(InId),
 	OvrpLayerId(0),
 	bUpdateTexture(false),
 	bInvertY(false),
 	bHasDepth(false),
+	bSupportDepthComposite(false),
 	PokeAHoleComponentPtr(nullptr), 
 	PokeAHoleActor(nullptr)
 {
 	FMemory::Memzero(OvrpLayerDesc);
 	FMemory::Memzero(OvrpLayerSubmit);
-	SetDesc(InDesc);
 }
 
 
@@ -88,6 +88,7 @@ FLayer::FLayer(const FLayer& Layer) :
 	bUpdateTexture(Layer.bUpdateTexture),
 	bInvertY(Layer.bInvertY),
 	bHasDepth(Layer.bHasDepth),
+	bSupportDepthComposite(Layer.bSupportDepthComposite),
 	PokeAHoleComponentPtr(Layer.PokeAHoleComponentPtr),
 	PokeAHoleActor(Layer.PokeAHoleActor),
 	UserDefinedGeometryMap(Layer.UserDefinedGeometryMap),
@@ -132,6 +133,14 @@ void FLayer::SetDesc(const IStereoLayers::FLayerDesc& InDesc)
 	UpdatePassthroughPokeActors_GameThread();
 }
 
+
+void FLayer::SetDesc(const FSettings* Settings, const IStereoLayers::FLayerDesc& InDesc)
+{
+	bSupportDepthComposite = Settings->Flags.bCompositeDepth;
+
+	SetDesc(InDesc);
+}
+
 static UWorld* GetWorld()
 {
 	UWorld* World = nullptr;
@@ -147,13 +156,13 @@ static UWorld* GetWorld()
 
 bool FLayer::NeedsPassthroughPokeAHole()
 {
-	return ((Desc.Flags & IStereoLayers::LAYER_FLAG_SUPPORT_DEPTH) && Desc.HasShape<FUserDefinedLayer>());
+	return !bSupportDepthComposite && ((Desc.Flags & IStereoLayers::LAYER_FLAG_SUPPORT_DEPTH) != 0) && Desc.HasShape<FUserDefinedLayer>();
 }
 
 bool FLayer::NeedsPokeAHole()
 {
 #if PLATFORM_ANDROID
-	return (Desc.Flags & IStereoLayers::LAYER_FLAG_SUPPORT_DEPTH) != 0;
+	return !bSupportDepthComposite && ((Desc.Flags & IStereoLayers::LAYER_FLAG_SUPPORT_DEPTH) != 0);
 #else
 	return false;
 #endif
@@ -752,7 +761,7 @@ bool FLayer::Initialize_RenderThread(const FSettings* Settings, FCustomPresent* 
 				const bool bNeedsSRGBFlag = bNeedsTexSrgbCreate || CustomPresent->IsSRGB(OvrpLayerDesc.Format);
 
 				ETextureCreateFlags ColorTexCreateFlags = TexCreate_ShaderResource | TexCreate_RenderTargetable | TexCreate_ResolveTargetable | (bNeedsSRGBFlag ? TexCreate_SRGB : TexCreate_None);
-				ETextureCreateFlags DepthTexCreateFlags = TexCreate_ShaderResource | TexCreate_DepthStencilTargetable | TexCreate_InputAttachmentRead;
+				ETextureCreateFlags DepthTexCreateFlags = TexCreate_ShaderResource | TexCreate_DepthStencilTargetable | TexCreate_InputAttachmentRead | (bSupportDepthComposite ? TexCreate_ResolveTargetable : TexCreate_None);
 
 				if (Desc.Texture.IsValid())
 				{
