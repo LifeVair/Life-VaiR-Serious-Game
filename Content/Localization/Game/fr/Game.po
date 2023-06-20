@@ -1,0 +1,379 @@
+﻿# Game French translation.
+# Copyright Epic Games, Inc. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Game\n"
+"POT-Creation-Date: 2023-06-19 13:40\n"
+"PO-Revision-Date: 2023-06-19 13:40\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Key:	0729F40746AFAF8834A0898A23B9BE62
+#. SourceLocation:	/Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_RestartButton.Text
+#: /Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_RestartButton.Text
+msgctxt ",0729F40746AFAF8834A0898A23B9BE62"
+msgid "Restart Session"
+msgstr ""
+
+#. Key:	0A4A8C3F4E5739F17ED5C29F612FEB4F
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock.Text
+msgctxt ",0A4A8C3F4E5739F17ED5C29F612FEB4F"
+msgid "PM10"
+msgstr ""
+
+#. Key:	0B0870E64DDA8E615AA7C9942A8BC3D3
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_7.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_7.Text
+msgctxt ",0B0870E64DDA8E615AA7C9942A8BC3D3"
+msgid "Please select the riddles  you want to solve"
+msgstr ""
+
+#. Key:	117C8DC3434AD0D676300688EBFD6BB9
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_1.Text
+msgctxt ",117C8DC3434AD0D676300688EBFD6BB9"
+msgid "< Back"
+msgstr ""
+
+#. Key:	14AB3CFB4001D6A7388D6084124A115E
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_9.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_9.Text
+msgctxt ",14AB3CFB4001D6A7388D6084124A115E"
+msgid "0.3.0.0-testing"
+msgstr ""
+
+#. Key:	189386FB40E5902ACCFB97B849E54CF1
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayerTyperSelect_NextButton.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayerTyperSelect_NextButton.Text
+msgctxt ",189386FB40E5902ACCFB97B849E54CF1"
+msgid "Next"
+msgstr ""
+
+#. Key:	1941B2DE4A156901FF620482E27B97D0
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.Overflownterritory_1.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.Overflownterritory_1.Text
+msgctxt ",1941B2DE4A156901FF620482E27B97D0"
+msgid "Overflown territory :"
+msgstr ""
+
+#. Key:	1986F02E4EDDA94408387789806A2D38
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_3.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_3.Text
+msgctxt ",1986F02E4EDDA94408387789806A2D38"
+msgid "SO2"
+msgstr ""
+
+#. Key:	1B99BDE74E61C6F344AC29B2285CABD9
+#. SourceLocation:	/Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.émission.Text
+#: /Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.émission.Text
+msgctxt ",1B99BDE74E61C6F344AC29B2285CABD9"
+msgid "Emissions"
+msgstr ""
+
+#. Key:	1CA8CFBEAB42BDE5A914FE825EA8F45A
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_Settings.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_Settings.Text
+msgctxt ",1CA8CFBEAB42BDE5A914FE825EA8F45A"
+msgid "Settings"
+msgstr ""
+
+#. Key:	1ECCD45D451EB7ADB8A25EB323CD84F2
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_3.Text
+#: /Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_3.Text
+msgctxt ",1ECCD45D451EB7ADB8A25EB323CD84F2"
+msgid "Agriculture"
+msgstr ""
+
+#. Key:	2AC4DA22224A59E882887093B410445B
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_0.Text
+msgctxt ",2AC4DA22224A59E882887093B410445B"
+msgid "Life V-aiR"
+msgstr ""
+
+#. Key:	2DD8763B8449092970C71593767F943E
+#. SourceLocation:	/Game/UI/GameOver/W_GameOver.W_GameOver_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/GameOver/W_GameOver.W_GameOver_C:WidgetTree.TextBlock_0.Text
+msgctxt ",2DD8763B8449092970C71593767F943E"
+msgid "Game is finished"
+msgstr ""
+
+#. Key:	3A3DE768448244701495369537DB7366
+#. SourceLocation:	/Game/UI/MainMenu/DomainList/W_domainListEntry.W_domainListEntry_C:WidgetTree.domainName.Text
+#: /Game/UI/MainMenu/DomainList/W_domainListEntry.W_domainListEntry_C:WidgetTree.domainName.Text
+msgctxt ",3A3DE768448244701495369537DB7366"
+msgid "Domain"
+msgstr ""
+
+#. Key:	43688996E348DAFA8132368FB17AB51D
+#. SourceLocation:	/Game/UI/MainMenu/MenuButtonTertiary/W_Button_Tertiary.Default__W_Button_Tertiary_C.Text
+#: /Game/UI/MainMenu/MenuButtonTertiary/W_Button_Tertiary.Default__W_Button_Tertiary_C.Text
+msgctxt ",43688996E348DAFA8132368FB17AB51D"
+msgid "Tertiary"
+msgstr ""
+
+#. Key:	4A0756D24C29F4733E1166BC5BBF9182
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Welcome_Next.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Welcome_Next.Text
+msgctxt ",4A0756D24C29F4733E1166BC5BBF9182"
+msgid "Next"
+msgstr ""
+
+#. Key:	4DA687344431B1F5EF15AE973A03C7F3
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_2.Text
+msgctxt ",4DA687344431B1F5EF15AE973A03C7F3"
+msgid "Energy Production"
+msgstr ""
+
+#. Key:	50F0668C40CB738090FCC0A50A59FF28
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_6.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_6.Text
+msgctxt ",50F0668C40CB738090FCC0A50A59FF28"
+msgid "Role"
+msgstr ""
+
+#. Key:	5CA05C444BCB7F0F70B80385020DF1FB
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_5.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_5.Text
+msgctxt ",5CA05C444BCB7F0F70B80385020DF1FB"
+msgid "GHG"
+msgstr ""
+
+#. Key:	6407F9201849E65A60A12F8E4EFB08A3
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayButton.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayButton.Text
+msgctxt ",6407F9201849E65A60A12F8E4EFB08A3"
+msgid "Play"
+msgstr ""
+
+#. Key:	6543F13F43BDC4C709FBA9824A63DF41
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_5.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_5.Text
+msgctxt ",6543F13F43BDC4C709FBA9824A63DF41"
+msgid "Please select the role you want to play."
+msgstr ""
+
+#. Key:	6568CD6C4786637F27814CBD57939905
+#. SourceLocation:	/Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.ScoreToReach_1.Text
+#: /Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.ScoreToReach_1.Text
+msgctxt ",6568CD6C4786637F27814CBD57939905"
+msgid "x"
+msgstr ""
+
+#. Key:	6B8621314670305B84C7E7859EFD2214
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_0.Text
+msgctxt ",6B8621314670305B84C7E7859EFD2214"
+msgid "Residential"
+msgstr ""
+
+#. Key:	6D1480804CA7AA88692B2DB4782F93E5
+#. SourceLocation:	/Game/UI/MainMenu/PlayerTypeSelection/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/MainMenu/PlayerTypeSelection/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock_0.Text
+msgctxt ",6D1480804CA7AA88692B2DB4782F93E5"
+msgid "Decision Maker"
+msgstr ""
+
+#. Key:	6FADC6929A49841567C95C8BB93E717E
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_RestartButton_1.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_RestartButton_1.Text
+msgctxt ",6FADC6929A49841567C95C8BB93E717E"
+msgid "Update data"
+msgstr ""
+
+#. Key:	72E1665A4045FA001F6CB0AE3123D7BA
+#. SourceLocation:	/Game/UI/MainMenu/MenuButton_Tones/W_Button_Secondary.Default__W_Button_Secondary_C.Text
+#: /Game/UI/MainMenu/MenuButton_Tones/W_Button_Secondary.Default__W_Button_Secondary_C.Text
+msgctxt ",72E1665A4045FA001F6CB0AE3123D7BA"
+msgid "Prime"
+msgstr ""
+
+#. Key:	74A820DC4F187F4327D89084A7C1C348
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_ResetOrientationButton_1.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_ResetOrientationButton_1.Text
+msgctxt ",74A820DC4F187F4327D89084A7C1C348"
+msgid "DEBUG : Go to Flying station"
+msgstr ""
+
+#. Key:	7753A0114B2CF664F3CB3D9DA5506F6A
+#. SourceLocation:	/Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_RestartButton_1.Text
+#: /Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_RestartButton_1.Text
+msgctxt ",7753A0114B2CF664F3CB3D9DA5506F6A"
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#. Key:	80A9E91641292EF60EAFDDAC089FD022
+#. SourceLocation:	/Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.InHandModule.Text
+#: /Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.InHandModule.Text
+msgctxt ",80A9E91641292EF60EAFDDAC089FD022"
+msgid "Hold Module"
+msgstr ""
+
+#. Key:	8855DFD9470CE20B14E386B286846F82
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.Overflownterritory.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.Overflownterritory.Text
+msgctxt ",8855DFD9470CE20B14E386B286846F82"
+msgid "The Territory"
+msgstr ""
+
+#. Key:	8903856F413315645A550AAE56E8A723
+#. SourceLocation:	/Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.ScoreToReach_4.Text
+#: /Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.ScoreToReach_4.Text
+msgctxt ",8903856F413315645A550AAE56E8A723"
+msgid "0"
+msgstr ""
+
+#. Key:	8920B40844676DEB94EFEAB560473995
+#. SourceLocation:	/Game/UI/MainMenu/PlayerTypeSelection/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock.Text
+#: /Game/UI/MainMenu/PlayerTypeSelection/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock.Text
+msgctxt ",8920B40844676DEB94EFEAB560473995"
+msgid "Citizen"
+msgstr ""
+
+#. Key:	980150C9144444C2F7D7AE899CE0F43F
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_30.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_30.Text
+msgctxt ",980150C9144444C2F7D7AE899CE0F43F"
+msgid "Be prepared to change our future"
+msgstr ""
+
+#. Key:	9AB3FF634C4D73BAD8F3889DFBD17996
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_NextButton.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_NextButton.Text
+msgctxt ",9AB3FF634C4D73BAD8F3889DFBD17996"
+msgid "Next"
+msgstr ""
+
+#. Key:	9C3A95724F55FC8762C79DB79FD10BC2
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayButton2.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayButton2.Text
+msgctxt ",9C3A95724F55FC8762C79DB79FD10BC2"
+msgid "Play"
+msgstr ""
+
+#. Key:	A55D4E3140EAD691F28D26B380F9E271
+#. SourceLocation:	/Game/UI/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.Name.Text
+#: /Game/UI/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.Name.Text
+msgctxt ",A55D4E3140EAD691F28D26B380F9E271"
+msgid "Machine"
+msgstr ""
+
+#. Key:	A5EDCE73419CF3B31FE374AF289AB0C4
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_1.Text
+msgctxt ",A5EDCE73419CF3B31FE374AF289AB0C4"
+msgid "Mobility"
+msgstr ""
+
+#. Key:	A62FD52E4BEE04CE9F7A2A806FD730D3
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_8.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_8.Text
+msgctxt ",A62FD52E4BEE04CE9F7A2A806FD730D3"
+msgid "Riddles"
+msgstr ""
+
+#. Key:	A9441E2215466D4A2720FC95882E8EBA
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock.Text
+msgctxt ",A9441E2215466D4A2720FC95882E8EBA"
+msgid "You will embark in a journey where your choices will make the difference"
+msgstr ""
+
+#. Key:	AC6F9F0F4C0E5E24DE98568465B91E11
+#. SourceLocation:	/Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_ExitButton.Text
+#: /Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_ExitButton.Text
+msgctxt ",AC6F9F0F4C0E5E24DE98568465B91E11"
+msgid "Quit Game"
+msgstr ""
+
+#. Key:	B40ACBBD47FF113D8C21C78995F54107
+#. SourceLocation:	/Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.Seuil.Text
+#: /Game/UI/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.Seuil.Text
+msgctxt ",B40ACBBD47FF113D8C21C78995F54107"
+msgid "Threshold"
+msgstr ""
+
+#. Key:	B6B941FE4DBC354C12D091BF6010A80D
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_1.Text
+msgctxt ",B6B941FE4DBC354C12D091BF6010A80D"
+msgid "PM25"
+msgstr ""
+
+#. Key:	BDFA77EE4627C06B56FAA681F7B50AE0
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_2.Text
+msgctxt ",BDFA77EE4627C06B56FAA681F7B50AE0"
+msgid "NH3"
+msgstr ""
+
+#. Key:	BE6B3A8746A08BD36069668199F319D1
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_4.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_4.Text
+msgctxt ",BE6B3A8746A08BD36069668199F319D1"
+msgid "COV"
+msgstr ""
+
+#. Key:	BEF731FE46E0E22855838589D19736F6
+#. SourceLocation:	/Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_126.Text
+#: /Game/UI/MainDashboard/W_MainDasboard.W_MainDasboard_C:WidgetTree.TextBlock_126.Text
+msgctxt ",BEF731FE46E0E22855838589D19736F6"
+msgid "NO2"
+msgstr ""
+
+#. Key:	C03205C1E543717443E356B0FE83BDBD
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Settings_QuitGame.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Settings_QuitGame.Text
+msgctxt ",C03205C1E543717443E356B0FE83BDBD"
+msgid "Quit game"
+msgstr ""
+
+#. Key:	C12A448047C4F0CDB22662A798B2E98A
+#. SourceLocation:	/Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_ResetOrientationButton.Text
+#: /Game/UI/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Text_ResetOrientationButton.Text
+msgctxt ",C12A448047C4F0CDB22662A798B2E98A"
+msgid "Reset Orientation"
+msgstr "Reinitialiser l'orientation"
+
+#. Key:	C647524A254D14A2E3315C85C369E14F
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_4.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_4.Text
+msgctxt ",C647524A254D14A2E3315C85C369E14F"
+msgid "Language"
+msgstr ""
+
+#. Key:	D1F39929DD46ACB0F732AFB96DB74D41
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_2.Text
+msgctxt ",D1F39929DD46ACB0F732AFB96DB74D41"
+msgid "Please select the domain you want to play in"
+msgstr ""
+
+#. Key:	F4E96B08804C65334B5252A747B7217B
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_3.Text
+#: /Game/UI/MainMenu/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_3.Text
+msgctxt ",F4E96B08804C65334B5252A747B7217B"
+msgid "Domain"
+msgstr ""
+
+#. Key:	FBD69AC8234CC64610B5599DBAA8EE94
+#. SourceLocation:	/Game/UI/MainMenu/MenuButton_Primary/W_Button_Primary.Default__W_Button_Primary_C.Text
+#: /Game/UI/MainMenu/MenuButton_Primary/W_Button_Primary.Default__W_Button_Primary_C.Text
+msgctxt ",FBD69AC8234CC64610B5599DBAA8EE94"
+msgid "Prime"
+msgstr ""
+
+#. Key:	FC77E22B4FB21E573D668099CA93FE07
+#. SourceLocation:	/Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock.Text
+#: /Game/UI/MainMenu/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock.Text
+msgctxt ",FC77E22B4FB21E573D668099CA93FE07"
+msgid "Industry"
+msgstr ""
+
