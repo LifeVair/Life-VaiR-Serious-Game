@@ -93,6 +93,10 @@
 		{
 			"Name": "DataCharts",
 			"Enabled": true
+		},
+		{
+			"Name": "GPULightmass",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
