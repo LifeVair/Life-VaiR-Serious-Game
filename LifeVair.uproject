@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.1",
+	"EngineAssociation": "5.2",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -24,8 +24,7 @@
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Linux",
-				"Android",
-				"HoloLens"
+				"Android"
 			]
 		},
 		{
@@ -44,11 +43,11 @@
 		},
 		{
 			"Name": "SQLiteSupport",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "SQLiteCore",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "OculusXR",
