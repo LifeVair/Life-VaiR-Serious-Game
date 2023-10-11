@@ -104,6 +104,7 @@
 		"XSX",
 		"HoloLens",
 		"Windows",
-		"Linux"
+		"Linux",
+		"Mac"
 	]
 }
