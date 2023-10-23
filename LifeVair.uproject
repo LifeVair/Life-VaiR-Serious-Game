@@ -24,7 +24,8 @@
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Linux",
-				"Android"
+				"Android",
+				"HoloLens"
 			]
 		},
 		{
@@ -43,11 +44,11 @@
 		},
 		{
 			"Name": "SQLiteSupport",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "SQLiteCore",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "OculusXR",
@@ -103,7 +104,6 @@
 		"WindowsNoEditor",
 		"XSX",
 		"HoloLens",
-		"Windows",
-		"Linux"
+		"Windows"
 	]
 }
