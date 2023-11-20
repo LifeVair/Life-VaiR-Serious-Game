@@ -1,0 +1,5 @@
+<uses-feature android:name="oculus.software.overlay_keyboard" android:required="false"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="remove"/>
+<uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" tools:node="remove"/>
+<meta-data android:name="com.oculus.dualcorecpuset" android:value="true"/>
