@@ -12,6 +12,7 @@ UCartridgeSlot::UCartridgeSlot()
 
 	// ...
 	isFull = true;
+	isEnabled = true;
 }
 
 
@@ -21,11 +22,43 @@ void UCartridgeSlot::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	OnComponentBeginOverlap.AddDynamic(this, &UCartridgeSlot::OnOverlapBegin);
-	OnComponentEndOverlap.AddDynamic(this,&UCartridgeSlot::OnOverlapEnd);
+//	OnComponentBeginOverlap.AddDynamic(this, &UCartridgeSlot::OnOverlapBegin);
 }
 
-void UCartridgeSlot::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+void UCartridgeSlot::SetSlotEnabled(bool EnableValue)
 {
-	
+	isEnabled = EnableValue;
+}
+
+bool UCartridgeSlot::GetSlotEnabled() const
+{
+	return isEnabled;
+}
+
+void UCartridgeSlot::SetSlotIsFull(bool isFullValue)
+{
+	if (isFullValue)
+	{
+		CartridgeFilled();
+	}
+	else
+	{
+		CartridgeEmptied();
+	}
+	isFull = isFullValue;
+}
+
+bool UCartridgeSlot::GetSlotIsFull() const
+{
+	return isFull;
+}
+
+void UCartridgeSlot::CartridgeFilled() const
+{
+	OnCartridgeFilled.Broadcast();
+}
+
+void UCartridgeSlot::CartridgeEmptied() const
+{
+	OnCartridgeEmptied.Broadcast();
 }
