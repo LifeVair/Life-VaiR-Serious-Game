@@ -1,0 +1,4 @@
+ - 8CF49214418B80E1B6B3DDA20F1B4208 
+	/Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.Default__BP_CustomProgressBar_C.Name - "gas" 
+	/Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.BP_CustomProgressBar_C:WidgetTree.Caption.Text - "Stuff" 
+
