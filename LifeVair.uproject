@@ -93,13 +93,20 @@
 		{
 			"Name": "GPULightmass",
 			"Enabled": true
+		},
+		{
+			"Name": "OculusPlatform",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Android"
+			]
 		}
 	],
 	"TargetPlatforms": [
 		"Android",
 		"WindowsNoEditor",
 		"XSX",
-		"HoloLens",
 		"Windows"
 	]
 }
