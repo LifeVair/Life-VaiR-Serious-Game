@@ -1,23 +1,21 @@
+﻿# Game French translation.
 # Copyright : OK
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2024-01-15 11:08\n"
-"PO-Revision-Date: 2024-01-15 16:36+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2024-01-22 14:15\n"
+"PO-Revision-Date: 2024-01-22 14:15\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #. Key:	00B988664BE01D69D230D5B8F2DC4F02
 #. SourceLocation:	/Game/Core/Riddles/EnergyMachine/BP_EnergyMachine.BP_EnergyMachine_C:Demand Value_GEN_VARIABLE.Text
-#: /Game/Core/Riddles/EnergyMachine/BP_EnergyMachine.BP_EnergyMachine_C:Demand
-#: Value_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/EnergyMachine/BP_EnergyMachine.BP_EnergyMachine_C:Demand Value_GEN_VARIABLE.Text
 msgctxt ",00B988664BE01D69D230D5B8F2DC4F02"
 msgid "1500 GWh"
 msgstr "1500 GWh"
@@ -45,8 +43,7 @@ msgstr "Coût (euros) de la pollution de l'air"
 
 #. Key:	035F2A4240EDB5B1BA3A6FA2EE038DE1
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_1.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
 msgctxt ",035F2A4240EDB5B1BA3A6FA2EE038DE1"
 msgid "Required Surface"
 msgstr "Surface requise"
@@ -170,6 +167,13 @@ msgctxt ",1D64499049601CCF3FCD4FA4C812F40A"
 msgid "Applying territory's sector..."
 msgstr "Application des modifications sur le territoire..."
 
+#. Key:	1E4C723E4DC19BFAB5375D93F9F0431C
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_4.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_4.Text
+msgctxt ",1E4C723E4DC19BFAB5375D93F9F0431C"
+msgid "Sending you back to the chaotic future..."
+msgstr ""
+
 #. Key:	1ECCD45D451EB7ADB8A25EB323CD84F2
 #. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_3.Text
 #: /Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_3.Text
@@ -179,8 +183,7 @@ msgstr "Agriculture"
 
 #. Key:	1F3A40D7449ADF51D9924EB6A2A8F6CC
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_FunctionEntry_0.MetaData.ToolTip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_FunctionEntry_0.MetaData.ToolTip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_FunctionEntry_0.MetaData.ToolTip
 msgctxt ",1F3A40D7449ADF51D9924EB6A2A8F6CC"
 msgid "Get the symbol, min & max value of a energy production setting from the energy action table"
 msgstr "Obtenir le symbole, les valeurs min et max d'un paramètre de production d'énergie à partir du tableau d'action énergétique"
@@ -194,8 +197,7 @@ msgstr "20000 Euros"
 
 #. Key:	209B8C2F486FC695B2A2F4901C7A22ED
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_0.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
 msgctxt ",209B8C2F486FC695B2A2F4901C7A22ED"
 msgid "Production Mean"
 msgstr "Moyen de production"
@@ -239,8 +241,8 @@ msgstr "Scan en cours… "
 #. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_7.description_28_A02F812049587A08F7657D83EA76C2B7
 #: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_7.description_28_A02F812049587A08F7657D83EA76C2B7
 msgctxt ",247EEB58410DA5585FB471876AC34892"
-msgid "Develop biomass/renewable dstrict heating."
-msgstr "Développer les réseaux de chaleur."
+msgid "Develop biomass/renewable district heating."
+msgstr ""
 
 #. Key:	25544CB7416AFDFE966E4A8169C85F9B
 #. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.9.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
@@ -251,8 +253,7 @@ msgstr ""
 
 #. Key:	26CF4899444D5513F8DBFBB747FC1DE5
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_0.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
 msgctxt ",26CF4899444D5513F8DBFBB747FC1DE5"
 msgid "Max Value"
 msgstr "Valeur Max"
@@ -308,8 +309,7 @@ msgstr "Jeu terminé"
 
 #. Key:	2F1565B1437B333BDA7BC7A5CCA1ED67
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_0.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
 msgctxt ",2F1565B1437B333BDA7BC7A5CCA1ED67"
 msgid "Min Value"
 msgstr "Valeur Min"
@@ -435,8 +435,7 @@ msgstr "Production d'énergie"
 
 #. Key:	54CEF1DB9F49DD5442AC1D8E3D192822
 #. SourceLocation:	/Game/UI/UI_Elements/RadioButtons/W_RadioButton.Default__W_RadioButton_C.Displayed Text
-#: /Game/UI/UI_Elements/RadioButtons/W_RadioButton.Default__W_RadioButton_C.Displayed
-#: Text
+#: /Game/UI/UI_Elements/RadioButtons/W_RadioButton.Default__W_RadioButton_C.Displayed Text
 msgctxt ",54CEF1DB9F49DD5442AC1D8E3D192822"
 msgid "Radio"
 msgstr "Radio"
@@ -450,8 +449,7 @@ msgstr "Période de récolte : "
 
 #. Key:	5838A74B4524953F72F03281EEEE82C2
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_1.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
 msgctxt ",5838A74B4524953F72F03281EEEE82C2"
 msgid "Production"
 msgstr "Production"
@@ -504,6 +502,13 @@ msgstr "Construire des trottoirs et des pistes cyclables"
 msgctxt ",612E353F4C6EB3D572AFCFA3F3E285FF"
 msgid "A product"
 msgstr "Produit"
+
+#. Key:	6216CA6642529D0AA3A6B2BF4A4D311A
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Climate_1.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Climate_1.Text
+msgctxt ",6216CA6642529D0AA3A6B2BF4A4D311A"
+msgid "Mission failed"
+msgstr ""
 
 #. Key:	628C3DDD4E2982A9F9DFB8B9A0BB7372
 #. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.10.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
@@ -558,22 +563,22 @@ msgstr "Eviter de brûler de la biomasse dans son jardin"
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_2.Text
 #: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_2.Text
 msgctxt ",674B7385A742E4ED2283A5A09517B0E0"
-msgid "Inhabitants"
-msgstr "Habitants"
+msgid "inhabitants"
+msgstr ""
 
 #. Key:	69541530984770BA1C0E7B8CD6145588
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_10.Text
 #: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_10.Text
 msgctxt ",69541530984770BA1C0E7B8CD6145588"
-msgid "See elevation "
-msgstr "Elevation de la mer"
+msgid "Sea elevation"
+msgstr ""
 
 #. Key:	696E08F1A44DAA11630B36AFE11D2893
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock.Text
 #: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock.Text
 msgctxt ",696E08F1A44DAA11630B36AFE11D2893"
 msgid "Analyzing..."
-msgstr "Anlyse en cours..."
+msgstr "Analyse en cours..."
 
 #. Key:	6A1A8EA7462B7510F17FD9A76333A509
 #. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock_2.Text
@@ -619,8 +624,7 @@ msgstr "Décideur politique"
 
 #. Key:	6F5249E74F7DFECC047BA2A7E09037B9
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_0.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
 msgctxt ",6F5249E74F7DFECC047BA2A7E09037B9"
 msgid "CO2e Emission Factor"
 msgstr "Facteur d'émission (CO2e)"
@@ -638,6 +642,13 @@ msgstr ""
 msgctxt ",6FADC6929A49841567C95C8BB93E717E"
 msgid "Update data"
 msgstr "Mettre à jour la base de données"
+
+#. Key:	70FFCB434A15081E94FF0FBCACF292A4
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_3.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_3.Text
+msgctxt ",70FFCB434A15081E94FF0FBCACF292A4"
+msgid "Mission Failed"
+msgstr ""
 
 #. Key:	71D296634218A0C850F30B8A06782E9A
 #. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.1.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
@@ -669,8 +680,7 @@ msgstr "Entrer dans l'environnement "
 
 #. Key:	75CD7E7542E6CCC54C72AFB67C3A5265
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_1.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
 msgctxt ",75CD7E7542E6CCC54C72AFB67C3A5265"
 msgid "Symbol"
 msgstr "Symbole"
@@ -722,7 +732,7 @@ msgstr "Dépôt pour la biomasse et les déchets industriels"
 #: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_13.Text
 msgctxt ",80A78B391648E2D3C8DDA2993DF9DD18"
 msgid "Analyzing..."
-msgstr "Anlyse en cours..."
+msgstr "Analyse en cours..."
 
 #. Key:	80A9E91641292EF60EAFDDAC089FD022
 #. SourceLocation:	/Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.InHandModule.Text
@@ -760,11 +770,11 @@ msgid "Temperature increase"
 msgstr "Augmentation de la température"
 
 #. Key:	8CF49214418B80E1B6B3DDA20F1B4208
-#. SourceLocation:	/Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.Default__BP_CustomProgressBar_C.Name
-#: /Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.Default__BP_CustomProgressBar_C.Name
+#. SourceLocation:	/Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.BP_CustomProgressBar_C:WidgetTree.Caption.Text
+#: /Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.BP_CustomProgressBar_C:WidgetTree.Caption.Text
 msgctxt ",8CF49214418B80E1B6B3DDA20F1B4208"
-msgid "gas"
-msgstr "gaz"
+msgid "Pollutant"
+msgstr ""
 
 #. Key:	8EBD49A84A1B155578A537A8EEDBF0C1
 #. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_8.description_28_A02F812049587A08F7657D83EA76C2B7
@@ -784,8 +794,8 @@ msgstr "Suivi du secteur résidentiel"
 #. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_5.description_28_A02F812049587A08F7657D83EA76C2B7
 #: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_5.description_28_A02F812049587A08F7657D83EA76C2B7
 msgctxt ",93F355CC4465051223C57B9007B2FC97"
-msgid "Develop support structures for the renovation of buildings."
-msgstr "Développer les structures d'aide à la rénovation des bâtiments."
+msgid "Develop biomass tanks"
+msgstr ""
 
 #. Key:	976A07304690DB4DED5725B7723C0827
 #. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.2.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
@@ -829,6 +839,13 @@ msgctxt ",9C3A95724F55FC8762C79DB79FD10BC2"
 msgid "Next"
 msgstr "Jouer"
 
+#. Key:	9D88DBA3405B96DEF66CBD97BCCA0D79
+#. SourceLocation:	/Game/Core/Environment/BP_Station.BP_Station_C:Counter_GEN_VARIABLE.Text
+#: /Game/Core/Environment/BP_Station.BP_Station_C:Counter_GEN_VARIABLE.Text
+msgctxt ",9D88DBA3405B96DEF66CBD97BCCA0D79"
+msgid "--:--"
+msgstr ""
+
 #. Key:	9DCDBF854FBDD4B323904DBB40F34A53
 #. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.20.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
 #: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.20.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
@@ -850,13 +867,6 @@ msgctxt ",A54013C349B25ED257B3328A65564E72"
 msgid "Selected actions : "
 msgstr "Actions sélectionnées :"
 
-#. Key:	A5BE07C8CE4F81057B9D54BBD335DA90
-#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.TextBlock_60.Text
-#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.TextBlock_60.Text
-msgctxt ",A5BE07C8CE4F81057B9D54BBD335DA90"
-msgid "Ready to scan"
-msgstr "Scanner prêt !"
-
 #. Key:	A5EDCE73419CF3B31FE374AF289AB0C4
 #. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_1.Text
 #: /Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_1.Text
@@ -866,8 +876,7 @@ msgstr "Mobilité"
 
 #. Key:	A60E95A74B873A4D0001B3A78B284E9F
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_1.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
 msgctxt ",A60E95A74B873A4D0001B3A78B284E9F"
 msgid "Production Mean"
 msgstr "Moyen de production"
@@ -972,8 +981,7 @@ msgstr "-"
 
 #. Key:	BD82567C4DB06C15D3D794A27BBCE722
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_1.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
 msgctxt ",BD82567C4DB06C15D3D794A27BBCE722"
 msgid "CO2e Emission Factor"
 msgstr "Facteur d'emission CO2e"
@@ -1011,7 +1019,7 @@ msgstr "0"
 #: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_4.description_28_A02F812049587A08F7657D83EA76C2B7
 msgctxt ",C433B4A243D7E83EEF251FAC00CC012E"
 msgid "Install solar panels."
-msgstr ""
+msgstr "Installation de panneaux solaires"
 
 #. Key:	C647524A254D14A2E3315C85C369E14F
 #. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_4.Text
@@ -1045,8 +1053,8 @@ msgstr ""
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_1.Text
 #: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_1.Text
 msgctxt ",CBBB0E66CB4A709E24FD8E93985877BD"
-msgid "Overflown territory"
-msgstr "Territoire survolé "
+msgid "Overflown territory :"
+msgstr ""
 
 #. Key:	CCA86B742043F8F473B54087D36FCA66
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory.Text
@@ -1057,8 +1065,7 @@ msgstr "Territoire"
 
 #. Key:	D057E12440AB06F6A8E8208405E06DEB
 #. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
-#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve
-#: Parameters:K2Node_BreakStruct_0.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
 msgctxt ",D057E12440AB06F6A8E8208405E06DEB"
 msgid "Symbol"
 msgstr "Symbole"
@@ -1085,11 +1092,11 @@ msgid "Installation of an organic recycling infrastructure."
 msgstr ""
 
 #. Key:	D8B5BB8FA74C9F72A60A4CBAB3A5E576
-#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.DetectedObjectName_1.Text
-#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.DetectedObjectName_1.Text
+#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.Description.Text
+#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.Description.Text
 msgctxt ",D8B5BB8FA74C9F72A60A4CBAB3A5E576"
-msgid "Action : "
-msgstr "Action :"
+msgid "No scan data available for this object"
+msgstr ""
 
 #. Key:	DA167C353646EB6D295AC5956AEE9EB1
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.WheatYieldValue.Text
@@ -1104,6 +1111,13 @@ msgstr "0%"
 msgctxt ",DFDAD9484DE49B7E6F56D9AE18901AE8"
 msgid "Main menu"
 msgstr "Menu Principal"
+
+#. Key:	E04D909644495297BBBFB59870314717
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_3.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_3.Text
+msgctxt ",E04D909644495297BBBFB59870314717"
+msgid "Pollutant emission reduction targets :"
+msgstr ""
 
 #. Key:	E214019742CFD531DD62DCB448270797
 #. SourceLocation:	/Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Restart.Text
@@ -1126,19 +1140,19 @@ msgctxt ",E44A74194526E6914BB849AD776BB7A6"
 msgid "Use of non-emissive materials for construction & renovation."
 msgstr "Utilisation de matériaux non-émissif lors de la construction et la rénovation de bâtiments."
 
-#. Key:	E88AD4052C4B6E48F4BF45AA6DFCDDF2
-#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.DetectedObjectName_2.Text
-#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.DetectedObjectName_2.Text
-msgctxt ",E88AD4052C4B6E48F4BF45AA6DFCDDF2"
-msgid "Results :"
-msgstr "Résultats :"
-
 #. Key:	E9A6972641F1CB573EA3DAB9F63A59AB
 #. SourceLocation:	/Game/UI/Widgets/MobilityScreen/W_MobilityScreen.W_MobilityScreen_C:WidgetTree.PlayerArrivedMessage.Text
 #: /Game/UI/Widgets/MobilityScreen/W_MobilityScreen.W_MobilityScreen_C:WidgetTree.PlayerArrivedMessage.Text
 msgctxt ",E9A6972641F1CB573EA3DAB9F63A59AB"
 msgid "You've made the right choices!"
 msgstr "Vos choix sont très vertueux !"
+
+#. Key:	EA397CE74161253AAC939E93E38D64ED
+#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:ExecuteUbergraph_W_ScannerScreen [Script Bytecode]
+#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:ExecuteUbergraph_W_ScannerScreen [Script Bytecode]
+msgctxt ",EA397CE74161253AAC939E93E38D64ED"
+msgid "No scan data available"
+msgstr ""
 
 #. Key:	EAF81A0746501ED1955D93B5554F56E5
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.SaleLocation
@@ -1160,13 +1174,6 @@ msgstr "Données"
 msgctxt ",ED4C5CB5476ACED623B4769003039345"
 msgid "Cooperation with federations & producers to promote energy efficiency processes."
 msgstr "Coopération avec les fédérations et les producteurs pour promouvoir les processus d'efficacité énergétique."
-
-#. Key:	EE8340A44DCDD59C43A59C875E07786F
-#. SourceLocation:	/Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.BP_CustomProgressBar_C:WidgetTree.Caption.Text
-#: /Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.BP_CustomProgressBar_C:WidgetTree.Caption.Text
-msgctxt ",EE8340A44DCDD59C43A59C875E07786F"
-msgid "Pollutant"
-msgstr "Polluant"
 
 #. Key:	F1683C2B4ABDDCBB544B70871CC40E03
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.MainProducts
@@ -1235,8 +1242,8 @@ msgstr "Have environmentally friendly insulation."
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_1.Text
 #: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_1.Text
 msgctxt "BridgeMainScreen,0D4AB07B46437409BCE14AB5B83D23E1"
-msgid "Please plug the cartridge to start the analysis"
-msgstr "Brancher la cartouche dans le terminal pour débuter l'analyse"
+msgid "Please plug the cartridge in to start the analysis"
+msgstr ""
 
 #. Key:	1A7E4D847745E66F34BEA89DD210A18B
 #. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_1.Text
@@ -1291,12 +1298,8 @@ msgstr "Famille Rohan"
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 #: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 msgctxt "FarmProfiles,farm1_Other"
-msgid ""
-"Community support for setting up \n"
-"contracts with school canteens"
-msgstr ""
-"Soutien communautaire à la mise en place de \n"
-"contrats avec les cantines scolaires"
+msgid "Community support for setting up \ncontracts with school canteens"
+msgstr "Soutien communautaire à la mise en place de \ncontrats avec les cantines scolaires"
 
 #. Key:	farm1_SalePoint
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
@@ -1337,12 +1340,8 @@ msgstr "Domaine Armieux"
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 #: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 msgctxt "FarmProfiles,farm2_Other"
-msgid ""
-"Practices stubble burning\r\n"
-"to extend the farm"
-msgstr ""
-"Pratiques de brûlage des chaumes\n"
-"pour étendre l'exploitation"
+msgid "Practices stubble burning\r\nto extend the farm"
+msgstr "Pratiques de brûlage des chaumes\npour étendre l'exploitation"
 
 #. Key:	farm2_SalePoint
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
@@ -1397,9 +1396,7 @@ msgstr "Boeufs"
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 #: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 msgctxt "FarmProfiles,farm4_cultivationTechnics"
-msgid ""
-"Good management of livestock \r\n"
-"effluents "
+msgid "Good management of livestock \r\neffluents "
 msgstr "Bonne gestion des effluents d'élevage. "
 
 #. Key:	farm4_name
@@ -1413,9 +1410,7 @@ msgstr "Domaine Ogli"
 #. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 #: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
 msgctxt "FarmProfiles,farm4_Other"
-msgid ""
-"The majority of beef feed is\n"
-"produced in the EU. "
+msgid "The majority of beef feed is\nproduced in the EU. "
 msgstr ""
 
 #. Key:	farm4_SalePoint
@@ -1516,6 +1511,62 @@ msgctxt "NewStringTable,MachineSelectionError"
 msgid "Please select at least one machine to riddle"
 msgstr "Veuillez sélectionner au moins 1 énigme à résoudre"
 
+#. Key:	Ammonia
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,Ammonia"
+msgid "Ammonia"
+msgstr "Ammoniac"
+
+#. Key:	COV
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,COV"
+msgid "Volatile organic compounds "
+msgstr "Composés organiques volatiles"
+
+#. Key:	GHG
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,GHG"
+msgid "Green House Gases"
+msgstr "Gaz à effet de serre"
+
+#. Key:	NO
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,NO"
+msgid "Oxides of nitrogen"
+msgstr "Oxydes d'azote"
+
+#. Key:	PM10
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,PM10"
+msgid "Fine particles (10 µm)"
+msgstr "Particules fines (10 µm)"
+
+#. Key:	PM25
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,PM25"
+msgid "Fine particles (2.5 µm)"
+msgstr "Particules fines (2.5 µm)"
+
+#. Key:	SO2
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,SO2"
+msgid "Sulfur dioxide"
+msgstr "Dioxyde de soufre"
+
+#. Key:	tree
+#. SourceLocation:	/Game/Core/Data/ScanData/ST_ScannableComponentDescription.ST_ScannableComponentDescription
+#: /Game/Core/Data/ScanData/ST_ScannableComponentDescription.ST_ScannableComponentDescription
+msgctxt "ST_ScannableComponentDescription,tree"
+msgid "Under certain conditions, trees can cool ambient air by 2° to 8°C."
+msgstr ""
+
 #. Key:	005165254664A2EDD65EA780A31474D8
 #. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_9.Text
 #: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_9.Text
@@ -1548,9 +1599,7 @@ msgstr "Direction le dôme!"
 #. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_12.Text
 #: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_12.Text
 msgctxt "Tutorial,90F22D98478ABBE1127DEFAE7BC204AC"
-msgid ""
-"Stuff ready? \n"
-"You can head to the door and open it using the scanner."
+msgid "Stuff ready? \nYou can head to the door and open it using the scanner."
 msgstr ""
 
 #. Key:	9866190F40D9046BCA576AB0D59D123C
@@ -1615,3 +1664,4 @@ msgstr "Entrez l'identifiant du territoire sur lequel vous souhaitez jouer"
 msgctxt "UMG,TextBlockDefaultValue"
 msgid "Text Block"
 msgstr "Texte"
+
