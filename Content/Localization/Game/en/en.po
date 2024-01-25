@@ -1,0 +1,1667 @@
+﻿# en English translation.
+# Copyright : OK
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: en\n"
+"POT-Creation-Date: 2024-01-22 17:16\n"
+"PO-Revision-Date: 2024-01-22 17:16\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Key:	00B988664BE01D69D230D5B8F2DC4F02
+#. SourceLocation:	/Game/Core/Riddles/EnergyMachine/BP_EnergyMachine.BP_EnergyMachine_C:Demand Value_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/EnergyMachine/BP_EnergyMachine.BP_EnergyMachine_C:Demand Value_GEN_VARIABLE.Text
+msgctxt ",00B988664BE01D69D230D5B8F2DC4F02"
+msgid "1500 GWh"
+msgstr "1500 GWh"
+
+#. Key:	029E87A0C64FBC29EB2BC6A0B8E2B9AD
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Seeelevation.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Seeelevation.Text
+msgctxt ",029E87A0C64FBC29EB2BC6A0B8E2B9AD"
+msgid "0.5 m"
+msgstr "0.5 m"
+
+#. Key:	02D6B8274C75CBD0081B2190DD42E252
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.17.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.17.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",02D6B8274C75CBD0081B2190DD42E252"
+msgid "Use of harmful products without post-consumer waste management."
+msgstr "Use of harmful products without post-consumer waste management."
+
+#. Key:	034068265C486B2C90FF00AE37792618
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_7.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_7.Text
+msgctxt ",034068265C486B2C90FF00AE37792618"
+msgid "Economical costs of air pollution"
+msgstr "Economical costs of air pollution"
+
+#. Key:	035F2A4240EDB5B1BA3A6FA2EE038DE1
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
+msgctxt ",035F2A4240EDB5B1BA3A6FA2EE038DE1"
+msgid "Required Surface"
+msgstr "Required Surface"
+
+#. Key:	0390B9B9F94315C5DF7A1794463AE369
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.Climate.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.Climate.Text
+msgctxt ",0390B9B9F94315C5DF7A1794463AE369"
+msgid "BreathByte memory card reader"
+msgstr "BreathByte memory card reader"
+
+#. Key:	03DA4590A64491536E93F9B62D8B0FEC
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_45.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_45.Text
+msgctxt ",03DA4590A64491536E93F9B62D8B0FEC"
+msgid "Percentage of allergic pop."
+msgstr "Percentage of allergic pop."
+
+#. Key:	045B2436B1449DFE16572EAD451D6E8C
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_3.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_3.Text
+msgctxt ",045B2436B1449DFE16572EAD451D6E8C"
+msgid "Loss of wheat yield due to ozone"
+msgstr "Loss of wheat yield due to ozone"
+
+#. Key:	06D721A64ADF49D4C89B5CB013413660
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.Skip.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.Skip.Text
+msgctxt ",06D721A64ADF49D4C89B5CB013413660"
+msgid "Skip tutorial"
+msgstr "Skip tutorial"
+
+#. Key:	0796D861DE4EE6B35225BBB7DBAD4F7C
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock.Text
+msgctxt ",0796D861DE4EE6B35225BBB7DBAD4F7C"
+msgid "Loss of river flows"
+msgstr "Loss of river flows"
+
+#. Key:	08A5340E4B00B9A889EFA1BDFA98B801
+#. SourceLocation:	/Game/UI/Widgets/ErrorOverlay/WBP_ErrorOverlay.WBP_ErrorOverlay_C:WidgetTree.ErrorMessage.Text
+#: /Game/UI/Widgets/ErrorOverlay/WBP_ErrorOverlay.WBP_ErrorOverlay_C:WidgetTree.ErrorMessage.Text
+msgctxt ",08A5340E4B00B9A889EFA1BDFA98B801"
+msgid "Error message"
+msgstr "Error message"
+
+#. Key:	0B0870E64DDA8E615AA7C9942A8BC3D3
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_7.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_7.Text
+msgctxt ",0B0870E64DDA8E615AA7C9942A8BC3D3"
+msgid "Please select the sectors you want to work on :"
+msgstr "Please select the sectors you want to work on :"
+
+#. Key:	117C8DC3434AD0D676300688EBFD6BB9
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_1.Text
+msgctxt ",117C8DC3434AD0D676300688EBFD6BB9"
+msgid "< Back"
+msgstr "< Back"
+
+#. Key:	12113E834FF2A8B7A6CCD4A4BB293359
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.15.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.15.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",12113E834FF2A8B7A6CCD4A4BB293359"
+msgid "Adopt a \"zero waste\" lifestyle"
+msgstr "Adopt a \"zero waste\" lifestyle"
+
+#. Key:	1326D6CD4BB7C03CE32A4B8F4FB55CB1
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.11.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.11.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",1326D6CD4BB7C03CE32A4B8F4FB55CB1"
+msgid "End-of-line treatment to reduce emissions of polluting gases."
+msgstr "End-of-line treatment to reduce emissions of polluting gases."
+
+#. Key:	143BF1DBFF46BF013FCAC2BCD9C5951D
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock_39.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock_39.Text
+msgctxt ",143BF1DBFF46BF013FCAC2BCD9C5951D"
+msgid "Territory analysis required to use this machine"
+msgstr "Territory analysis required to use this machine"
+
+#. Key:	177418543A4E9D19E84EF4BD59D7FE00
+#. SourceLocation:	/Game/Core/Riddles/WBP_EnergyProgressBars.WBP_EnergyProgressBars_C:WidgetTree.Surface.Name
+#: /Game/Core/Riddles/WBP_EnergyProgressBars.WBP_EnergyProgressBars_C:WidgetTree.Surface.Name
+msgctxt ",177418543A4E9D19E84EF4BD59D7FE00"
+msgid "Surface"
+msgstr "Surface"
+
+#. Key:	189386FB40E5902ACCFB97B849E54CF1
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayerTyperSelect_NextButton.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayerTyperSelect_NextButton.Text
+msgctxt ",189386FB40E5902ACCFB97B849E54CF1"
+msgid "Next"
+msgstr "Next"
+
+#. Key:	1B99BDE74E61C6F344AC29B2285CABD9
+#. SourceLocation:	/Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.émission.Text
+#: /Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.émission.Text
+msgctxt ",1B99BDE74E61C6F344AC29B2285CABD9"
+msgid "Emissions : "
+msgstr "Emissions : "
+
+#. Key:	1CA8CFBEAB42BDE5A914FE825EA8F45A
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_Settings.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_Settings.Text
+msgctxt ",1CA8CFBEAB42BDE5A914FE825EA8F45A"
+msgid "Settings"
+msgstr "Settings"
+
+#. Key:	1CFE466F403B8EF9DFCD2CA0F396F0D6
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.triangleround.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.triangleround.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",1CFE466F403B8EF9DFCD2CA0F396F0D6"
+msgid "Develop dedicated lanes for public transportation"
+msgstr "Develop dedicated lanes for public transportation"
+
+#. Key:	1D64499049601CCF3FCD4FA4C812F40A
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_2.Text
+msgctxt ",1D64499049601CCF3FCD4FA4C812F40A"
+msgid "Applying machine's result to territory..."
+msgstr "Applying machine's result to territory..."
+
+#. Key:	1E4C723E4DC19BFAB5375D93F9F0431C
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_4.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_4.Text
+msgctxt ",1E4C723E4DC19BFAB5375D93F9F0431C"
+msgid "Sending you back to the chaotic future..."
+msgstr "Sending you back to the chaotic future..."
+
+#. Key:	1ECCD45D451EB7ADB8A25EB323CD84F2
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_3.Text
+#: /Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_3.Text
+msgctxt ",1ECCD45D451EB7ADB8A25EB323CD84F2"
+msgid "Agriculture"
+msgstr "Agriculture"
+
+#. Key:	1F3A40D7449ADF51D9924EB6A2A8F6CC
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_FunctionEntry_0.MetaData.ToolTip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_FunctionEntry_0.MetaData.ToolTip
+msgctxt ",1F3A40D7449ADF51D9924EB6A2A8F6CC"
+msgid "Get the symbol, min & max value of a energy production setting from the energy action table"
+msgstr "Get the symbol, min & max value of a energy production setting from the energy action table"
+
+#. Key:	2012AFAA2F49DD5D12C327956C553512
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.CostAirPollution.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.CostAirPollution.Text
+msgctxt ",2012AFAA2F49DD5D12C327956C553512"
+msgid "20000 Euros"
+msgstr "20000 Euros"
+
+#. Key:	209B8C2F486FC695B2A2F4901C7A22ED
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
+msgctxt ",209B8C2F486FC695B2A2F4901C7A22ED"
+msgid "Production Mean"
+msgstr "Production Mean"
+
+#. Key:	20F2A47F1344FF1317CCE698440DFCB8
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/BP_MobilityMachine.BP_MobilityMachine_C:journey_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/MobilityRiddle/BP_MobilityMachine.BP_MobilityMachine_C:journey_GEN_VARIABLE.Text
+msgctxt ",20F2A47F1344FF1317CCE698440DFCB8"
+msgid "Journey cost :"
+msgstr "Journey cost :"
+
+#. Key:	211DF9DEA14D92608343B29EE3E3A309
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.biodiversityLoss.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.biodiversityLoss.Text
+msgctxt ",211DF9DEA14D92608343B29EE3E3A309"
+msgid "0%"
+msgstr "0%"
+
+#. Key:	21B5FCA74DFD1BF4BB4B6183F034A510
+#. SourceLocation:	/Game/Core/Riddles/EnergyMachine/ProductionMeanSlider.ProductionMeanSlider_C:value_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/EnergyMachine/ProductionMeanSlider.ProductionMeanSlider_C:value_GEN_VARIABLE.Text
+msgctxt ",21B5FCA74DFD1BF4BB4B6183F034A510"
+msgid "0 GWh"
+msgstr "0 GWh"
+
+#. Key:	22BFF9A04CB744BFB8416AB08BC653AD
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_14.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_14.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",22BFF9A04CB744BFB8416AB08BC653AD"
+msgid "Add green spaces to combat heat islands"
+msgstr "Add green spaces to combat heat islands"
+
+#. Key:	22CB97634D4A58184B1AC3B6F8BDC203
+#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.DetectedObjectName.Text
+#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.DetectedObjectName.Text
+msgctxt ",22CB97634D4A58184B1AC3B6F8BDC203"
+msgid "Scanning... "
+msgstr "Scanning... "
+
+#. Key:	247EEB58410DA5585FB471876AC34892
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_7.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_7.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",247EEB58410DA5585FB471876AC34892"
+msgid "Develop biomass/renewable district heating."
+msgstr "Develop biomass/renewable district heating."
+
+#. Key:	25544CB7416AFDFE966E4A8169C85F9B
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.9.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.9.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",25544CB7416AFDFE966E4A8169C85F9B"
+msgid "No communication around recycling and/or reducing the consumption of natural resources"
+msgstr "No communication around recycling and/or reducing the consumption of natural resources"
+
+#. Key:	26CF4899444D5513F8DBFBB747FC1DE5
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(3).ShowPinForProperties.PropertyTooltip
+msgctxt ",26CF4899444D5513F8DBFBB747FC1DE5"
+msgid "Max Value"
+msgstr "Max Value"
+
+#. Key:	2789C4C04333E90C382E69BB830A29D2
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",2789C4C04333E90C382E69BB830A29D2"
+msgid "Support the development of a carpooling area"
+msgstr "Support the development of a carpooling area"
+
+#. Key:	29B6913441D49E30D1C507864CCBCFBF
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_13.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_13.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",29B6913441D49E30D1C507864CCBCFBF"
+msgid "Encourage the use of very dry wood for wood heating."
+msgstr "Encourage the use of very dry wood for wood heating."
+
+#. Key:	2AC4DA22224A59E882887093B410445B
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_0.Text
+msgctxt ",2AC4DA22224A59E882887093B410445B"
+msgid "Life V-aiR"
+msgstr "Life V-aiR"
+
+#. Key:	2AC62069478A0037F1C5D7928F6F2806
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.14.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.14.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",2AC62069478A0037F1C5D7928F6F2806"
+msgid "Do not take into account the opinion of consumers."
+msgstr "Do not take into account the opinion of consumers."
+
+#. Key:	2B53187A8A4A90E3C6145B87B6B906DE
+#. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.Name.Text
+#: /Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.Name.Text
+msgctxt ",2B53187A8A4A90E3C6145B87B6B906DE"
+msgid "Machine impact summary :"
+msgstr "Machine impact summary :"
+
+#. Key:	2C013DB442BF646602B2C68E549F4CFB
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Product_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Product_GEN_VARIABLE.Text
+msgctxt ",2C013DB442BF646602B2C68E549F4CFB"
+msgid "A product"
+msgstr "A product"
+
+#. Key:	2DD8763B8449092970C71593767F943E
+#. SourceLocation:	/Game/UI/Widgets/GameOver/W_GameOver.W_GameOver_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/Widgets/GameOver/W_GameOver.W_GameOver_C:WidgetTree.TextBlock_0.Text
+msgctxt ",2DD8763B8449092970C71593767F943E"
+msgid "Game is finished"
+msgstr "Game is finished"
+
+#. Key:	2F1565B1437B333BDA7BC7A5CCA1ED67
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
+msgctxt ",2F1565B1437B333BDA7BC7A5CCA1ED67"
+msgid "Min Value"
+msgstr "Min Value"
+
+#. Key:	31591159404368324295BE86D8F83CB7
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_1.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_1.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",31591159404368324295BE86D8F83CB7"
+msgid "Develop free (or reduced pricing) Park and Ride / intermodality hubs / facilities"
+msgstr "Develop free (or reduced pricing) Park and Ride / intermodality hubs / facilities"
+
+#. Key:	338DEFFA468ECAFE4D1BE8BEEB227BB2
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_3.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_3.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",338DEFFA468ECAFE4D1BE8BEEB227BB2"
+msgid "Develop communication around selective sorting, recycling and zero waste lifestyles."
+msgstr "Develop communication around selective sorting, recycling and zero waste lifestyles."
+
+#. Key:	33C5B5A58F43E4BAA7B43CB5F2223C91
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.AllergicPopValue.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.AllergicPopValue.Text
+msgctxt ",33C5B5A58F43E4BAA7B43CB5F2223C91"
+msgid "0 %"
+msgstr "0 %"
+
+#. Key:	37D70F7CA046E27A53B1769E960D02B2
+#. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.NO_value.Text
+#: /Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.NO_value.Text
+msgctxt ",37D70F7CA046E27A53B1769E960D02B2"
+msgid "80%"
+msgstr "80%"
+
+#. Key:	39E0A61C416F2CEC6E28468F6B296C99
+#. SourceLocation:	/Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.ResetView.Text
+#: /Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.ResetView.Text
+msgctxt ",39E0A61C416F2CEC6E28468F6B296C99"
+msgid "Reset Orientation"
+msgstr "Reset Orientation"
+
+#. Key:	3AD7F0AF4FCBEA36F53F1EAB668F9DE0
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.16.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.16.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",3AD7F0AF4FCBEA36F53F1EAB668F9DE0"
+msgid "Maximum use of natural resources to boost productivity."
+msgstr "Maximum use of natural resources to boost productivity."
+
+#. Key:	3C60D8C64A0A7F5146BBA18B0BBB33BE
+#. SourceLocation:	/Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.QuitGame.Text
+#: /Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.QuitGame.Text
+msgctxt ",3C60D8C64A0A7F5146BBA18B0BBB33BE"
+msgid "Quit Game"
+msgstr "Quit Game"
+
+#. Key:	3F8C17204648E69592164CB27CCE800D
+#. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock.Text
+msgctxt ",3F8C17204648E69592164CB27CCE800D"
+msgid "Machine setup correctly !"
+msgstr "Machine setup correctly !"
+
+#. Key:	41BCDDCC4CFBA6A27D9D648A20359F6E
+#. SourceLocation:	/Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_2.Text
+msgctxt ",41BCDDCC4CFBA6A27D9D648A20359F6E"
+msgid "-"
+msgstr "-"
+
+#. Key:	43688996E348DAFA8132368FB17AB51D
+#. SourceLocation:	/Game/UI/UI_Elements/Buttons/W_Button_Tertiary.Default__W_Button_Tertiary_C.Text
+#: /Game/UI/UI_Elements/Buttons/W_Button_Tertiary.Default__W_Button_Tertiary_C.Text
+msgctxt ",43688996E348DAFA8132368FB17AB51D"
+msgid "Tertiary"
+msgstr "Tertiary"
+
+#. Key:	45760B2B457BB55832248DA939FB4361
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.8.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.8.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",45760B2B457BB55832248DA939FB4361"
+msgid "Installation of mechanical recycling infrastructure"
+msgstr "Installation of mechanical recycling infrastructure"
+
+#. Key:	47A6227C4F39EA1D2653F59F5303BC0F
+#. SourceLocation:	/Game/Core/Riddles/EnergyMachine/BP_EnergyMachine.BP_EnergyMachine_C:Demand_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/EnergyMachine/BP_EnergyMachine.BP_EnergyMachine_C:Demand_GEN_VARIABLE.Text
+msgctxt ",47A6227C4F39EA1D2653F59F5303BC0F"
+msgid "Demand"
+msgstr "Demand"
+
+#. Key:	49DAEF5C42B2C68D39061BAECBD88805
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_7.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_7.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",49DAEF5C42B2C68D39061BAECBD88805"
+msgid "Create local subsidies for the renewal of cars"
+msgstr "Create local subsidies for the renewal of cars"
+
+#. Key:	4A0756D24C29F4733E1166BC5BBF9182
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Welcome_Next.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Welcome_Next.Text
+msgctxt ",4A0756D24C29F4733E1166BC5BBF9182"
+msgid "Next"
+msgstr "Next"
+
+#. Key:	4B9A1BBBB4419D46844C9F82ADEB2B20
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.LossRiverFlowValue.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.LossRiverFlowValue.Text
+msgctxt ",4B9A1BBBB4419D46844C9F82ADEB2B20"
+msgid "0 %"
+msgstr "0 %"
+
+#. Key:	4D0EA298424D081D0F45FB9F349C2CBA
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.3.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.3.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",4D0EA298424D081D0F45FB9F349C2CBA"
+msgid "Use eco-responsible services or products."
+msgstr "Use eco-responsible services or products."
+
+#. Key:	4DA687344431B1F5EF15AE973A03C7F3
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_2.Text
+msgctxt ",4DA687344431B1F5EF15AE973A03C7F3"
+msgid "Energy Production"
+msgstr "Energy Production"
+
+#. Key:	54CEF1DB9F49DD5442AC1D8E3D192822
+#. SourceLocation:	/Game/UI/UI_Elements/RadioButtons/W_RadioButton.Default__W_RadioButton_C.Displayed Text
+#: /Game/UI/UI_Elements/RadioButtons/W_RadioButton.Default__W_RadioButton_C.Displayed Text
+msgctxt ",54CEF1DB9F49DD5442AC1D8E3D192822"
+msgid "Radio"
+msgstr "Radio"
+
+#. Key:	554D89ED45DE77440CE726B21305AF25
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Harvest_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Harvest_GEN_VARIABLE.Text
+msgctxt ",554D89ED45DE77440CE726B21305AF25"
+msgid "Harvest period :"
+msgstr "Harvest period :"
+
+#. Key:	5838A74B4524953F72F03281EEEE82C2
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(2).ShowPinForProperties.PropertyTooltip
+msgctxt ",5838A74B4524953F72F03281EEEE82C2"
+msgid "Production"
+msgstr "Production"
+
+#. Key:	58924CB22744E193CFE98A8892752B84
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_11.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_11.Text
+msgctxt ",58924CB22744E193CFE98A8892752B84"
+msgid "Biodiversity Loss"
+msgstr "Biodiversity Loss"
+
+#. Key:	58AF91C70240289D8696178B030D15C8
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_6.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_6.Text
+msgctxt ",58AF91C70240289D8696178B030D15C8"
+msgid "Number of additional climate refugies"
+msgstr "Number of additional climate refugies"
+
+#. Key:	5A8094A54DAFF62815647AB972E27605
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Location_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Location_GEN_VARIABLE.Text
+msgctxt ",5A8094A54DAFF62815647AB972E27605"
+msgid "A product"
+msgstr "A product"
+
+#. Key:	5D534A0DFB44C15509C487AC1AB881E0
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Climate.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Climate.Text
+msgctxt ",5D534A0DFB44C15509C487AC1AB881E0"
+msgid "Climate and Air Quality impacts"
+msgstr "Climate and Air Quality impacts"
+
+#. Key:	5FBE80734653F3BB2D28DA96C94D8F65
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Title_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Title_GEN_VARIABLE.Text
+msgctxt ",5FBE80734653F3BB2D28DA96C94D8F65"
+msgid "Other informations : "
+msgstr "Other informations : "
+
+#. Key:	5FC5874149D6448680501CA31DEF7EC8
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundtriangle.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundtriangle.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",5FC5874149D6448680501CA31DEF7EC8"
+msgid "Build walking and cycle lanes"
+msgstr "Build walking and cycle lanes"
+
+#. Key:	612E353F4C6EB3D572AFCFA3F3E285FF
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Technics_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Technics_GEN_VARIABLE.Text
+msgctxt ",612E353F4C6EB3D572AFCFA3F3E285FF"
+msgid "A product"
+msgstr "A product"
+
+#. Key:	6216CA6642529D0AA3A6B2BF4A4D311A
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Climate_1.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Climate_1.Text
+msgctxt ",6216CA6642529D0AA3A6B2BF4A4D311A"
+msgid "Mission failed"
+msgstr "Mission failed"
+
+#. Key:	628C3DDD4E2982A9F9DFB8B9A0BB7372
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.10.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.10.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",628C3DDD4E2982A9F9DFB8B9A0BB7372"
+msgid "No treatment of wastes at the end of the production line."
+msgstr "No treatment of wastes at the end of the production line."
+
+#. Key:	6407F9201849E65A60A12F8E4EFB08A3
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayButton.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.PlayButton.Text
+msgctxt ",6407F9201849E65A60A12F8E4EFB08A3"
+msgid "Play"
+msgstr "Play"
+
+#. Key:	6414624E4AA1794E45361CA85EA6623F
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_6.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_6.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",6414624E4AA1794E45361CA85EA6623F"
+msgid "Reduce the personal car dedicated infrastructure: more shared roads (pedestrian/bicycle/car shared space) with 10 to 20 km/h speed limits"
+msgstr "Reduce the personal car dedicated infrastructure: more shared roads (pedestrian/bicycle/car shared space) with 10 to 20 km/h speed limits"
+
+#. Key:	6456B6799F4CF9011873CAA4480EBDC4
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_4.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_4.Text
+msgctxt ",6456B6799F4CF9011873CAA4480EBDC4"
+msgid "Number of hot days"
+msgstr "Number of hot days"
+
+#. Key:	6543F13F43BDC4C709FBA9824A63DF41
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_5.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_5.Text
+msgctxt ",6543F13F43BDC4C709FBA9824A63DF41"
+msgid "Please select the role you want to embody :"
+msgstr "Please select the role you want to embody :"
+
+#. Key:	6568CD6C4786637F27814CBD57939905
+#. SourceLocation:	/Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.Threshold.Text
+#: /Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.Threshold.Text
+msgctxt ",6568CD6C4786637F27814CBD57939905"
+msgid "x"
+msgstr "x"
+
+#. Key:	663A631844D91AF07221B490845644F6
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_1.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_1.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",663A631844D91AF07221B490845644F6"
+msgid "Avoid burning biomass in gardens."
+msgstr "Avoid burning biomass in gardens."
+
+#. Key:	674B7385A742E4ED2283A5A09517B0E0
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_2.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_2.Text
+msgctxt ",674B7385A742E4ED2283A5A09517B0E0"
+msgid "inhabitants"
+msgstr "inhabitants"
+
+#. Key:	69541530984770BA1C0E7B8CD6145588
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_10.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_10.Text
+msgctxt ",69541530984770BA1C0E7B8CD6145588"
+msgid "Sea elevation"
+msgstr "Sea elevation"
+
+#. Key:	696E08F1A44DAA11630B36AFE11D2893
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock.Text
+msgctxt ",696E08F1A44DAA11630B36AFE11D2893"
+msgid "Analyzing..."
+msgstr "Analyzing..."
+
+#. Key:	6A1A8EA7462B7510F17FD9A76333A509
+#. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock_2.Text
+msgctxt ",6A1A8EA7462B7510F17FD9A76333A509"
+msgid "Plug the cartridge in to initialize the machine"
+msgstr "Plug the cartridge in to initialize the machine"
+
+#. Key:	6A8019144D89CE3EDBB3C4B88A64E538
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_0.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_0.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",6A8019144D89CE3EDBB3C4B88A64E538"
+msgid "Promote and apply good practices concerning wildfire."
+msgstr "Promote and apply good practices concerning wildfire."
+
+#. Key:	6A92F19AF74DB55041661FB838075D1C
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TropicalNights.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TropicalNights.Text
+msgctxt ",6A92F19AF74DB55041661FB838075D1C"
+msgid "0"
+msgstr "0"
+
+#. Key:	6AB5FA74A74B19F56A2C6C9935C2325E
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock.Text
+msgctxt ",6AB5FA74A74B19F56A2C6C9935C2325E"
+msgid "Ready for analysis"
+msgstr "Ready for analysis"
+
+#. Key:	6B8621314670305B84C7E7859EFD2214
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_0.Text
+msgctxt ",6B8621314670305B84C7E7859EFD2214"
+msgid "Residential"
+msgstr "Residential"
+
+#. Key:	6D1480804CA7AA88692B2DB4782F93E5
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/Widgets/MainMenu/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock_0.Text
+msgctxt ",6D1480804CA7AA88692B2DB4782F93E5"
+msgid "Serious Game"
+msgstr "Serious Game"
+
+#. Key:	6F5249E74F7DFECC047BA2A7E09037B9
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
+msgctxt ",6F5249E74F7DFECC047BA2A7E09037B9"
+msgid "CO2e Emission Factor"
+msgstr "CO2e Emission Factor"
+
+#. Key:	6F713F5E48F9B1EB675D4DBA66566E44
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.6.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.6.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",6F713F5E48F9B1EB675D4DBA66566E44"
+msgid "Space for burning biomass & waste in the open air."
+msgstr "Space for burning biomass & waste in the open air."
+
+#. Key:	6FADC6929A49841567C95C8BB93E717E
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_RestartButton_1.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_RestartButton_1.Text
+msgctxt ",6FADC6929A49841567C95C8BB93E717E"
+msgid "Update data"
+msgstr "Update data"
+
+#. Key:	70FFCB434A15081E94FF0FBCACF292A4
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_3.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_3.Text
+msgctxt ",70FFCB434A15081E94FF0FBCACF292A4"
+msgid "Mission Failed"
+msgstr "Mission Failed"
+
+#. Key:	71D296634218A0C850F30B8A06782E9A
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.1.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.1.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",71D296634218A0C850F30B8A06782E9A"
+msgid "Support professionals in the implementation of energy-efficient buildings."
+msgstr "Support professionals in the implementation of energy-efficient buildings."
+
+#. Key:	72B5732149F6F537AB24D1A3D8344F00
+#. SourceLocation:	/Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.InHandDisplay.Text
+#: /Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.InHandDisplay.Text
+msgctxt ",72B5732149F6F537AB24D1A3D8344F00"
+msgid "-"
+msgstr "-"
+
+#. Key:	72E1665A4045FA001F6CB0AE3123D7BA
+#. SourceLocation:	/Game/UI/UI_Elements/Buttons/W_Button_Secondary.Default__W_Button_Secondary_C.Text
+#: /Game/UI/UI_Elements/Buttons/W_Button_Secondary.Default__W_Button_Secondary_C.Text
+msgctxt ",72E1665A4045FA001F6CB0AE3123D7BA"
+msgid "Prime"
+msgstr "Prime"
+
+#. Key:	74A820DC4F187F4327D89084A7C1C348
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_ResetOrientationButton_1.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Text_ResetOrientationButton_1.Text
+msgctxt ",74A820DC4F187F4327D89084A7C1C348"
+msgid "DEBUG : Go to Flying station"
+msgstr "DEBUG : Go to Flying station"
+
+#. Key:	75CD7E7542E6CCC54C72AFB67C3A5265
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(4).ShowPinForProperties.PropertyTooltip
+msgctxt ",75CD7E7542E6CCC54C72AFB67C3A5265"
+msgid "Symbol"
+msgstr "Symbol"
+
+#. Key:	778173FEBC4A934553848A8DB45A67A0
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.HotDays.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.HotDays.Text
+msgctxt ",778173FEBC4A934553848A8DB45A67A0"
+msgid "0"
+msgstr "0"
+
+#. Key:	78DB1D0246349AF9E5BA3294A5EC1DF0
+#. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock_1.Text
+msgctxt ",78DB1D0246349AF9E5BA3294A5EC1DF0"
+msgid "Bring the cartridge to the main machine to apply the result."
+msgstr "Bring the cartridge to the main machine to apply the result."
+
+#. Key:	7A3F7E9C428A8F39E8218FB2CC845462
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.FarmName
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.FarmName
+msgctxt ",7A3F7E9C428A8F39E8218FB2CC845462"
+msgid "A Farm"
+msgstr "A Farm"
+
+#. Key:	7A9139831F45207163F78598AA0488D8
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TempIncrease.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TempIncrease.Text
+msgctxt ",7A9139831F45207163F78598AA0488D8"
+msgid "0°C"
+msgstr "0°C"
+
+#. Key:	7F65766C454553D34D5265B0EC771FE3
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_39.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_39.Text
+msgctxt ",7F65766C454553D34D5265B0EC771FE3"
+msgid "Analysis required"
+msgstr "Analysis required"
+
+#. Key:	7FE5F47D49C28998CDC66789F6F6A917
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.7.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.7.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",7FE5F47D49C28998CDC66789F6F6A917"
+msgid "Deposit for biomass & industrial waste."
+msgstr "Deposit for biomass & industrial waste."
+
+#. Key:	80A78B391648E2D3C8DDA2993DF9DD18
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_13.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_13.Text
+msgctxt ",80A78B391648E2D3C8DDA2993DF9DD18"
+msgid "Analyzing..."
+msgstr "Analyzing..."
+
+#. Key:	80A9E91641292EF60EAFDDAC089FD022
+#. SourceLocation:	/Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.InHandModule.Text
+#: /Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.InHandModule.Text
+msgctxt ",80A9E91641292EF60EAFDDAC089FD022"
+msgid "Hold Module"
+msgstr "Hold Module"
+
+#. Key:	81BFB1404788AD6579858AAF1C4CEF7D
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.18.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.18.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",81BFB1404788AD6579858AAF1C4CEF7D"
+msgid "Installation of chemical recycling infrastructure. Check its compliance."
+msgstr "Installation of chemical recycling infrastructure. Check its compliance."
+
+#. Key:	8903856F413315645A550AAE56E8A723
+#. SourceLocation:	/Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.TotalEmissions.Text
+#: /Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.TotalEmissions.Text
+msgctxt ",8903856F413315645A550AAE56E8A723"
+msgid "x"
+msgstr "x"
+
+#. Key:	8920B40844676DEB94EFEAB560473995
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/MainMenu/W_PlayerTypeSelection.W_PlayerTypeSelection_C:WidgetTree.TextBlock.Text
+msgctxt ",8920B40844676DEB94EFEAB560473995"
+msgid "Escape Game"
+msgstr "Escape Game"
+
+#. Key:	8A88D76F3B45E4CA5DF6448E177BE2D5
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_5.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_5.Text
+msgctxt ",8A88D76F3B45E4CA5DF6448E177BE2D5"
+msgid "Temperature increase"
+msgstr "Temperature increase"
+
+#. Key:	8CF49214418B80E1B6B3DDA20F1B4208
+#. SourceLocation:	/Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.BP_CustomProgressBar_C:WidgetTree.Caption.Text
+#: /Game/UI/Widgets/MainDashboard/BP_CustomProgressBar.BP_CustomProgressBar_C:WidgetTree.Caption.Text
+msgctxt ",8CF49214418B80E1B6B3DDA20F1B4208"
+msgid "Pollutant"
+msgstr "Pollutant"
+
+#. Key:	8EBD49A84A1B155578A537A8EEDBF0C1
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_8.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_8.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",8EBD49A84A1B155578A537A8EEDBF0C1"
+msgid "Encourage the installation of ecological heating systems in homes"
+msgstr "Encourage the installation of ecological heating systems in homes"
+
+#. Key:	9176CED947C7395CBC8CDD862C1229C5
+#. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.Climate.Text
+#: /Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.Climate.Text
+msgctxt ",9176CED947C7395CBC8CDD862C1229C5"
+msgid "Residential Sector Monitoring"
+msgstr "Residential Sector Monitoring"
+
+#. Key:	93F355CC4465051223C57B9007B2FC97
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_5.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_5.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",93F355CC4465051223C57B9007B2FC97"
+msgid "Develop biomass tanks"
+msgstr "Develop biomass tanks"
+
+#. Key:	976A07304690DB4DED5725B7723C0827
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.2.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.2.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",976A07304690DB4DED5725B7723C0827"
+msgid "Installation of a one-stop shop to help professionals implement energy-efficient processes."
+msgstr "Installation of a one-stop shop to help professionals implement energy-efficient processes."
+
+#. Key:	980150C9144444C2F7D7AE899CE0F43F
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_30.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_30.Text
+msgctxt ",980150C9144444C2F7D7AE899CE0F43F"
+msgid "Be prepared to change our future"
+msgstr "Be prepared to change our future"
+
+#. Key:	98C5CC60415356AE6F9D90930C3C4256
+#. SourceLocation:	/Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock_41.Text
+#: /Game/UI/Widgets/MachineUI/W_MachineStatus.W_MachineStatus_C:WidgetTree.TextBlock_41.Text
+msgctxt ",98C5CC60415356AE6F9D90930C3C4256"
+msgid "Analysis on main machine required"
+msgstr "Analysis on main machine required"
+
+#. Key:	9AB3FF634C4D73BAD8F3889DFBD17996
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_NextButton.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_NextButton.Text
+msgctxt ",9AB3FF634C4D73BAD8F3889DFBD17996"
+msgid "Next"
+msgstr "Next"
+
+#. Key:	9BF0B1064BFC100C1498E0AA62C79239
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.12.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.12.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",9BF0B1064BFC100C1498E0AA62C79239"
+msgid "Integrate selective sorting into your lifestyle & use non-recyclable waste recovery companies."
+msgstr "Integrate selective sorting into your lifestyle & use non-recyclable waste recovery companies."
+
+#. Key:	9C3A95724F55FC8762C79DB79FD10BC2
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TerritorySelection_Next.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TerritorySelection_Next.Text
+msgctxt ",9C3A95724F55FC8762C79DB79FD10BC2"
+msgid "Next"
+msgstr "Next"
+
+#. Key:	9D88DBA3405B96DEF66CBD97BCCA0D79
+#. SourceLocation:	/Game/Core/Environment/BP_Station.BP_Station_C:Counter_GEN_VARIABLE.Text
+#: /Game/Core/Environment/BP_Station.BP_Station_C:Counter_GEN_VARIABLE.Text
+msgctxt ",9D88DBA3405B96DEF66CBD97BCCA0D79"
+msgid "--:--"
+msgstr "--:--"
+
+#. Key:	9DCDBF854FBDD4B323904DBB40F34A53
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.20.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.20.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",9DCDBF854FBDD4B323904DBB40F34A53"
+msgid "No promotion of the circular economy."
+msgstr "No promotion of the circular economy."
+
+#. Key:	A15FF9E94BCE268DC3D84FB2BD0CE58D
+#. SourceLocation:	/Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_0.Text
+#: /Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_0.Text
+msgctxt ",A15FF9E94BCE268DC3D84FB2BD0CE58D"
+msgid "-"
+msgstr "-"
+
+#. Key:	A54013C349B25ED257B3328A65564E72
+#. SourceLocation:	/Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_8.Text
+#: /Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_8.Text
+msgctxt ",A54013C349B25ED257B3328A65564E72"
+msgid "Selected actions : "
+msgstr "Selected actions : "
+
+#. Key:	A5EDCE73419CF3B31FE374AF289AB0C4
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock_1.Text
+msgctxt ",A5EDCE73419CF3B31FE374AF289AB0C4"
+msgid "Mobility"
+msgstr "Mobility"
+
+#. Key:	A60E95A74B873A4D0001B3A78B284E9F
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
+msgctxt ",A60E95A74B873A4D0001B3A78B284E9F"
+msgid "Production Mean"
+msgstr "Production Mean"
+
+#. Key:	A74C6A18164CCA8F868C2C815A6E1177
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Deaths.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Deaths.Text
+msgctxt ",A74C6A18164CCA8F868C2C815A6E1177"
+msgid "0"
+msgstr "0"
+
+#. Key:	A9441E2215466D4A2720FC95882E8EBA
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock.Text
+msgctxt ",A9441E2215466D4A2720FC95882E8EBA"
+msgid "You will embark in a journey where your choices will make the difference"
+msgstr "You will embark in a journey where your choices will make the difference"
+
+#. Key:	A9A26E472147AE89962914AA0A03C4BF
+#. SourceLocation:	/Game/UI/UI_Elements/RadioButtons/W_RadioButton.W_RadioButton_C:WidgetTree.RadioButtonText.Text
+#: /Game/UI/UI_Elements/RadioButtons/W_RadioButton.W_RadioButton_C:WidgetTree.RadioButtonText.Text
+msgctxt ",A9A26E472147AE89962914AA0A03C4BF"
+msgid "Radio button Long"
+msgstr "Radio button Long"
+
+#. Key:	AD08E81DA04384827E8F088D0A3E33BF
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Refugies.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.Refugies.Text
+msgctxt ",AD08E81DA04384827E8F088D0A3E33BF"
+msgid "0%"
+msgstr "0%"
+
+#. Key:	AD56B4FC4FF9C6BD1603338E17588540
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Cultivation_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Cultivation_GEN_VARIABLE.Text
+msgctxt ",AD56B4FC4FF9C6BD1603338E17588540"
+msgid "Cultivation technics :"
+msgstr "Cultivation technics :"
+
+#. Key:	B3D7515647D2C456A8DBE092928E0D28
+#. SourceLocation:	/Game/UI/Widgets/ErrorOverlay/WBP_ErrorOverlay.WBP_ErrorOverlay_C:WidgetTree.OKButton.Text
+#: /Game/UI/Widgets/ErrorOverlay/WBP_ErrorOverlay.WBP_ErrorOverlay_C:WidgetTree.OKButton.Text
+msgctxt ",B3D7515647D2C456A8DBE092928E0D28"
+msgid "OK"
+msgstr "OK"
+
+#. Key:	B40ACBBD47FF113D8C21C78995F54107
+#. SourceLocation:	/Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.Seuil.Text
+#: /Game/UI/Widgets/IndustryScreen/W_IndustryScreen.W_IndustryScreen_C:WidgetTree.Seuil.Text
+msgctxt ",B40ACBBD47FF113D8C21C78995F54107"
+msgid "Threshold :"
+msgstr "Threshold :"
+
+#. Key:	B60FDADD4898864DB3CDB0A3C4D1352A
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_2.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_2.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",B60FDADD4898864DB3CDB0A3C4D1352A"
+msgid "Develop green waste disposal areas."
+msgstr "Develop green waste disposal areas."
+
+#. Key:	B87B99634549FA43F36AE9B091A69DA0
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_39.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_39.Text
+msgctxt ",B87B99634549FA43F36AE9B091A69DA0"
+msgid "Territory analysis is required"
+msgstr "Territory analysis is required"
+
+#. Key:	B8E9110743AC7CB5CF713E8062EC6F65
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_11.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_11.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",B8E9110743AC7CB5CF713E8062EC6F65"
+msgid "Develop communication around health risks due to air pollution."
+msgstr "Develop communication around health risks due to air pollution."
+
+#. Key:	B9D53B5E4BC0F4343260D1B484E78FDA
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Business_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Business_GEN_VARIABLE.Text
+msgctxt ",B9D53B5E4BC0F4343260D1B484E78FDA"
+msgid "Main business :"
+msgstr "Main business :"
+
+#. Key:	BAFEADA04452E1A26F791386FA3FED4F
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_5.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_5.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",BAFEADA04452E1A26F791386FA3FED4F"
+msgid "Increase buses frequency"
+msgstr "Increase buses frequency"
+
+#. Key:	BC80B9CF9045D433A57E8F9E78237CA6
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_9.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_9.Text
+msgctxt ",BC80B9CF9045D433A57E8F9E78237CA6"
+msgid "Deaths due to climate change per year "
+msgstr "Deaths due to climate change per year "
+
+#. Key:	BCE4C7424DF17E2F8B1EF2A45E992BA5
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_Potentiometer.BP_Potentiometer_C:Value_GEN_VARIABLE.Text
+#: /Game/Core/Interactables/Potentiometer/BP_Potentiometer.BP_Potentiometer_C:Value_GEN_VARIABLE.Text
+msgctxt ",BCE4C7424DF17E2F8B1EF2A45E992BA5"
+msgid "0"
+msgstr "0"
+
+#. Key:	BD82567C4DB06C15D3D794A27BBCE722
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_1.ShowPinForProperties(1).ShowPinForProperties.PropertyTooltip
+msgctxt ",BD82567C4DB06C15D3D794A27BBCE722"
+msgid "CO2e Emission Factor"
+msgstr "CO2e Emission Factor"
+
+#. Key:	BDAA4FE947EC832D57CCF6A3E14A3F82
+#. SourceLocation:	/Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock_1.Text
+msgctxt ",BDAA4FE947EC832D57CCF6A3E14A3F82"
+msgid "-"
+msgstr "-"
+
+#. Key:	BDB346354DA56F20A44B3E9E34D29EA6
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Title3_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:Title3_GEN_VARIABLE.Text
+msgctxt ",BDB346354DA56F20A44B3E9E34D29EA6"
+msgid "Point of sale :"
+msgstr "Point of sale :"
+
+#. Key:	C03205C1E543717443E356B0FE83BDBD
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_QuitButton.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.Main_QuitButton.Text
+msgctxt ",C03205C1E543717443E356B0FE83BDBD"
+msgid "Quit game"
+msgstr "Quit game"
+
+#. Key:	C3A353528745F5F6A5FD9E9DC1FF53FF
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/BP_MobilityMachine.BP_MobilityMachine_C:cost_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/MobilityRiddle/BP_MobilityMachine.BP_MobilityMachine_C:cost_GEN_VARIABLE.Text
+msgctxt ",C3A353528745F5F6A5FD9E9DC1FF53FF"
+msgid "0"
+msgstr "0"
+
+#. Key:	C433B4A243D7E83EEF251FAC00CC012E
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_4.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_4.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",C433B4A243D7E83EEF251FAC00CC012E"
+msgid "Install solar panels."
+msgstr "Install solar panels."
+
+#. Key:	C647524A254D14A2E3315C85C369E14F
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_4.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_4.Text
+msgctxt ",C647524A254D14A2E3315C85C369E14F"
+msgid "Language"
+msgstr "Language"
+
+#. Key:	CA4A5EF946129724210A548D3861F52C
+#. SourceLocation:	/Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/ResidentialScreen/W_ResidentialScreen.W_ResidentialScreen_C:WidgetTree.TextBlock.Text
+msgctxt ",CA4A5EF946129724210A548D3861F52C"
+msgid "-"
+msgstr "-"
+
+#. Key:	CAA1EEF242ACA5CDC70BA3BC24C7D5BD
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:FarmNameTitle_GEN_VARIABLE.Text
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.BP_Sheet_C:FarmNameTitle_GEN_VARIABLE.Text
+msgctxt ",CAA1EEF242ACA5CDC70BA3BC24C7D5BD"
+msgid "Farm profile :"
+msgstr "Farm profile :"
+
+#. Key:	CB195D1548B1E59DDD15F2A83A2AC985
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.13.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.13.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",CB195D1548B1E59DDD15F2A83A2AC985"
+msgid "Reintegrate communication between Citizen & Companies."
+msgstr "Reintegrate communication between Citizen & Companies."
+
+#. Key:	CBBB0E66CB4A709E24FD8E93985877BD
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_1.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_1.Text
+msgctxt ",CBBB0E66CB4A709E24FD8E93985877BD"
+msgid "Overflown territory :"
+msgstr "Overflown territory :"
+
+#. Key:	CCA86B742043F8F473B54087D36FCA66
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory.Text
+msgctxt ",CCA86B742043F8F473B54087D36FCA66"
+msgid "The Territory"
+msgstr "The Territory"
+
+#. Key:	D057E12440AB06F6A8E8208405E06DEB
+#. SourceLocation:	/Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
+#: /Game/Core/Interactables/Potentiometer/BP_ProductionMean_Dial.Retrieve Parameters:K2Node_BreakStruct_0.ShowPinForProperties(0).ShowPinForProperties.PropertyTooltip
+msgctxt ",D057E12440AB06F6A8E8208405E06DEB"
+msgid "Symbol"
+msgstr "Symbol"
+
+#. Key:	D4CC7023A6415FA3A9FA6E9879C263C6
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.GHG.Name
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.GHG.Name
+msgctxt ",D4CC7023A6415FA3A9FA6E9879C263C6"
+msgid "Green House Gases"
+msgstr "Green House Gases"
+
+#. Key:	D5090954714F176AE36B95BBCF6A348E
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/List_Entry.List_Entry_C:WidgetTree.RadioButtonText.Text
+#: /Game/UI/Widgets/MainMenu/List_Entry.List_Entry_C:WidgetTree.RadioButtonText.Text
+msgctxt ",D5090954714F176AE36B95BBCF6A348E"
+msgid "Radio button "
+msgstr "Radio button "
+
+#. Key:	D81418D44D92E93276A5E3A83138BD69
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.19.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.19.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",D81418D44D92E93276A5E3A83138BD69"
+msgid "Installation of an organic recycling infrastructure."
+msgstr "Installation of an organic recycling infrastructure."
+
+#. Key:	D8B5BB8FA74C9F72A60A4CBAB3A5E576
+#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.Description.Text
+#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:WidgetTree.Description.Text
+msgctxt ",D8B5BB8FA74C9F72A60A4CBAB3A5E576"
+msgid "No scan data available for this object"
+msgstr "No scan data available for this object"
+
+#. Key:	DA167C353646EB6D295AC5956AEE9EB1
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.WheatYieldValue.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.WheatYieldValue.Text
+msgctxt ",DA167C353646EB6D295AC5956AEE9EB1"
+msgid "0%"
+msgstr "0%"
+
+#. Key:	DFDAD9484DE49B7E6F56D9AE18901AE8
+#. SourceLocation:	/Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.MainMenu.Text
+#: /Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.MainMenu.Text
+msgctxt ",DFDAD9484DE49B7E6F56D9AE18901AE8"
+msgid "Main menu"
+msgstr "Main menu"
+
+#. Key:	E04D909644495297BBBFB59870314717
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_3.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.Overflownterritory_3.Text
+msgctxt ",E04D909644495297BBBFB59870314717"
+msgid "Pollutant emission reduction targets :"
+msgstr "Pollutant emission reduction targets :"
+
+#. Key:	E214019742CFD531DD62DCB448270797
+#. SourceLocation:	/Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Restart.Text
+#: /Game/UI/Widgets/HandMenu/W_HandMenuWidget.W_HandMenuWidget_C:WidgetTree.Restart.Text
+msgctxt ",E214019742CFD531DD62DCB448270797"
+msgid "New Session"
+msgstr "New Session"
+
+#. Key:	E2C439F6144678C85DFD0FA458DF4562
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_2.Text
+msgctxt ",E2C439F6144678C85DFD0FA458DF4562"
+msgid "Number of tropical nights"
+msgstr "Number of tropical nights"
+
+#. Key:	E44A74194526E6914BB849AD776BB7A6
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_9.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_9.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",E44A74194526E6914BB849AD776BB7A6"
+msgid "Use of non-emissive materials for construction & renovation."
+msgstr "Use of non-emissive materials for construction & renovation."
+
+#. Key:	E9A6972641F1CB573EA3DAB9F63A59AB
+#. SourceLocation:	/Game/UI/Widgets/MobilityScreen/W_MobilityScreen.W_MobilityScreen_C:WidgetTree.PlayerArrivedMessage.Text
+#: /Game/UI/Widgets/MobilityScreen/W_MobilityScreen.W_MobilityScreen_C:WidgetTree.PlayerArrivedMessage.Text
+msgctxt ",E9A6972641F1CB573EA3DAB9F63A59AB"
+msgid "You've made the right choices!"
+msgstr "You've made the right choices!"
+
+#. Key:	EA397CE74161253AAC939E93E38D64ED
+#. SourceLocation:	/Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:ExecuteUbergraph_W_ScannerScreen [Script Bytecode]
+#: /Game/UI/Widgets/Scanner/W_ScannerScreen.W_ScannerScreen_C:ExecuteUbergraph_W_ScannerScreen [Script Bytecode]
+msgctxt ",EA397CE74161253AAC939E93E38D64ED"
+msgid "No scan data available"
+msgstr "No scan data available"
+
+#. Key:	EAF81A0746501ED1955D93B5554F56E5
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.SaleLocation
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.SaleLocation
+msgctxt ",EAF81A0746501ED1955D93B5554F56E5"
+msgid "Some location"
+msgstr "Some location"
+
+#. Key:	EB05FDD74C20E973FA1C7C99BB85EBDE
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.OtherData
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.OtherData
+msgctxt ",EB05FDD74C20E973FA1C7C99BB85EBDE"
+msgid "Data"
+msgstr "Data"
+
+#. Key:	ED4C5CB5476ACED623B4769003039345
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.5.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.5.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",ED4C5CB5476ACED623B4769003039345"
+msgid "Cooperation with federations & producers to promote energy efficiency processes."
+msgstr "Cooperation with federations & producers to promote energy efficiency processes."
+
+#. Key:	F1683C2B4ABDDCBB544B70871CC40E03
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.MainProducts
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.MainProducts
+msgctxt ",F1683C2B4ABDDCBB544B70871CC40E03"
+msgid "A potato"
+msgstr "A potato"
+
+#. Key:	F21826AF4EFEE759843DCA84FC058A6E
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TerritorySearchBar.HintText
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TerritorySearchBar.HintText
+msgctxt ",F21826AF4EFEE759843DCA84FC058A6E"
+msgid "Territory ID to search"
+msgstr "Territory ID to search"
+
+#. Key:	F5C291F049BC716C1A34FFA4815CA511
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.CultivationTechnics
+#: /Game/Core/Riddles/AgricultureRiddle/BP_Sheet.Default__BP_Sheet_C.CultivationTechnics
+msgctxt ",F5C291F049BC716C1A34FFA4815CA511"
+msgid "Some Technic"
+msgstr "Some Technic"
+
+#. Key:	F7C141AD4C8710E0194771AA171B2880
+#. SourceLocation:	/Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.4.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+#: /Game/Core/Riddles/IndustryRiddle/DT_ModuleDataTable.DT_ModuleDataTable.4.Description_18_C00266DC4EB6166A5DD4188352ED1AF2
+msgctxt ",F7C141AD4C8710E0194771AA171B2880"
+msgid "Purchases of products that do not comply with eco-responsible rules."
+msgstr "Purchases of products that do not comply with eco-responsible rules."
+
+#. Key:	F82D88D94DC32FDB7B188BB5062B0EED
+#. SourceLocation:	/Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_4.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+#: /Game/Core/Riddles/MobilityRiddle/DT_MobilityPathes.DT_MobilityPathes.roundround_4.ActionDescription_25_AF04ADC9499FD19994646488600A1F59
+msgctxt ",F82D88D94DC32FDB7B188BB5062B0EED"
+msgid "Develop the bicycle lanes"
+msgstr "Develop the bicycle lanes"
+
+#. Key:	FB0FF20F4316D8540EABB6B397B125E7
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_10.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_10.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",FB0FF20F4316D8540EABB6B397B125E7"
+msgid "Treat green spaces against allergenic plants."
+msgstr "Treat green spaces against allergenic plants."
+
+#. Key:	FBD69AC8234CC64610B5599DBAA8EE94
+#. SourceLocation:	/Game/UI/UI_Elements/Buttons/W_Button_Primary.Default__W_Button_Primary_C.Text
+#: /Game/UI/UI_Elements/Buttons/W_Button_Primary.Default__W_Button_Primary_C.Text
+msgctxt ",FBD69AC8234CC64610B5599DBAA8EE94"
+msgid "Prime"
+msgstr "Prime"
+
+#. Key:	FC77E22B4FB21E573D668099CA93FE07
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock.Text
+#: /Game/UI/Widgets/MainMenu/W_MachineSelections.W_MachineSelections_C:WidgetTree.TextBlock.Text
+msgctxt ",FC77E22B4FB21E573D668099CA93FE07"
+msgid "Industry"
+msgstr "Industry"
+
+#. Key:	FD3CD44947F658F5EF63F0ABEDAD4371
+#. SourceLocation:	/Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_6.description_28_A02F812049587A08F7657D83EA76C2B7
+#: /Game/Core/Riddles/ResidentialRiddle/DT_ResidentialActionsTable.DT_ResidentialActionsTable.action_6.description_28_A02F812049587A08F7657D83EA76C2B7
+msgctxt ",FD3CD44947F658F5EF63F0ABEDAD4371"
+msgid "Have environmentally friendly insulation."
+msgstr "Have environmentally friendly insulation."
+
+#. Key:	0D4AB07B46437409BCE14AB5B83D23E1
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MainScreen.W_Bridge_MainScreen_C:WidgetTree.TextBlock_1.Text
+msgctxt "BridgeMainScreen,0D4AB07B46437409BCE14AB5B83D23E1"
+msgid "Please plug the cartridge in to start the analysis"
+msgstr "Please plug the cartridge in to start the analysis"
+
+#. Key:	1A7E4D847745E66F34BEA89DD210A18B
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_ClimateData.W_Bridge_ClimateData_C:WidgetTree.TextBlock_1.Text
+msgctxt "BridgeMainScreen,1A7E4D847745E66F34BEA89DD210A18B"
+msgid "Please plug the cartridge to start the analysis"
+msgstr "Please plug the cartridge to start the analysis"
+
+#. Key:	527B8DE50D47E0FC1B078E95CA3C0465
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock_1.Text
+msgctxt "BridgeMainScreen,527B8DE50D47E0FC1B078E95CA3C0465"
+msgid "Please start the analysis using the button"
+msgstr "Please start the analysis using the button"
+
+#. Key:	C8AE14D8874E3592F4F48EBA42E43A06
+#. SourceLocation:	/Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/BridgeMachineScreens/W_Bridge_MachineScreen.W_Bridge_MachineScreen_C:WidgetTree.TextBlock_2.Text
+msgctxt "BridgeMainScreen,C8AE14D8874E3592F4F48EBA42E43A06"
+msgid "Start the analysis by pressing the button on the table"
+msgstr "Start the analysis by pressing the button on the table"
+
+#. Key:	farm1_business
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm1_business"
+msgid "Carrot production"
+msgstr "Carrot production"
+
+#. Key:	farm1_cultivationTechnics
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm1_cultivationTechnics"
+msgid "Permaculture and agroforestry"
+msgstr "Permaculture and agroforestry"
+
+#. Key:	farm1_harvest
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm1_harvest"
+msgid "Harvested year-round"
+msgstr "Harvested year-round"
+
+#. Key:	farm1_name
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm1_name"
+msgid "Rohan Family "
+msgstr "Rohan Family "
+
+#. Key:	farm1_Other
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm1_Other"
+msgid "Community support for setting up \ncontracts with school canteens"
+msgstr "Community support for setting up \ncontracts with school canteens"
+
+#. Key:	farm1_SalePoint
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm1_SalePoint"
+msgid "Favours short distribution channels"
+msgstr "Favours short distribution channels"
+
+#. Key:	farm2_business
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm2_business"
+msgid "strawberry production "
+msgstr "strawberry production "
+
+#. Key:	farm2_cultivationTechnics
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm2_cultivationTechnics"
+msgid "Heated Greenhouse cultivation "
+msgstr "Heated Greenhouse cultivation "
+
+#. Key:	farm2_harvest
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm2_harvest"
+msgid "Harvested from March to November"
+msgstr "Harvested from March to November"
+
+#. Key:	farm2_name
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm2_name"
+msgid "Armieux Domain "
+msgstr "Armieux Domain "
+
+#. Key:	farm2_Other
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm2_Other"
+msgid "Practices stubble burning\r\nto extend the farm"
+msgstr "Practices stubble burning\r\nto extend the farm"
+
+#. Key:	farm2_SalePoint
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm2_SalePoint"
+msgid "All over europe"
+msgstr "All over europe"
+
+#. Key:	farm3_business
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm3_business"
+msgid "Tomatoes"
+msgstr "Tomatoes"
+
+#. Key:	farm3_cultivationTechnics
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm3_cultivationTechnics"
+msgid "Fields near habitations "
+msgstr "Fields near habitations "
+
+#. Key:	farm3_harvest
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm3_harvest"
+msgid "Harvested all year"
+msgstr "Harvested all year"
+
+#. Key:	farm3_name
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm3_name"
+msgid "LaTomato Compagny"
+msgstr "LaTomato Compagny"
+
+#. Key:	farm3_SalePoint
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm3_SalePoint"
+msgid "All over europe"
+msgstr "All over europe"
+
+#. Key:	farm4_business
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm4_business"
+msgid "Beefs "
+msgstr "Beefs "
+
+#. Key:	farm4_cultivationTechnics
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm4_cultivationTechnics"
+msgid "Good management of livestock \r\neffluents "
+msgstr "Good management of livestock \r\neffluents "
+
+#. Key:	farm4_name
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm4_name"
+msgid "Ogli Domain  "
+msgstr "Ogli Domain  "
+
+#. Key:	farm4_Other
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm4_Other"
+msgid "The majority of beef feed is\nproduced in the EU. "
+msgstr "The majority of beef feed is\nproduced in the EU. "
+
+#. Key:	farm4_SalePoint
+#. SourceLocation:	/Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+#: /Game/Core/Riddles/AgricultureRiddle/FarmProfiles.FarmProfiles
+msgctxt "FarmProfiles,farm4_SalePoint"
+msgid "Favours short distribution channels"
+msgstr "Favours short distribution channels"
+
+#. Key:	int
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/IDTerritorySearchMessages.IDTerritorySearchMessages
+#: /Game/UI/Widgets/MainMenu/IDTerritorySearchMessages.IDTerritorySearchMessages
+msgctxt "IDTerritorySearcg,int"
+msgid "The search must be a numeric value"
+msgstr "The search must be a numeric value"
+
+#. Key:	NotFound
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/IDTerritorySearchMessages.IDTerritorySearchMessages
+#: /Game/UI/Widgets/MainMenu/IDTerritorySearchMessages.IDTerritorySearchMessages
+msgctxt "IDTerritorySearcg,NotFound"
+msgid "This territory ID does not exists in the database"
+msgstr "This territory ID does not exists in the database"
+
+#. Key:	search
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/IDTerritorySearchMessages.IDTerritorySearchMessages
+#: /Game/UI/Widgets/MainMenu/IDTerritorySearchMessages.IDTerritorySearchMessages
+msgctxt "IDTerritorySearcg,search"
+msgid "Please type a territory ID to select it"
+msgstr "Please type a territory ID to select it"
+
+#. Key:	agri
+#. SourceLocation:	/Game/UI/MachineNames.MachineNames
+#: /Game/UI/MachineNames.MachineNames
+msgctxt "MachineNames,agri"
+msgid "Agriculture Machine"
+msgstr "Agriculture Machine"
+
+#. Key:	energy
+#. SourceLocation:	/Game/UI/MachineNames.MachineNames
+#: /Game/UI/MachineNames.MachineNames
+msgctxt "MachineNames,energy"
+msgid "Energy Production Machine"
+msgstr "Energy Production Machine"
+
+#. Key:	industry
+#. SourceLocation:	/Game/UI/MachineNames.MachineNames
+#: /Game/UI/MachineNames.MachineNames
+msgctxt "MachineNames,industry"
+msgid "Industry Machine"
+msgstr "Industry Machine"
+
+#. Key:	Mobility
+#. SourceLocation:	/Game/UI/MachineNames.MachineNames
+#: /Game/UI/MachineNames.MachineNames
+msgctxt "MachineNames,Mobility"
+msgid "Mobility Machine"
+msgstr "Mobility Machine"
+
+#. Key:	residential
+#. SourceLocation:	/Game/UI/MachineNames.MachineNames
+#: /Game/UI/MachineNames.MachineNames
+msgctxt "MachineNames,residential"
+msgid "Residential Machine"
+msgstr "Residential Machine"
+
+#. Key:	bad
+#. SourceLocation:	/Game/UI/Widgets/MobilityScreen/MobilityMessages.MobilityMessages
+#: /Game/UI/Widgets/MobilityScreen/MobilityMessages.MobilityMessages
+msgctxt "MobilityMessages,bad"
+msgid "You could have chosen better options"
+msgstr "You could have chosen better options"
+
+#. Key:	Success
+#. SourceLocation:	/Game/UI/Widgets/MobilityScreen/MobilityMessages.MobilityMessages
+#: /Game/UI/Widgets/MobilityScreen/MobilityMessages.MobilityMessages
+msgctxt "MobilityMessages,Success"
+msgid "You've made the right choices"
+msgstr "You've made the right choices"
+
+#. Key:	ErrorDomainSearch
+#. SourceLocation:	/Game/UI/ST_ErrorMessages.ST_ErrorMessages
+#: /Game/UI/ST_ErrorMessages.ST_ErrorMessages
+msgctxt "NewStringTable,ErrorDomainSearch"
+msgid "Unable to find the requested domain. Please check the ID of the domain you want to play in."
+msgstr "Unable to find the requested domain. Please check the ID of the domain you want to play in."
+
+#. Key:	ErrorDomainSearchText
+#. SourceLocation:	/Game/UI/ST_ErrorMessages.ST_ErrorMessages
+#: /Game/UI/ST_ErrorMessages.ST_ErrorMessages
+msgctxt "NewStringTable,ErrorDomainSearchText"
+msgid "Please be sure to search for an ID (integer)"
+msgstr "Please be sure to search for an ID (integer)"
+
+#. Key:	MachineSelectionError
+#. SourceLocation:	/Game/UI/ST_ErrorMessages.ST_ErrorMessages
+#: /Game/UI/ST_ErrorMessages.ST_ErrorMessages
+msgctxt "NewStringTable,MachineSelectionError"
+msgid "Please select at least one machine to riddle"
+msgstr "Please select at least one machine to riddle"
+
+#. Key:	Ammonia
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,Ammonia"
+msgid "Ammonia"
+msgstr "Ammonia"
+
+#. Key:	COV
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,COV"
+msgid "Volatile organic compounds "
+msgstr "Volatile organic compounds "
+
+#. Key:	GHG
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,GHG"
+msgid "Green House Gases"
+msgstr "Green House Gases"
+
+#. Key:	NO
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,NO"
+msgid "Oxides of nitrogen"
+msgstr "Oxides of nitrogen"
+
+#. Key:	PM10
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,PM10"
+msgid "Fine particles (10 µm)"
+msgstr "Fine particles (10 µm)"
+
+#. Key:	PM25
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,PM25"
+msgid "Fine particles (2.5 µm)"
+msgstr "Fine particles (2.5 µm)"
+
+#. Key:	SO2
+#. SourceLocation:	/Game/Core/Data/PollutantList.PollutantList
+#: /Game/Core/Data/PollutantList.PollutantList
+msgctxt "PollutantList,SO2"
+msgid "Sulfur dioxide"
+msgstr "Sulfur dioxide"
+
+#. Key:	tree
+#. SourceLocation:	/Game/Core/Data/ScanData/ST_ScannableComponentDescription.ST_ScannableComponentDescription
+#: /Game/Core/Data/ScanData/ST_ScannableComponentDescription.ST_ScannableComponentDescription
+msgctxt "ST_ScannableComponentDescription,tree"
+msgid "Under certain conditions, trees can cool ambient air by 2° to 8°C."
+msgstr "Under certain conditions, trees can cool ambient air by 2° to 8°C."
+
+#. Key:	005165254664A2EDD65EA780A31474D8
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_9.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_9.Text
+msgctxt "Tutorial,005165254664A2EDD65EA780A31474D8"
+msgid "The AirGuard Scanner is on the desk. Take it in your hand and go to the door to scan the tag on the wall."
+msgstr "The AirGuard Scanner is on the desk. Take it in your hand and go to the door to scan the tag on the wall."
+
+#. Key:	3565D53C4094DECE32E7F19F6B6D7DB1
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_1.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_1.Text
+msgctxt "Tutorial,3565D53C4094DECE32E7F19F6B6D7DB1"
+msgid "You're required by your expert to improve air quality on this territory!"
+msgstr "You're required by your expert to improve air quality on this territory!"
+
+#. Key:	3B1B2797497C1F95117199BD86E5F020
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_90.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_90.Text
+msgctxt "Tutorial,3B1B2797497C1F95117199BD86E5F020"
+msgid "An Alert!"
+msgstr "An Alert!"
+
+#. Key:	7099675A46D511DD29E537BC5E7C342A
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_11.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_11.Text
+msgctxt "Tutorial,7099675A46D511DD29E537BC5E7C342A"
+msgid "Let's head to the dome!"
+msgstr "Let's head to the dome!"
+
+#. Key:	90F22D98478ABBE1127DEFAE7BC204AC
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_12.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_12.Text
+msgctxt "Tutorial,90F22D98478ABBE1127DEFAE7BC204AC"
+msgid "Stuff ready? \nYou can head to the door and open it using the scanner."
+msgstr "Stuff ready? \nYou can head to the door and open it using the scanner."
+
+#. Key:	9866190F40D9046BCA576AB0D59D123C
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_2.Text
+msgctxt "Tutorial,9866190F40D9046BCA576AB0D59D123C"
+msgid "Push the glowing button using your whole hand to stop the alert."
+msgstr "Push the glowing button using your whole hand to stop the alert."
+
+#. Key:	A18D9D034FBB391D462A54B5C70459ED
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_15.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_15.Text
+msgctxt "Tutorial,A18D9D034FBB391D462A54B5C70459ED"
+msgid "Go to the desk to retrieve the AirGuard Scanner before accessing to the rest of the station!"
+msgstr "Go to the desk to retrieve the AirGuard Scanner before accessing to the rest of the station!"
+
+#. Key:	B4EA11C54B246CC5808E2094CF57340B
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_13.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_13.Text
+msgctxt "Tutorial,B4EA11C54B246CC5808E2094CF57340B"
+msgid "Teleport to the door with the keybard and put it in the reader."
+msgstr "Teleport to the door with the keybard and put it in the reader."
+
+#. Key:	CC0C7BA646B6A373C551B7BDD8480295
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_14.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_14.Text
+msgctxt "Tutorial,CC0C7BA646B6A373C551B7BDD8480295"
+msgid "You need the key!"
+msgstr "You need the key!"
+
+#. Key:	DADB24C0499A22AF0412E8871EA2BDD2
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_10.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_10.Text
+msgctxt "Tutorial,DADB24C0499A22AF0412E8871EA2BDD2"
+msgid "You can grab objects using the grip button of the controller."
+msgstr "You can grab objects using the grip button of the controller."
+
+#. Key:	DC4270EB4ACDCE9AA075C096F40A00D4
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_8.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_8.Text
+msgctxt "Tutorial,DC4270EB4ACDCE9AA075C096F40A00D4"
+msgid "Grab the scanner!"
+msgstr "Grab the scanner!"
+
+#. Key:	FE5964B44548C8BA4AC56CB4E5FF3B72
+#. SourceLocation:	/Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_16.Text
+#: /Game/UI/Widgets/Tutorial/W_Tutorial.W_Tutorial_C:WidgetTree.TextBlock_16.Text
+msgctxt "Tutorial,FE5964B44548C8BA4AC56CB4E5FF3B72"
+msgid "You can teleport by maintening the right joystick forward with your thumb and aiming the location you want to teleport to."
+msgstr "You can teleport by maintening the right joystick forward with your thumb and aiming the location you want to teleport to."
+
+#. Key:	D1F39929DD46ACB0F732AFB96DB74D41
+#. SourceLocation:	/Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_2.Text
+#: /Game/UI/Widgets/MainMenu/W_MainMenu.W_MainMenu_C:WidgetTree.TextBlock_2.Text
+msgctxt "UI,D1F39929DD46ACB0F732AFB96DB74D41"
+msgid "Type the identifier of the territory you want to work on :"
+msgstr "Type the identifier of the territory you want to work on :"
+
+#. Key:	TextBlockDefaultValue
+#. SourceLocation:	/Game/UI/Widgets/MobilityScreen/W_MobilityScreen.W_MobilityScreen_C:WidgetTree.TextBlock_45.Text
+#: /Game/UI/Widgets/MobilityScreen/W_MobilityScreen.W_MobilityScreen_C:WidgetTree.TextBlock_45.Text
+msgctxt "UMG,TextBlockDefaultValue"
+msgid "Text Block"
+msgstr "Text Block"
+
