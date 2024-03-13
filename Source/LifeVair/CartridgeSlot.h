@@ -7,7 +7,7 @@
 #include "CartridgeSlot.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FMyCustomDelegate);
-/*This class is used to create a custom collision box used to the cartridge*/
+/*This class is used to create a custom collision box used to detect and snap the cartridge to*/
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class LIFEVAIR_API UCartridgeSlot : public UBoxComponent
 {
