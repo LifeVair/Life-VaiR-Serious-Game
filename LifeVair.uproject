@@ -32,24 +32,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "VaRest",
-			"Enabled": false,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e47be161e7a24e928560290abd5dcc4f"
-		},
-		{
-			"Name": "RuntimeFilesDownloader",
-			"Enabled": false,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e7e6df6d6e9c46f0ae35163eab67ff9a"
-		},
-		{
-			"Name": "SQLiteSupport",
-			"Enabled": false
-		},
-		{
-			"Name": "SQLiteCore",
-			"Enabled": false
-		},
-		{
 			"Name": "OculusXR",
 			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
