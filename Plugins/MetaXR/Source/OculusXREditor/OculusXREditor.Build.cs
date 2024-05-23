@@ -6,6 +6,8 @@ public class OculusXREditor : ModuleRules
 {
 	public OculusXREditor(ReadOnlyTargetRules Target) : base(Target)
 	{
+		bUseUnity = true;
+
 		PrivateDependencyModuleNames.AddRange(
 			new string[] {
 				"Projects",

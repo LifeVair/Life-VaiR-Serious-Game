@@ -22,6 +22,8 @@ enum EOculusAsset
 	RightTouchQuest2,
 	LeftTouchQuestPro,
 	RightTouchQuestPro,
+	LeftTouchQuest3,
+	RightTouchQuest3,
 	OculusAssetTotal
 };
 
@@ -32,6 +34,8 @@ FSoftObjectPath FOculusAssetDirectory::AssetListing[OculusAssetTotal] = {
 	FString(TEXT("/OculusXR/Meshes/RightTouchForQuest2.RightTouchForQuest2")),
 	FString(TEXT("/OculusXR/Meshes/LeftMetaQuestTouchPro.LeftMetaQuestTouchPro")),
 	FString(TEXT("/OculusXR/Meshes/RightMetaQuestTouchPro.RightMetaQuestTouchPro")),
+	FString(TEXT("/OculusXR/Meshes/LeftMetaQuestTouchPlus.LeftMetaQuestTouchPlus")),
+	FString(TEXT("/OculusXR/Meshes/RightMetaQuestTouchPlus.RightMetaQuestTouchPlus")),
 };
 
 #if WITH_EDITORONLY_DATA
@@ -105,6 +109,10 @@ namespace OculusAssetManager_Impl
 		//Quest Pro
 		{ ovrpNode_HandLeft, ovrpSystemHeadset_Meta_Quest_Pro, ovrpSystemHeadset_Meta_Quest_Pro, FOculusAssetDirectory::AssetListing[LeftTouchQuestPro] },
 		{ ovrpNode_HandRight, ovrpSystemHeadset_Meta_Quest_Pro, ovrpSystemHeadset_Meta_Quest_Pro, FOculusAssetDirectory::AssetListing[RightTouchQuestPro] },
+
+		//Quest 3
+		{ ovrpNode_HandLeft, ovrpSystemHeadset_Meta_Quest_3, ovrpSystemHeadset_Meta_Quest_3, FOculusAssetDirectory::AssetListing[LeftTouchQuest3] },
+		{ ovrpNode_HandRight, ovrpSystemHeadset_Meta_Quest_3, ovrpSystemHeadset_Meta_Quest_3, FOculusAssetDirectory::AssetListing[RightTouchQuest3] },
 #else
 		//PC - Rift S
 		{ ovrpNode_HandLeft, ovrpSystemHeadset_Rift_S, ovrpSystemHeadset_Rift_S, FOculusAssetDirectory::AssetListing[LeftTouchRiftS] },
@@ -117,6 +125,10 @@ namespace OculusAssetManager_Impl
 		//PC - Quest Pro
 		{ ovrpNode_HandLeft, ovrpSystemHeadset_Meta_Link_Quest_Pro, ovrpSystemHeadset_Meta_Link_Quest_Pro, FOculusAssetDirectory::AssetListing[LeftTouchQuestPro] },
 		{ ovrpNode_HandRight, ovrpSystemHeadset_Meta_Link_Quest_Pro, ovrpSystemHeadset_Meta_Link_Quest_Pro, FOculusAssetDirectory::AssetListing[RightTouchQuestPro] },
+
+		//Quest 3
+		{ ovrpNode_HandLeft, ovrpSystemHeadset_Meta_Link_Quest_3, ovrpSystemHeadset_Meta_Link_Quest_3, FOculusAssetDirectory::AssetListing[LeftTouchQuest3] },
+		{ ovrpNode_HandRight, ovrpSystemHeadset_Meta_Link_Quest_3, ovrpSystemHeadset_Meta_Link_Quest_3, FOculusAssetDirectory::AssetListing[RightTouchQuest3] },
 #endif
 	};
 

@@ -6,6 +6,8 @@ namespace UnrealBuildTool.Rules
 	{
 		public OculusXRAnchors(ReadOnlyTargetRules Target) : base(Target)
 		{
+			bUseUnity = true;
+
 			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{

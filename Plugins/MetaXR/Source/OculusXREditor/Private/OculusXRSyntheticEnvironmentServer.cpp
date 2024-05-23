@@ -12,14 +12,14 @@ const FString LocalSharingServer = "Local Sharing Server";
 FProcHandle FMetaXRSES::EnvProcHandle;
 FProcHandle FMetaXRSES::LSSProcHandle;
 
-void FMetaXRSES::LaunchOffice()
+void FMetaXRSES::LaunchGameRoom()
 {
 	if (GetMetaXRSimPackagePath().IsEmpty())
 	{
 		return;
 	}
 	StopServer();
-	LaunchEnvironment("Office");
+	LaunchEnvironment("GameRoom");
 	LaunchLocalSharingServer();
 }
 
@@ -103,20 +103,22 @@ void FMetaXRSES::StopProcess(FProcHandle& ProcHandle, FString LogContext)
 
 FString FMetaXRSES::GetMetaXRSimPackagePath()
 {
-	FString PackagePath = GetMutableDefault<UOculusXRHMDRuntimeSettings>()->MetaXRPackagePath.Path;
-	if (PackagePath.IsEmpty())
+	FString JsonPath = GetMutableDefault<UOculusXRHMDRuntimeSettings>()->MetaXRJsonPath.FilePath;
+	if (JsonPath.IsEmpty() || !IFileManager::Get().FileExists(*JsonPath))
 	{
-		FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("Meta XR Simulator Package Path Not Found.\nPlease set its path in Project Settings/Meta XR Plugin/PC."));
+		FString Message("Meta XR Simulator Not Found.\nPlease set its path in Project Settings/Meta XR Plugin/PC.");
+		FMessageDialog::Open(EAppMsgType::Ok, FText::FromString(Message));
+		UE_LOG(LogMetaXRSES, Error, TEXT("%s"), *Message);
 	}
-	return PackagePath;
+	return FPaths::GetPath(JsonPath);
 }
 
 FString FMetaXRSES::GetSynthEnvServerPath()
 {
-	return GetMetaXRSimPackagePath() + "/MetaXRSimulator/.synth_env_server/synth_env_server.exe";
+	return GetMetaXRSimPackagePath() + "/.synth_env_server/synth_env_server.exe";
 }
 
 FString FMetaXRSES::GetLocalSharingServerPath()
 {
-	return GetMetaXRSimPackagePath() + "/MetaXRSimulator/.local_sharing_server/local_sharing_server.exe";
+	return GetMetaXRSimPackagePath() + "/.local_sharing_server/local_sharing_server.exe";
 }

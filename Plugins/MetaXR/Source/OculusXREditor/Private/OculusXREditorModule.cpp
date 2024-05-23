@@ -25,10 +25,14 @@ LICENSE file in the root directory of this source tree.
 #include "IAssetTools.h"
 #include "Framework/MultiBox/MultiBoxBuilder.h"
 #include "ISettingsModule.h"
-#include "OculusXREditorSettings.h"
 #include "OculusXRPassthroughColorLutAsset.h"
 #include "OculusXRSimulator.h"
 #include "OculusXRSyntheticEnvironmentServer.h"
+#include "OculusXRPrivacyNotification.h"
+#include "OculusXRSettingsToggle.h"
+#include "OculusXRTelemetryPrivacySettings.h"
+#include "OculusXRTelemetry.h"
+#include "OculusXRTelemetryEditorEvents.h"
 
 #define LOCTEXT_NAMESPACE "OculusXREditor"
 
@@ -81,8 +85,8 @@ void FOculusXREditorModule::StartupModule()
 				return FMetaXRSimulator::IsSimulatorActivated();
 			}));
 		PluginCommands->MapAction(
-			FOculusToolCommands::Get().LaunchOffice,
-			FExecuteAction::CreateRaw(this, &FOculusXREditorModule::LaunchSESOffice),
+			FOculusToolCommands::Get().LaunchGameRoom,
+			FExecuteAction::CreateRaw(this, &FOculusXREditorModule::LaunchSESGameRoom),
 			FCanExecuteAction());
 		PluginCommands->MapAction(
 			FOculusToolCommands::Get().LaunchLivingRoom,
@@ -116,6 +120,10 @@ void FOculusXREditorModule::StartupModule()
 		// Register asset types
 		IAssetTools& AssetTools = FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools").Get();
 		AssetTools.RegisterAssetTypeActions(MakeShareable(new FAssetTypeActions_OculusXRPassthroughColorLut));
+
+		// If needed, open a notification here.
+		OculusXRTelemetry::SpawnNotification();
+		OculusXRTelemetry::TScopedMarker<OculusXRTelemetry::Events::FEditorStart>();
 	}
 }
 
@@ -178,6 +186,12 @@ void FOculusXREditorModule::RegisterSettings()
 
 		FPropertyEditorModule& PropertyModule = FModuleManager::GetModuleChecked<FPropertyEditorModule>("PropertyEditor");
 		PropertyModule.RegisterCustomClassLayout(UOculusXRHMDRuntimeSettings::StaticClass()->GetFName(), FOnGetDetailCustomizationInstance::CreateStatic(&FOculusXRHMDSettingsDetailsCustomization::MakeInstance));
+
+		SettingsModule->RegisterSettings("Editor", "Privacy", "OculusXR",
+			LOCTEXT("PrivacyTelemetrySettingsName", "MetaXR Usage Data"),
+			LOCTEXT("PrivacyTelemetrySettingsDescription", "Configure the way MetaXR usage information is handled."),
+			GetMutableDefault<UOculusXRTelemetryPrivacySettings>());
+		PropertyModule.RegisterCustomClassLayout(UOculusXRTelemetryPrivacySettings::StaticClass()->GetFName(), FOnGetDetailCustomizationInstance::CreateStatic(&FOculusXRSettingsToggle::MakeInstance));
 	}
 }
 
@@ -186,6 +200,7 @@ void FOculusXREditorModule::UnregisterSettings()
 	if (ISettingsModule* SettingsModule = FModuleManager::GetModulePtr<ISettingsModule>("Settings"))
 	{
 		SettingsModule->UnregisterSettings("Project", "Plugins", "OculusXR");
+		SettingsModule->UnregisterSettings("Editor", "Privacy", "OculusXR");
 	}
 }
 
@@ -210,9 +225,9 @@ void FOculusXREditorModule::ToggleOpenXRRuntime()
 	FMetaXRSimulator::ToggleOpenXRRuntime();
 }
 
-void FOculusXREditorModule::LaunchSESOffice()
+void FOculusXREditorModule::LaunchSESGameRoom()
 {
-	FMetaXRSES::LaunchOffice();
+	FMetaXRSES::LaunchGameRoom();
 }
 
 void FOculusXREditorModule::LaunchSESLivingRoom()
@@ -248,6 +263,16 @@ void FOculusXREditorModule::AddToolbarExtension(FToolBarBuilder& Builder)
 		FOnGetContent::CreateRaw(this, &FOculusXREditorModule::CreateToolbarEntryMenu, PluginCommands),
 		LOCTEXT("OculusToolsToolBarCombo", "Meta XR Tools"),
 		LOCTEXT("OculusToolsToolBarComboTooltip", "Meta XR tools"),
+		TAttribute<FSlateIcon>::CreateLambda([]() {
+			return FSlateIcon(FOculusToolStyle::GetStyleSetName(), "OculusTool.MenuButton");
+		}),
+		false);
+
+	Builder.AddComboButton(
+		FUIAction(),
+		FOnGetContent::CreateRaw(this, &FOculusXREditorModule::CreateXrSimToolbarEntryMenu, PluginCommands),
+		LOCTEXT("MetaXRSimulatorCombo", "Meta XR Simulator"),
+		LOCTEXT("MetaXRSimulatorComboTooltip", "Meta XR Simulator"),
 		TAttribute<FSlateIcon>::CreateLambda([]() {
 			return FSlateIcon(FOculusToolStyle::GetStyleSetName(), "OculusTool.MenuButton");
 		}),
@@ -291,7 +316,7 @@ TSharedRef<SWidget> FOculusXREditorModule::CreateXrSimToolbarEntryMenu(TSharedPt
 void FOculusXREditorModule::CreateSESSubMenus(FMenuBuilder& MenuBuilder)
 {
 	MenuBuilder.BeginSection("Synthetic Environment Server", LOCTEXT("Synthetic Environment Server", "Synthetic Environment Server"));
-	MenuBuilder.AddMenuEntry(FOculusToolCommands::Get().LaunchOffice);
+	MenuBuilder.AddMenuEntry(FOculusToolCommands::Get().LaunchGameRoom);
 	MenuBuilder.AddMenuEntry(FOculusToolCommands::Get().LaunchLivingRoom);
 	MenuBuilder.AddMenuEntry(FOculusToolCommands::Get().LaunchBedroom);
 	MenuBuilder.AddMenuEntry(FOculusToolCommands::Get().StopServer);

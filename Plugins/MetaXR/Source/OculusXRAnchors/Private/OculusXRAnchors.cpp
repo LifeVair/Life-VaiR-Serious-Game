@@ -16,6 +16,7 @@ LICENSE file in the root directory of this source tree.
 #include "OculusXRAnchorManager.h"
 #include "OculusXRSpatialAnchorComponent.h"
 #include "OculusXRAnchorBPFunctionLibrary.h"
+#include "OculusXRTelemetryAnchorsEvents.h"
 
 namespace OculusXRAnchors
 {
@@ -100,6 +101,7 @@ namespace OculusXRAnchors
 		OutResult = FOculusXRAnchorManager::CreateAnchor(InTransform, RequestId, MainCameraTransform);
 		bool bAsyncStartSuccess = UOculusXRAnchorBPFunctionLibrary::IsAnchorResultSuccess(OutResult);
 
+		OculusXRTelemetry::Events::FAnchorsCreateRequest Trace(static_cast<int>(GetTypeHash(RequestId)));
 		if (bAsyncStartSuccess)
 		{
 			CreateAnchorBinding AnchorData;
@@ -114,6 +116,7 @@ namespace OculusXRAnchors
 		{
 			UE_LOG(LogOculusXRAnchors, Warning, TEXT("Failed to start async create spatial anchor."));
 			ResultCallback.ExecuteIfBound(EOculusXRAnchorResult::Failure, nullptr);
+			Trace.SetResult(OculusXRTelemetry::EAction::Cancel).End();
 		}
 
 		return bAsyncStartSuccess;
@@ -151,6 +154,7 @@ namespace OculusXRAnchors
 		EOculusXRAnchorResult::Type Result = FOculusXRAnchorManager::EraseAnchor(Anchor->GetHandle(), EOculusXRSpaceStorageLocation::Local, RequestId);
 		bool bAsyncStartSuccess = UOculusXRAnchorBPFunctionLibrary::IsAnchorResultSuccess(Result);
 
+		OculusXRTelemetry::Events::FAnchorsEraseRequest Trace(static_cast<int>(GetTypeHash(RequestId)));
 		if (bAsyncStartSuccess)
 		{
 			EraseAnchorBinding EraseData;
@@ -165,6 +169,7 @@ namespace OculusXRAnchors
 		{
 			UE_LOG(LogOculusXRAnchors, Warning, TEXT("Failed to start async erase spatial anchor."));
 			ResultCallback.ExecuteIfBound(EOculusXRAnchorResult::Failure, FOculusXRUUID());
+			Trace.SetResult(OculusXRTelemetry::EAction::Cancel).End();
 		}
 
 		return bAsyncStartSuccess;
@@ -199,6 +204,7 @@ namespace OculusXRAnchors
 		OutResult = FOculusXRAnchorManager::SetSpaceComponentStatus(Anchor->GetHandle(), SpaceComponentType, Enable, Timeout, RequestId);
 		bool bAsyncStartSuccess = UOculusXRAnchorBPFunctionLibrary::IsAnchorResultSuccess(OutResult);
 
+		OculusXRTelemetry::Events::FAnchorsSetComponentStatusRequest Trace(static_cast<int>(GetTypeHash(RequestId)));
 		if (bAsyncStartSuccess)
 		{
 			SetComponentStatusBinding SetComponentStatusData;
@@ -213,6 +219,7 @@ namespace OculusXRAnchors
 		{
 			UE_LOG(LogOculusXRAnchors, Warning, TEXT("Failed to start async call to set anchor component status."));
 			ResultCallback.ExecuteIfBound(EOculusXRAnchorResult::Failure, nullptr, EOculusXRSpaceComponentType::Undefined, false);
+			Trace.SetResult(OculusXRTelemetry::EAction::Cancel).End();
 		}
 
 		return true;
@@ -287,6 +294,7 @@ namespace OculusXRAnchors
 		OutResult = FOculusXRAnchorManager::SaveAnchor(Anchor->GetHandle(), StorageLocation, EOculusXRSpaceStoragePersistenceMode::Indefinite, RequestId);
 		bool bAsyncStartSuccess = UOculusXRAnchorBPFunctionLibrary::IsAnchorResultSuccess(OutResult);
 
+		OculusXRTelemetry::Events::FAnchorsSaveRequest Trace(static_cast<int>(GetTypeHash(RequestId)));
 		if (bAsyncStartSuccess)
 		{
 			SaveAnchorBinding SaveAnchorData;
@@ -302,6 +310,7 @@ namespace OculusXRAnchors
 		{
 			UE_LOG(LogOculusXRAnchors, Warning, TEXT("Failed to start async call to save anchor."));
 			ResultCallback.ExecuteIfBound(EOculusXRAnchorResult::Failure, nullptr);
+			Trace.SetResult(OculusXRTelemetry::EAction::Cancel).End();
 		}
 
 		return bAsyncStartSuccess;
@@ -379,6 +388,7 @@ namespace OculusXRAnchors
 		OutResult = FOculusXRAnchorManager::QuerySpaces(QueryInfo, RequestId);
 		bool bAsyncStartSuccess = UOculusXRAnchorBPFunctionLibrary::IsAnchorResultSuccess(OutResult);
 
+		OculusXRTelemetry::Events::FAnchorsQueryRequest Trace(static_cast<int>(GetTypeHash(RequestId)));
 		if (bAsyncStartSuccess)
 		{
 			AnchorQueryBinding QueryResults;
@@ -393,6 +403,7 @@ namespace OculusXRAnchors
 		{
 			UE_LOG(LogOculusXRAnchors, Warning, TEXT("Failed to start async call to query anchors."));
 			ResultCallback.ExecuteIfBound(EOculusXRAnchorResult::Failure, TArray<FOculusXRSpaceQueryResult>());
+			Trace.SetResult(OculusXRTelemetry::EAction::Cancel).End();
 		}
 
 		return bAsyncStartSuccess;
@@ -462,6 +473,8 @@ namespace OculusXRAnchors
 
 	void FOculusXRAnchors::HandleSpatialAnchorCreateComplete(FOculusXRUInt64 RequestId, int Result, FOculusXRUInt64 Space, FOculusXRUUID UUID)
 	{
+		OculusXRTelemetry::Events::FAnchorsCreateResponse(static_cast<int>(GetTypeHash(RequestId)))
+			.SetResult(OVRP_SUCCESS(Result) ? OculusXRTelemetry::EAction::Success : OculusXRTelemetry::EAction::Fail);
 		CreateAnchorBinding* AnchorDataPtr = CreateSpatialAnchorBindings.Find(RequestId.GetValue());
 		if (AnchorDataPtr == nullptr)
 		{
@@ -512,6 +525,8 @@ namespace OculusXRAnchors
 
 	void FOculusXRAnchors::HandleAnchorEraseComplete(FOculusXRUInt64 RequestId, int Result, FOculusXRUUID UUID, EOculusXRSpaceStorageLocation Location)
 	{
+		OculusXRTelemetry::Events::FAnchorsEraseResponse(static_cast<int>(GetTypeHash(RequestId)))
+			.SetResult(OVRP_SUCCESS(Result) ? OculusXRTelemetry::EAction::Success : OculusXRTelemetry::EAction::Fail);
 		EraseAnchorBinding* EraseDataPtr = EraseAnchorBindings.Find(RequestId.GetValue());
 		if (EraseDataPtr == nullptr)
 		{
@@ -539,6 +554,8 @@ namespace OculusXRAnchors
 
 	void FOculusXRAnchors::HandleSetComponentStatusComplete(FOculusXRUInt64 RequestId, int Result, FOculusXRUInt64 Space, FOculusXRUUID UUID, EOculusXRSpaceComponentType ComponentType, bool Enabled)
 	{
+		OculusXRTelemetry::Events::FAnchorsSetComponentStatusResponse(static_cast<int>(GetTypeHash(RequestId)))
+			.SetResult(OVRP_SUCCESS(Result) ? OculusXRTelemetry::EAction::Success : OculusXRTelemetry::EAction::Fail);
 		SetComponentStatusBinding* SetStatusBinding = SetComponentStatusBindings.Find(RequestId.GetValue());
 		SetAnchorComponentStatusBinding* SetAnchorStatusBinding = SetAnchorComponentStatusBindings.Find(RequestId.GetValue());
 
@@ -563,6 +580,8 @@ namespace OculusXRAnchors
 
 	void FOculusXRAnchors::HandleAnchorSaveComplete(FOculusXRUInt64 RequestId, FOculusXRUInt64 Space, bool Success, int Result, FOculusXRUUID UUID)
 	{
+		OculusXRTelemetry::Events::FAnchorsSaveResponse(static_cast<int>(GetTypeHash(RequestId)))
+			.SetResult(OVRP_SUCCESS(Result) ? OculusXRTelemetry::EAction::Success : OculusXRTelemetry::EAction::Fail);
 		SaveAnchorBinding* SaveAnchorData = AnchorSaveBindings.Find(RequestId.GetValue());
 		if (SaveAnchorData == nullptr)
 		{
@@ -646,6 +665,8 @@ namespace OculusXRAnchors
 
 	void FOculusXRAnchors::HandleAnchorQueryComplete(FOculusXRUInt64 RequestId, int Result)
 	{
+		OculusXRTelemetry::Events::FAnchorsQueryResponse(static_cast<int>(GetTypeHash(RequestId)))
+			.SetResult(OVRP_SUCCESS(Result) ? OculusXRTelemetry::EAction::Success : OculusXRTelemetry::EAction::Fail);
 		AnchorQueryBinding* ResultPtr = AnchorQueryBindings.Find(RequestId.GetValue());
 		if (ResultPtr)
 		{

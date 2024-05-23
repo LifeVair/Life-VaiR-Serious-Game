@@ -12,6 +12,7 @@ LICENSE file in the root directory of this source tree.
 #include "OculusXRMovementLog.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMesh.h"
+#include "OculusXRTelemetryMovementEvents.h"
 
 int UOculusXRFaceTrackingComponent::TrackingInstanceCount = 0;
 
@@ -88,6 +89,7 @@ UOculusXRFaceTrackingComponent::UOculusXRFaceTrackingComponent()
 	ExpressionNames.Add(EOculusXRFaceExpression::UpperLidRaiserR, "upperLidRaiser_R");
 	ExpressionNames.Add(EOculusXRFaceExpression::UpperLipRaiserL, "upperLipRaiser_L");
 	ExpressionNames.Add(EOculusXRFaceExpression::UpperLipRaiserR, "upperLipRaiser_R");
+	OculusXRTelemetry::TScopedMarker<OculusXRTelemetry::Events::FMovementSDKFaceStart>(static_cast<int>(GetTypeHash(this)));
 }
 
 void UOculusXRFaceTrackingComponent::BeginPlay()

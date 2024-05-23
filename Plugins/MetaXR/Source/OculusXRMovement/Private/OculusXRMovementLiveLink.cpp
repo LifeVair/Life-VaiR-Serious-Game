@@ -5,6 +5,7 @@
 #include "OculusXRMovementLog.h"
 #include "OculusXRMovement.h"
 #include "OculusXRMovementTypes.h"
+#include "OculusXRTelemetryMovementEvents.h"
 
 #include "Roles/LiveLinkAnimationTypes.h"
 #include "ILiveLinkClient.h"
@@ -197,6 +198,7 @@ namespace MetaXRMovement
 	LiveLinkSource::LiveLinkSource()
 		: bAnySupported(FEyeSubject::IsSupported() || FFaceSubject::IsSupported() || FBodySubject::IsSupported())
 	{
+		OculusXRTelemetry::TScopedMarker<OculusXRTelemetry::Events::FMovementSDKLiveLinkCreated>();
 	}
 
 	void LiveLinkSource::ReceiveClient(ILiveLinkClient* InClient, FGuid InSourceGuid)
@@ -255,8 +257,9 @@ namespace MetaXRMovement
 	}
 
 	template <typename SubjectT>
-	void LiveLinkSource::InitializeMovementSubject(TOptional<FLiveLinkSubjectKey>& Key, SubjectT& Subject)
+	LiveLinkSource::ESubjectInitializationResult LiveLinkSource::InitializeMovementSubject(TOptional<FLiveLinkSubjectKey>& Key, SubjectT& Subject)
 	{
+		ESubjectInitializationResult FinalState;
 		if (Key)
 		{
 			if (Key->Source.IsValid())
@@ -268,9 +271,11 @@ namespace MetaXRMovement
 		if (Subject.IsSupported())
 		{
 			Key = FLiveLinkSubjectKey(SourceGuid, Subject.Name);
+			FinalState = ESubjectInitializationResult::Started;
 			if (!Subject.Start())
 			{
 				UE_LOG(LogOculusXRMovement, Error, TEXT("Tracker for LiveLink subject %s cannot start."), *Subject.Name.ToString());
+				FinalState = ESubjectInitializationResult::StartFailed;
 			}
 			using Role = typename std::remove_reference_t<decltype(Subject)>::Role;
 			Client->PushSubjectStaticData_AnyThread(*Key, Role::StaticClass(), Subject.StaticData());
@@ -278,15 +283,25 @@ namespace MetaXRMovement
 		else
 		{
 			UE_LOG(LogOculusXRMovement, Log, TEXT("LiveLink subject %s is not supported."), *Subject.Name.ToString());
+			FinalState = ESubjectInitializationResult::NotSupported;
 		}
+		return FinalState;
 	}
+
 	void LiveLinkSource::InitializeMovementSubjects()
 	{
 		check(IsInGameThread());
-		InitializeMovementSubject(KeyEye, Eye);
-		InitializeMovementSubject(KeyFace, Face);
-		InitializeMovementSubject(KeyBody, Body);
+		const OculusXRTelemetry::TScopedMarker<OculusXRTelemetry::Events::FMovementSDKLiveLinkInit> LiveLinkInit;
+
+		const auto EyeInit = InitializeMovementSubject(KeyEye, Eye);
+		const auto FaceInit = InitializeMovementSubject(KeyFace, Face);
+		const auto BodyInit = InitializeMovementSubject(KeyBody, Body);
+
+		LiveLinkInit.AddAnnotation(StringCast<ANSICHAR>(*Eye.Name.ToString()).Get(), ResultToText[static_cast<int>(EyeInit)])
+			.AddAnnotation(StringCast<ANSICHAR>(*Face.Name.ToString()).Get(), ResultToText[static_cast<int>(FaceInit)])
+			.AddAnnotation(StringCast<ANSICHAR>(*Body.Name.ToString()).Get(), ResultToText[static_cast<int>(BodyInit)]);
 	}
+
 	template <typename SubjectT>
 	void LiveLinkSource::UpdateMovementSubject(const TOptional<FLiveLinkSubjectKey>& Key, SubjectT& Subject)
 	{

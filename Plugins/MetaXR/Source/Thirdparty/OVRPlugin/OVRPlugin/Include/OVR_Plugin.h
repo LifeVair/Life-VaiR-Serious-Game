@@ -764,6 +764,11 @@ OVRP_EXPORT ovrpResult ovrp_SetControllerDrivenHandPosesAreNatural(ovrpBool cont
 OVRP_EXPORT ovrpResult ovrp_IsControllerDrivenHandPosesEnabled(ovrpBool* enabled);
 OVRP_EXPORT ovrpResult ovrp_AreControllerDrivenHandPosesNatural(ovrpBool* natural);
 
+
+
+
+
+
 OVRP_EXPORT ovrpResult ovrp_SetMultimodalHandsControllersSupported(ovrpBool supported);
 OVRP_EXPORT ovrpResult ovrp_IsMultimodalHandsControllersSupported(ovrpBool* supported);
 OVRP_EXPORT ovrpResult
@@ -1051,20 +1056,6 @@ OVRP_EXPORT ovrpResult ovrp_FeatureFidelityGetFeatureState(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 OVRP_EXPORT ovrpResult ovrp_GetLocalDimmingSupported(ovrpBool* localDimmingSupported);
 OVRP_EXPORT ovrpResult ovrp_SetLocalDimming(ovrpBool localDimmingMode);
 OVRP_EXPORT ovrpResult ovrp_GetLocalDimming(ovrpBool* localDimmingMode);
@@ -1102,16 +1093,14 @@ OVRP_EXPORT ovrpResult ovrp_GetEyeLayerRecommendedResolution(ovrpSizei* recommen
 
 OVRP_EXPORT ovrpResult ovrp_IsLayerShapeSupported(ovrpShape shape, ovrpBool* isLayerShapeSupported);
 
-
-
-
-
-
-
-
-
-
-
+OVRP_EXPORT ovrpResult ovrp_InitializeEnvironmentDepth(int createFlags);
+OVRP_EXPORT ovrpResult ovrp_DestroyEnvironmentDepth();
+OVRP_EXPORT ovrpResult ovrp_GetEnvironmentDepthTextureDesc(ovrpEnvironmentDepthTextureDesc* desc);
+OVRP_EXPORT ovrpResult ovrp_GetEnvironmentDepthTextureStageCount(int* stageCount);
+OVRP_EXPORT ovrpResult ovrp_GetEnvironmentDepthTexture(int stage, ovrpEye eyeId, ovrpTextureHandle* texture);
+OVRP_EXPORT ovrpResult ovrp_StartEnvironmentDepth();
+OVRP_EXPORT ovrpResult ovrp_StopEnvironmentDepth();
+OVRP_EXPORT ovrpResult ovrp_GetEnvironmentDepthFrameDesc(ovrpEye eyeId, ovrpEnvironmentDepthFrameDesc* frameDesc);
 
 #ifdef __cplusplus
 }

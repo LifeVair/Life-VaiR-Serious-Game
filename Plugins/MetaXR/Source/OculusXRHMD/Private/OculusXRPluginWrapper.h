@@ -246,6 +246,14 @@ struct OculusPluginWrapper
 	OCULUS_DECLARE_ENTRY_POINT(IsLayerShapeSupported);
 	OCULUS_DECLARE_ENTRY_POINT(SetEyeBufferSharpenType);
 
+	OCULUS_DECLARE_ENTRY_POINT(InitializeEnvironmentDepth);
+	OCULUS_DECLARE_ENTRY_POINT(DestroyEnvironmentDepth);
+	OCULUS_DECLARE_ENTRY_POINT(GetEnvironmentDepthTextureDesc);
+	OCULUS_DECLARE_ENTRY_POINT(GetEnvironmentDepthTextureStageCount);
+	OCULUS_DECLARE_ENTRY_POINT(GetEnvironmentDepthTexture);
+	OCULUS_DECLARE_ENTRY_POINT(StartEnvironmentDepth);
+	OCULUS_DECLARE_ENTRY_POINT(StopEnvironmentDepth);
+	OCULUS_DECLARE_ENTRY_POINT(GetEnvironmentDepthFrameDesc);
 
 #ifndef OVRPLUGIN_JNI_LIB_EXCLUDED
 	OCULUS_DECLARE_ENTRY_POINT(GetSystemVolume2);
@@ -302,6 +310,15 @@ struct OculusPluginWrapper
 	OCULUS_DECLARE_ENTRY_POINT(StartEyeTracking);
 	OCULUS_DECLARE_ENTRY_POINT(StopEyeTracking);
 
+	// QPL
+	OCULUS_DECLARE_ENTRY_POINT(QplMarkerStart);
+	OCULUS_DECLARE_ENTRY_POINT(QplMarkerEnd);
+	OCULUS_DECLARE_ENTRY_POINT(QplMarkerPoint);
+	OCULUS_DECLARE_ENTRY_POINT(QplMarkerPointCached);
+	OCULUS_DECLARE_ENTRY_POINT(QplMarkerAnnotation);
+	OCULUS_DECLARE_ENTRY_POINT(QplCreateMarkerHandle);
+	OCULUS_DECLARE_ENTRY_POINT(QplDestroyMarkerHandle);
+	OCULUS_DECLARE_ENTRY_POINT(OnEditorShutdown);
 
 	//OVR_Plugin_Insight.h
 	OCULUS_DECLARE_ENTRY_POINT(InitializeInsightPassthrough);

@@ -70,8 +70,17 @@ namespace MetaXRMovement
 		virtual bool IsTickableWhenPaused() const override { return true; }
 
 	private:
+		enum class ESubjectInitializationResult
+		{
+			Started = 0,
+			StartFailed = 1,
+			NotSupported = 2
+		};
+
+		static constexpr const char* ResultToText[]{ "started", "start_failed", "not_supported" };
+
 		template <typename SubjectT>
-		void InitializeMovementSubject(TOptional<FLiveLinkSubjectKey>& Key, SubjectT& Subject);
+		ESubjectInitializationResult InitializeMovementSubject(TOptional<FLiveLinkSubjectKey>& Key, SubjectT& Subject);
 		void InitializeMovementSubjects();
 		template <typename SubjectT>
 		void UpdateMovementSubject(const TOptional<FLiveLinkSubjectKey>& Key, SubjectT& Subject);

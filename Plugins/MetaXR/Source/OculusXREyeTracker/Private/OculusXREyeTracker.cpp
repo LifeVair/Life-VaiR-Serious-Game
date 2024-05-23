@@ -16,6 +16,7 @@ LICENSE file in the root directory of this source tree.
 
 #include "OculusXRHMDModule.h"
 #include "OculusXRHMDPrivate.h"
+#include "OculusXRTelemetryEyeTrackerEvents.h"
 
 #if OCULUS_HMD_SUPPORTED_PLATFORMS
 
@@ -31,6 +32,7 @@ namespace OculusXRHMD
 			{
 				OculusXRHMD = GEngine->XRSystem.Get();
 			}
+			OculusXRTelemetry::TScopedMarker<OculusXRTelemetry::Events::FMovementSDKEyeTrackerCreated>();
 		}
 
 		virtual ~FOculusXREyeTracker()
@@ -78,15 +80,15 @@ namespace OculusXRHMD
 		{
 			ovrpBool IsSupported = ovrpBool_False;
 			ovrpBool IsEnabled = ovrpBool_False;
-			ovrpResult TrackingSupportedResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeTrackingSupported(&IsSupported);
-			ovrpResult TrackingEnabledResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeTrackingEnabled(&IsEnabled);
+			const ovrpResult TrackingSupportedResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeTrackingSupported(&IsSupported);
+			const ovrpResult TrackingEnabledResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeTrackingEnabled(&IsEnabled);
 			if (OVRP_SUCCESS(TrackingSupportedResult) && OVRP_SUCCESS(TrackingEnabledResult))
 			{
 				if ((IsSupported == ovrpBool_True) && (IsEnabled == ovrpBool_True))
 				{
 					return EEyeTrackerStatus::Tracking;
 				}
-				else if (IsSupported == ovrpBool_True)
+				if (IsSupported == ovrpBool_True)
 				{
 					return EEyeTrackerStatus::NotTracking;
 				}
@@ -113,7 +115,7 @@ namespace OculusXRHMD
 			if (bIsTrackerStarted)
 			{
 				ovrpEyeGazesState OVREyeGazesState;
-				ovrpResult OVREyeGazesStateResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeGazesState(ovrpStep_Render, OVRP_CURRENT_FRAMEINDEX, &OVREyeGazesState);
+				const ovrpResult OVREyeGazesStateResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeGazesState(ovrpStep_Render, OVRP_CURRENT_FRAMEINDEX, &OVREyeGazesState);
 				checkf(OVREyeGazesStateResult != ovrpFailure_NotYetImplemented, TEXT("Eye tracking is not implemented on this platform."));
 
 				if (OVRP_SUCCESS(OVREyeGazesStateResult) && IsStateValidForBothEyes(OVREyeGazesState))
@@ -190,11 +192,11 @@ public:
 #if OCULUS_HMD_SUPPORTED_PLATFORMS
 		if (FOculusXRHMDModule::Get().IsOVRPluginAvailable() && FOculusXRHMDModule::GetPluginWrapper().IsInitialized())
 		{
-			ovrpBool isSupported = ovrpBool_False;
-			ovrpResult trackingSupportedResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeTrackingSupported(&isSupported);
+			ovrpBool IsSupported = ovrpBool_False;
+			const ovrpResult trackingSupportedResult = FOculusXRHMDModule::GetPluginWrapper().GetEyeTrackingSupported(&IsSupported);
 			if (OVRP_SUCCESS(trackingSupportedResult))
 			{
-				return (isSupported == ovrpBool_True);
+				return (IsSupported == ovrpBool_True);
 			}
 		}
 #endif // OCULUS_HMD_SUPPORTED_PLATFORMS
@@ -206,15 +208,10 @@ public:
 #if OCULUS_HMD_SUPPORTED_PLATFORMS
 		if (FOculusXRHMDModule::Get().IsOVRPluginAvailable() && FOculusXRHMDModule::GetPluginWrapper().IsInitialized())
 		{
-			return TSharedPtr<class IEyeTracker, ESPMode::ThreadSafe>(new OculusXRHMD::FOculusXREyeTracker);
+			return MakeShared<OculusXRHMD::FOculusXREyeTracker>();
 		}
-		else
-		{
-			return TSharedPtr<class IEyeTracker, ESPMode::ThreadSafe>();
-		}
-#else
-		return TSharedPtr<class IEyeTracker, ESPMode::ThreadSafe>();
 #endif // OCULUS_HMD_SUPPORTED_PLATFORMS
+		return TSharedPtr<class IEyeTracker, ESPMode::ThreadSafe>();
 	}
 };
 

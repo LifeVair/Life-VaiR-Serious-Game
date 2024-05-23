@@ -37,6 +37,7 @@ namespace OculusXRHMD
 		, CurrentFeatureLevel(GMaxRHIFeatureLevel)
 		, bLateLatching(false)
 		, bSupportExperimentalFeatures(false)
+		, ProcessorFavor(EProcessorFavor::FavorEqually)
 	{
 		Flags.Raw = 0;
 		Flags.bHMDEnabled = true;

@@ -305,6 +305,28 @@ void UOculusXRPassthroughLayerComponent::MarkPassthroughStyleForUpdate()
 	bPassthroughStyleNeedsUpdate = true;
 }
 
+#if WITH_EDITOR
+bool UOculusXRPassthroughLayerComponent::CanEditChange(const FProperty* InProperty) const
+{
+	if (!Super::CanEditChange(InProperty))
+		return false;
+
+	bool isPTLayerSelected = !Shape.IsNull() && Shape.IsA(UOculusXRPassthroughLayerBase::StaticClass());
+	if (!isPTLayerSelected)
+		return true;
+
+	const FName PropertyName = InProperty->GetFName();
+	if (PropertyName == GET_MEMBER_NAME_CHECKED(UOculusXRPassthroughLayerComponent, Texture)
+		|| PropertyName == GET_MEMBER_NAME_CHECKED(UOculusXRPassthroughLayerComponent, bQuadPreserveTextureRatio)
+		|| PropertyName == GET_MEMBER_NAME_CHECKED(UOculusXRPassthroughLayerComponent, QuadSize)
+		|| PropertyName == GET_MEMBER_NAME_CHECKED(UOculusXRPassthroughLayerComponent, UVRect)
+		|| PropertyName == GET_MEMBER_NAME_CHECKED(UOculusXRPassthroughLayerComponent, StereoLayerType))
+		return false;
+	else
+		return true;
+}
+#endif // WITH_EDITOR
+
 bool UOculusXRPassthroughLayerComponent::LayerRequiresTexture()
 {
 	const bool bIsPassthroughShape = Shape && (Shape->IsA<UOculusXRStereoLayerShapeReconstructed>() || Shape->IsA<UOculusXRStereoLayerShapeUserDefined>());

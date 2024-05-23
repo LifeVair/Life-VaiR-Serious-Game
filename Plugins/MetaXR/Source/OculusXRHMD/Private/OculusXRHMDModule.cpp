@@ -13,6 +13,7 @@
 #endif
 #include "Interfaces/IPluginManager.h"
 #include "ShaderCore.h"
+#include "OculusXRTelemetry.h"
 
 #if !PLATFORM_ANDROID
 #if !UE_BUILD_SHIPPING
@@ -77,6 +78,7 @@ void FOculusXRHMDModule::ShutdownModule()
 #if OCULUS_HMD_SUPPORTED_PLATFORMS
 	if (PluginWrapper.IsInitialized())
 	{
+		OculusXRTelemetry::FTelemetryBackend::OnEditorShutdown();
 		PluginWrapper.Shutdown2();
 		OculusPluginWrapper::DestroyOculusPluginWrapper(&PluginWrapper);
 	}

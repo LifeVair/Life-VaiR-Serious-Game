@@ -13,13 +13,17 @@ float4x4 ScreenToDepthMatrices[NUM_VIEWS];
 void HardOcclusionsPS(
 	noperspective float4 UVAndScreenPos : TEXCOORD0,
 	float4 SvPosition : SV_POSITION,
-#if MOBILE_MULTI_VIEW
+#if INSTANCED_STEREO
+	in uint InstanceId : SV_InstanceID,
+#elif MOBILE_MULTI_VIEW
 	in uint ViewId : SV_ViewID,
 #endif
 	out float4 OutColor : SV_Target0,
 	out float OutDepth : SV_DEPTH)
 {
-#if !MOBILE_MULTI_VIEW
+#if INSTANCED_STEREO
+	uint ViewId = InstanceId & 1;
+#elif !MOBILE_MULTI_VIEW
 	uint ViewId = 0;
 #endif
 	OutColor = float4(0.0, 0.0, 0.0, 1.0);

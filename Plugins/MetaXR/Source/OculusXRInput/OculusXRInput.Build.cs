@@ -6,6 +6,8 @@ namespace UnrealBuildTool.Rules
 	{
 		public OculusXRInput(ReadOnlyTargetRules Target) : base(Target)
 		{
+			bUseUnity = true;
+
 			PrivateIncludePathModuleNames.AddRange(
 				new string[]
 				{

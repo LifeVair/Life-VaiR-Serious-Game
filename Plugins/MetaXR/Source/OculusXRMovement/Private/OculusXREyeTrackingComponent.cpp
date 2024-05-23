@@ -13,6 +13,7 @@ LICENSE file in the root directory of this source tree.
 #include "OculusXRMovementFunctionLibrary.h"
 #include "OculusXRMovementHelpers.h"
 #include "OculusXRMovementLog.h"
+#include "OculusXRTelemetryMovementEvents.h"
 
 int UOculusXREyeTrackingComponent::TrackingInstanceCount = 0;
 
@@ -30,6 +31,7 @@ UOculusXREyeTrackingComponent::UOculusXREyeTrackingComponent()
 
 	EyeToBone.Add(EOculusXREye::Left, "LeftEye");
 	EyeToBone.Add(EOculusXREye::Right, "RightEye");
+	OculusXRTelemetry::TScopedMarker<OculusXRTelemetry::Events::FMovementSDKEyeStart>(static_cast<int>(GetTypeHash(this)));
 }
 
 void UOculusXREyeTrackingComponent::BeginPlay()

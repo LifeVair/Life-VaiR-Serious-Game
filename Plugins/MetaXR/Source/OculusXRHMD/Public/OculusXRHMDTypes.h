@@ -292,6 +292,16 @@ struct FOculusXRSplashDesc
 	}
 };
 
+UENUM(BlueprintType)
+enum class EOculusXROcclusionsMode : uint8
+{
+	/// Environment depth occlusions disabled.
+	Disabled = 0,
+	/// Hard occlusions, good performance, shows hard edges between the real and virtual world.
+	HardOcclusions = 1,
+	/// Soft occlusions, most expensive, shows soft edges between the real and virtual world.
+	SoftOcclusions = 2,
+};
 
 UENUM(BlueprintType)
 enum class EOculusXREyeBufferSharpenType : uint8
@@ -306,4 +316,12 @@ enum class EOculusXREyeBufferSharpenType : uint8
 	SLST_Quality UMETA(DisplayName = "Quality Sharpening"),
 
 	SLST_MAX,
+};
+
+UENUM()
+enum class EProcessorFavor : int8
+{
+	FavorEqually = 0 UMETA(DisplayName = "Favor Equally"),
+	FavorCPU = 1 UMETA(DisplayName = "Favor CPU"),
+	FavorGPU = 2 UMETA(DisplayName = "Favor GPU"),
 };

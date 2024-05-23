@@ -138,6 +138,8 @@ namespace OculusXRHMD
 		bool bLateLatching;
 		bool bSupportExperimentalFeatures;
 
+		EProcessorFavor ProcessorFavor;
+
 	public:
 		FSettings();
 		virtual ~FSettings() {}

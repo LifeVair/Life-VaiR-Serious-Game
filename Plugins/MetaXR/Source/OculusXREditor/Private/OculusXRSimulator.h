@@ -14,7 +14,5 @@ public:
 	static void ToggleOpenXRRuntime();
 
 private:
-	static FString GetMetaXRSimPackagePath();
 	static FString GetSimulatorJsonPath();
-	static FString GetSimulatorConfigPath();
 };

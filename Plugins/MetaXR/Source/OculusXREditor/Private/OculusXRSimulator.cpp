@@ -8,10 +8,6 @@
 
 const FString OpenXrRuntimeEnvKey = "XR_RUNTIME_JSON";
 const FString PreviousOpenXrRuntimeEnvKey = "XR_RUNTIME_JSON_PREV";
-const FString XrSimConfigEnvKey = "META_XRSIM_CONFIG_JSON";
-const FString PreviousXrSimConfigEnvKey = "META_XRSIM_CONFIG_JSON_PREV";
-const FString MetaXRSimFileName = "meta_openxr_simulator.json";
-const FString MetaXRSimCfgName = "sim_core_configuration.json";
 
 bool FMetaXRSimulator::IsSimulatorActivated()
 {
@@ -23,9 +19,12 @@ bool FMetaXRSimulator::IsSimulatorActivated()
 void FMetaXRSimulator::ToggleOpenXRRuntime()
 {
 	FString MetaXRSimPath = GetSimulatorJsonPath();
-	FString MetaXRSimCfgPath = GetSimulatorConfigPath();
-	if (MetaXRSimPath.IsEmpty() || MetaXRSimCfgPath.IsEmpty())
+	if (!IFileManager::Get().FileExists(*MetaXRSimPath))
 	{
+		FString Message("Meta XR Simulator Not Found.\nPlease set its path in Project Settings/Meta XR Plugin/PC.");
+		FMessageDialog::Open(EAppMsgType::Ok, FText::FromString(Message));
+		UE_LOG(LogMetaXRSim, Error, TEXT("%s"), *Message);
+
 		return;
 	}
 
@@ -33,52 +32,27 @@ void FMetaXRSimulator::ToggleOpenXRRuntime()
 	{
 		//Deactivate MetaXR Simulator
 		FString PrevOpenXrRuntimeEnvKey = FWindowsPlatformMisc::GetEnvironmentVariable(*PreviousOpenXrRuntimeEnvKey);
-		FString PrevXrSimConfigEnvKey = FWindowsPlatformMisc::GetEnvironmentVariable(*PreviousXrSimConfigEnvKey);
 
 		FWindowsPlatformMisc::SetEnvironmentVar(*PreviousOpenXrRuntimeEnvKey,
 			TEXT(""));
 		FWindowsPlatformMisc::SetEnvironmentVar(*OpenXrRuntimeEnvKey, *PrevOpenXrRuntimeEnvKey);
 
-		FWindowsPlatformMisc::SetEnvironmentVar(*PreviousXrSimConfigEnvKey,
-			TEXT(""));
-		FWindowsPlatformMisc::SetEnvironmentVar(*XrSimConfigEnvKey, *PrevXrSimConfigEnvKey);
-
-		UE_LOG(LogMetaXRSim, Log, TEXT("Meta XR Simulator is deactivated. (%s : %s), (%s : %s)"), *OpenXrRuntimeEnvKey, *PrevOpenXrRuntimeEnvKey, *XrSimConfigEnvKey, *PrevXrSimConfigEnvKey);
+		UE_LOG(LogMetaXRSim, Log, TEXT("Meta XR Simulator is deactivated. (%s : %s)"), *OpenXrRuntimeEnvKey, *PrevOpenXrRuntimeEnvKey);
 	}
 	else
 	{
 		//Activate MetaXR Simulator
 		FString CurOpenXrRuntimeEnvKey = FWindowsPlatformMisc::GetEnvironmentVariable(*OpenXrRuntimeEnvKey);
-		FString CurXrSimConfigEnvKey = FWindowsPlatformMisc::GetEnvironmentVariable(*XrSimConfigEnvKey);
 
 		FWindowsPlatformMisc::SetEnvironmentVar(*PreviousOpenXrRuntimeEnvKey,
 			*CurOpenXrRuntimeEnvKey);
 		FWindowsPlatformMisc::SetEnvironmentVar(*OpenXrRuntimeEnvKey, *MetaXRSimPath);
 
-		FWindowsPlatformMisc::SetEnvironmentVar(*PreviousXrSimConfigEnvKey,
-			*CurXrSimConfigEnvKey);
-		FWindowsPlatformMisc::SetEnvironmentVar(*XrSimConfigEnvKey, *MetaXRSimCfgPath);
-
-		UE_LOG(LogMetaXRSim, Log, TEXT("Meta XR Simulator is activated. (%s : %s), (%s : %s)"), *OpenXrRuntimeEnvKey, *MetaXRSimPath, *XrSimConfigEnvKey, *MetaXRSimCfgPath);
+		UE_LOG(LogMetaXRSim, Log, TEXT("Meta XR Simulator is activated. (%s : %s)"), *OpenXrRuntimeEnvKey, *MetaXRSimPath);
 	}
-}
-
-FString FMetaXRSimulator::GetMetaXRSimPackagePath()
-{
-	FString PackagePath = GetMutableDefault<UOculusXRHMDRuntimeSettings>()->MetaXRPackagePath.Path;
-	if (PackagePath.IsEmpty())
-	{
-		FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("Meta XR Simulator Package Path Not Found.\nPlease set its path in Project Settings/Meta XR Plugin/PC."));
-	}
-	return PackagePath;
 }
 
 FString FMetaXRSimulator::GetSimulatorJsonPath()
 {
-	return GetMetaXRSimPackagePath() + "/MetaXRSimulator/meta_openxr_simulator.json";
-}
-
-FString FMetaXRSimulator::GetSimulatorConfigPath()
-{
-	return GetMetaXRSimPackagePath() + "/MetaXRSimulator/config/sim_core_configuration.json";
+	return GetMutableDefault<UOculusXRHMDRuntimeSettings>()->MetaXRJsonPath.FilePath;
 }

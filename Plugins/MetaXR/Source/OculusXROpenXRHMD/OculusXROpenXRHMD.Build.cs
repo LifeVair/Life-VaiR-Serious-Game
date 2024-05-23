@@ -9,6 +9,8 @@ namespace UnrealBuildTool.Rules
 	{
 		public OculusXROpenXRHMD(ReadOnlyTargetRules Target) : base(Target)
 		{
+			bUseUnity = true;
+
 			var EngineDir = Path.GetFullPath(Target.RelativeEnginePath);
 
 			PublicIncludePaths.AddRange(

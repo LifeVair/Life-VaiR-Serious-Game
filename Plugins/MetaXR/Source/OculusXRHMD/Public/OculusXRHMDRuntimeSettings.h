@@ -59,10 +59,10 @@ public:
 	bool bHQDistortion;
 
 	/**
-	Path to the installation package of Meta XR Simulator which holds the MetaXrSimulator folder.
+	Path to Meta XR Simulator JSON file (meta_openxr_simulator.json).
 	*/
-	UPROPERTY(config, EditAnywhere, Category = PC, meta = (DisplayName = "Meta XR Simulator Package Path."))
-	FDirectoryPath MetaXRPackagePath;
+	UPROPERTY(config, EditAnywhere, Category = PC, meta = (DisplayName = "Meta XR Simulator JSON File."))
+	FFilePath MetaXRJsonPath;
 
 	/** Maximum allowed pixel density. */
 	UPROPERTY(config, EditAnywhere, Category = "Mobile|Dynamic Resolution", DisplayName = "Enable Dynamic Resolution")
@@ -176,6 +176,10 @@ public:
 	/** Whether experimental features listed below can be used with the app. */
 	UPROPERTY(config, EditAnywhere, Category = Experimental)
 	bool bSupportExperimentalFeatures;
+
+	/** If selected, will increase the frequency of one processor at the expense of decreasing the frequency of the other on supported devices. */
+	UPROPERTY(config, EditAnywhere, Category = Mobile, meta = (DisplayName = "Processor Favor"))
+	EProcessorFavor ProcessorFavor;
 
 private:
 #if WITH_EDITOR

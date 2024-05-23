@@ -914,7 +914,7 @@ namespace OculusXRHMD
 						UserDefinedGeometryMap->Add(MeshName, FPassthroughMesh(MeshHandle, InstanceHandle));
 					}
 				}
-				else if (GeometryDesc.bUpdateTransform)
+				else
 				{
 					const FMatrix Transform = TransformToPassthroughSpace(GeometryDesc.Transform, Frame);
 					UpdatePassthroughMeshTransform_RenderThread(LayerPassthroughMesh->InstanceHandle, Transform);

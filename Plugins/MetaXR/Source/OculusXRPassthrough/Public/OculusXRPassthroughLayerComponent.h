@@ -14,7 +14,7 @@
 
 DECLARE_LOG_CATEGORY_EXTERN(LogOculusPassthrough, Log, All);
 
-UCLASS(meta = (DisplayName = "Passthrough Layer Base"))
+UCLASS(Abstract, meta = (DisplayName = "Passthrough Layer Base"))
 class OCULUSXRPASSTHROUGH_API UOculusXRPassthroughLayerBase : public UStereoLayerShape
 {
 	GENERATED_BODY()
@@ -237,6 +237,10 @@ public:
 	// Manually mark the stereo layer passthrough effect for updating
 	UFUNCTION(BlueprintCallable, Category = "Components|Stereo Layer")
 	void MarkPassthroughStyleForUpdate();
+
+#if WITH_EDITOR
+	virtual bool CanEditChange(const FProperty* InProperty) const override;
+#endif // WITH_EDITOR
 
 protected:
 	virtual bool LayerRequiresTexture();

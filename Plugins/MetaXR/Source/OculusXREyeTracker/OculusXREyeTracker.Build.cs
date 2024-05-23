@@ -6,12 +6,13 @@ namespace UnrealBuildTool.Rules
 	{
 		public OculusXREyeTracker(ReadOnlyTargetRules Target) : base(Target)
 		{
+			bUseUnity = true;
+
 			if (Target.Platform == UnrealTargetPlatform.Win64 ||
 				Target.Platform == UnrealTargetPlatform.Android)
 			{
 				PrivateIncludePaths.AddRange(
 					new string[] {
-						// Relative to Engine\Plugins\Runtime\Oculus\OculusVR\Source
 						"OculusXRHMD/Private",
 					});
 

@@ -9,6 +9,8 @@ namespace UnrealBuildTool.Rules
 	{
 		public OculusXRPassthrough(ReadOnlyTargetRules Target) : base(Target)
 		{
+			bUseUnity = true;
+
 			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{

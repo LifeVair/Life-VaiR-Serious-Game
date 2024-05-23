@@ -12,7 +12,7 @@ struct FProcHandle;
 class FMetaXRSES
 {
 public:
-	static void LaunchOffice();
+	static void LaunchGameRoom();
 	static void LaunchLivingRoom();
 	static void LaunchBedroom();
 	static void StopServer();

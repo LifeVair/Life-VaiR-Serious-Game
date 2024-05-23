@@ -24,7 +24,7 @@ public:
 	TSharedPtr<FUICommandInfo> ToggleDeploySo;
 	TSharedPtr<FUICommandInfo> OpenPlatWindow;
 	TSharedPtr<FUICommandInfo> ToggleMetaXRSim;
-	TSharedPtr<FUICommandInfo> LaunchOffice;
+	TSharedPtr<FUICommandInfo> LaunchGameRoom;
 	TSharedPtr<FUICommandInfo> LaunchLivingRoom;
 	TSharedPtr<FUICommandInfo> LaunchBedroom;
 	TSharedPtr<FUICommandInfo> StopServer;

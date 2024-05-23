@@ -43,7 +43,7 @@ public:
 	void ToggleOpenXRRuntime();
 
 	void CreateSESSubMenus(FMenuBuilder& MenuBuilder);
-	void LaunchSESOffice();
+	void LaunchSESGameRoom();
 	void LaunchSESLivingRoom();
 	void LaunchSESBedroom();
 	void StopSESServer();

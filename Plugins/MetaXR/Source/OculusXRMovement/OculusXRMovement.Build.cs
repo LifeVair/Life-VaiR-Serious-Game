@@ -6,6 +6,8 @@ namespace UnrealBuildTool.Rules
 	{
 		public OculusXRMovement(ReadOnlyTargetRules Target) : base(Target)
 		{
+			bUseUnity = true;
+
 			PublicDependencyModuleNames.AddRange(
 				new string[] {
 					"LiveLinkInterface",

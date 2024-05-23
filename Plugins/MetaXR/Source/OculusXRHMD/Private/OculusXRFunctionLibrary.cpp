@@ -873,7 +873,48 @@ bool UOculusXRFunctionLibrary::IsColorPassthroughSupported()
 	return false;
 }
 
+void UOculusXRFunctionLibrary::StartEnvironmentDepth(bool RemoveHands)
+{
+#if OCULUS_HMD_SUPPORTED_PLATFORMS
+	OculusXRHMD::FOculusXRHMD* OculusXRHMD = GetOculusXRHMD();
+	if (OculusXRHMD != nullptr)
+	{
+		int CreateFlags = 0;
+		if (RemoveHands)
+		{
+			CreateFlags |= ovrpEnvironmentDepthCreateFlag_RemoveHands;
+		}
+		OculusXRHMD->StartEnvironmentDepth(CreateFlags);
+	}
+#endif
+}
 
+void UOculusXRFunctionLibrary::StopEnvironmentDepth()
+{
+#if OCULUS_HMD_SUPPORTED_PLATFORMS
+	OculusXRHMD::FOculusXRHMD* OculusXRHMD = GetOculusXRHMD();
+	if (OculusXRHMD != nullptr)
+	{
+		OculusXRHMD->StopEnvironmentDepth();
+	}
+#endif
+}
+
+void UOculusXRFunctionLibrary::SetXROcclusionsMode(UObject* WorldContextObject, EOculusXROcclusionsMode Mode)
+{
+#if OCULUS_HMD_SUPPORTED_PLATFORMS
+	OculusXRHMD::FOculusXRHMD* OculusXRHMD = GetOculusXRHMD();
+	if (OculusXRHMD != nullptr)
+	{
+		OculusXRHMD->EnableHardOcclusions(Mode == EOculusXROcclusionsMode::HardOcclusions);
+	}
+#if defined(WITH_OCULUS_BRANCH)
+	WorldContextObject->GetWorld()->Scene->SetEnableXRPassthroughSoftOcclusions(Mode == EOculusXROcclusionsMode::SoftOcclusions);
+#else
+	ensureMsgf(Mode != EOculusXROcclusionsMode::SoftOcclusions, TEXT("Soft occlusions are only supported with the Oculus branch of the Unreal Engine"));
+#endif // defined(WITH_OCULUS_BRANCH)
+#endif // OCULUS_HMD_SUPPORTED_PLATFORMS
+}
 
 void UOculusXRFunctionLibrary::SetEyeBufferSharpenType(EOculusXREyeBufferSharpenType EyeBufferSharpenType)
 {

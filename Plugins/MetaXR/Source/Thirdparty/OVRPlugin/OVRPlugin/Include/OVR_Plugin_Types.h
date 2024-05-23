@@ -30,7 +30,7 @@
 // Note: OVRP_MINOR_VERSION == OCULUS_SDK_VERSION + 32
 
 #define OVRP_MAJOR_VERSION 1
-#define OVRP_MINOR_VERSION 88
+#define OVRP_MINOR_VERSION 89
 #define OVRP_PATCH_VERSION 0
 
 #define OVRP_VERSION OVRP_MAJOR_VERSION, OVRP_MINOR_VERSION, OVRP_PATCH_VERSION
@@ -3346,28 +3346,31 @@ typedef struct ovrpPassthroughPreferences_ {
 
 
 
+typedef struct ovrpEnvironmentDepthTextureDesc_ {
+  ovrpSizei TextureSize;
+  int MipLevels;
+  int SampleCount;
+  ovrpLayout Layout;
+  ovrpTextureFormat Format;
+} ovrpEnvironmentDepthTextureDesc;
 
+typedef struct ovrpEnvironmentDepthFrameDesc_ {
+  ovrpBool IsValid;
+  double CreateTime;
+  double PredictedDisplayTime;
+  int SwapchainIndex;
+  ovrpPosef CreatePose;
+  ovrpFovf Fov;
+  float NearZ;
+  float FarZ;
+  float MinDepth;
+  float MaxDepth;
+} ovrpEnvironmentDepthFrameDesc;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+typedef enum {
+  ovrpEnvironmentDepthCreateFlag_None = 0,
+  ovrpEnvironmentDepthCreateFlag_RemoveHands = 1 << 0,
+} ovrpEnvironmentDepthCreateFlag;
 
 #ifdef __clang__
 #pragma clang diagnostic pop

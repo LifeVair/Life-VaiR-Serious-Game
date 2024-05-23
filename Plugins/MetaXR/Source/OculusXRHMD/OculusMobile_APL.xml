@@ -60,6 +60,8 @@
 		<setBoolFromProperty result="bAnchorSharingEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bAnchorSharingEnabled" default="false"/>
 		<setBoolFromProperty result="bSceneSupportEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bSceneSupportEnabled" default="false"/>
 		<setBoolFromProperty result="bSupportEyeTrackedFoveatedRendering" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bSupportEyeTrackedFoveatedRendering" default="false"/>
+		<setStringFromProperty result="ProcessorFavor" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="ProcessorFavor" default="FavorEqually"/>
+		<setBoolIsEqual result="bProcessorFavorEqually" arg1="$S(ProcessorFavor)" arg2="FavorEqually"/>
 
 		<!-- check for experimental feature support from config -->
 		<setBoolFromProperty result="bSupportExperimentalFeatures" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bSupportExperimentalFeatures" default="false"/>
@@ -414,6 +416,27 @@
 					</if>
 					<addElement tag="application" name="oculusSplashColorspace"/>
 				</true>
+			</if>
+
+			<!-- Add tradeCpuForGpuAmount Amount -->
+			<if condition="bProcessorFavorEqually">
+				<false>
+					<setBoolIsEqual result="bFavorGPU" arg1="$S(ProcessorFavor)" arg2="FavorGPU"/>
+					<setBoolIsEqual result="bFavorCPU" arg1="$S(ProcessorFavor)" arg2="FavorCPU"/>
+					<setElement result="tradeCpuForGpuAmount" value="meta-data"/>
+					<addAttribute tag="$tradeCpuForGpuAmount" name="android:name" value="com.oculus.trade_cpu_for_gpu_amount"/>
+					<if condition="bFavorGPU">
+						<true>
+							<addAttribute tag="$tradeCpuForGpuAmount" name="android:value" value="1"/>
+						</true>
+					</if>
+					<if condition="bFavorCPU">
+						<true>
+							<addAttribute tag="$tradeCpuForGpuAmount" name="android:value" value="-1"/>
+						</true>
+					</if>
+					<addElement tag="application" name="tradeCpuForGpuAmount"/>
+				</false>
 			</if>
 		</loopElements>
 

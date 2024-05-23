@@ -240,6 +240,14 @@ bool OculusPluginWrapper::InitializeOculusPluginWrapper(OculusPluginWrapper* wra
 		OCULUS_BIND_ENTRY_POINT(IsLayerShapeSupported),
 		OCULUS_BIND_ENTRY_POINT(SetEyeBufferSharpenType),
 
+		OCULUS_BIND_ENTRY_POINT(InitializeEnvironmentDepth),
+		OCULUS_BIND_ENTRY_POINT(DestroyEnvironmentDepth),
+		OCULUS_BIND_ENTRY_POINT(GetEnvironmentDepthTextureDesc),
+		OCULUS_BIND_ENTRY_POINT(GetEnvironmentDepthTextureStageCount),
+		OCULUS_BIND_ENTRY_POINT(GetEnvironmentDepthTexture),
+		OCULUS_BIND_ENTRY_POINT(StartEnvironmentDepth),
+		OCULUS_BIND_ENTRY_POINT(StopEnvironmentDepth),
+		OCULUS_BIND_ENTRY_POINT(GetEnvironmentDepthFrameDesc),
 
 #ifndef OVRPLUGIN_JNI_LIB_EXCLUDED
 		OCULUS_BIND_ENTRY_POINT(GetSystemVolume2),
@@ -294,6 +302,15 @@ bool OculusPluginWrapper::InitializeOculusPluginWrapper(OculusPluginWrapper* wra
 		OCULUS_BIND_ENTRY_POINT(StartEyeTracking),
 		OCULUS_BIND_ENTRY_POINT(StopEyeTracking),
 
+		// QPL
+		OCULUS_BIND_ENTRY_POINT(QplMarkerStart),
+		OCULUS_BIND_ENTRY_POINT(QplMarkerEnd),
+		OCULUS_BIND_ENTRY_POINT(QplMarkerPoint),
+		OCULUS_BIND_ENTRY_POINT(QplMarkerPointCached),
+		OCULUS_BIND_ENTRY_POINT(QplMarkerAnnotation),
+		OCULUS_BIND_ENTRY_POINT(QplCreateMarkerHandle),
+		OCULUS_BIND_ENTRY_POINT(QplDestroyMarkerHandle),
+		OCULUS_BIND_ENTRY_POINT(OnEditorShutdown),
 
 		// OVR_Plugin_Insight.h
 		OCULUS_BIND_ENTRY_POINT(InitializeInsightPassthrough),

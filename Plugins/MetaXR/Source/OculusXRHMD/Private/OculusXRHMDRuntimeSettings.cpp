@@ -42,6 +42,7 @@ UOculusXRHMDRuntimeSettings::UOculusXRHMDRuntimeSettings(const FObjectInitialize
 	bAnchorSupportEnabled = DefaultSettings.Flags.bAnchorSupportEnabled;
 	bAnchorSharingEnabled = DefaultSettings.Flags.bAnchorSharingEnabled;
 	bSceneSupportEnabled = DefaultSettings.Flags.bSceneSupportEnabled;
+	ProcessorFavor = DefaultSettings.ProcessorFavor;
 
 	// Default this to false, FSettings doesn't have a separate composite depth flag for mobile
 	bCompositeDepthMobile = false;
@@ -78,6 +79,7 @@ UOculusXRHMDRuntimeSettings::UOculusXRHMDRuntimeSettings(const FObjectInitialize
 	bAnchorSupportEnabled = false;
 	bAnchorSharingEnabled = false;
 	bSceneSupportEnabled = false;
+	ProcessorFavor = EProcessorFavor::FavorEqually;
 #endif
 
 	LoadFromIni();
