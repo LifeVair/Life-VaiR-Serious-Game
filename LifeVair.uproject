@@ -24,7 +24,8 @@
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Linux",
-				"Android"
+				"Android",
+				"HoloLens"
 			]
 		},
 		{
@@ -64,6 +65,10 @@
 		},
 		{
 			"Name": "HDRIBackdrop",
+			"Enabled": true
+		},
+		{
+			"Name": "SQLiteCore",
 			"Enabled": true
 		},
 		{
