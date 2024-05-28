@@ -24,8 +24,7 @@
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Linux",
-				"Android",
-				"HoloLens"
+				"Android"
 			]
 		},
 		{
@@ -68,10 +67,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "SQLiteCore",
-			"Enabled": true
-		},
-		{
 			"Name": "Substance",
 			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4"
@@ -95,6 +90,10 @@
 				"Win64",
 				"Android"
 			]
+		},
+		{
+			"Name": "SQLiteCore",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
