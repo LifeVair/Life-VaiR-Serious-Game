@@ -94,7 +94,7 @@
 		},
 		{
 			"Name": "SQLiteCore",
-			"Enabled": true
+			"Enabled": false
 		}
 	],
 	"TargetPlatforms": [
