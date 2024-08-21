@@ -25,6 +25,15 @@ The app can also be downloaded in the Github's release page of the project and i
 ### Credits 
 Thanks to Joshua Statzer for its amazing work on the VR expansion plugin (https://vreue4.com/)
 
+
+Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6297">Pixabay</a>
+
+Sound Effect by <a href="https://pixabay.com/users/aiko_changing-30278997/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=183845">Aiko Matsuda</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=183845">Pixabay</a>
+
+Sound Effect by <a href="https://pixabay.com/users/placidplace-25572496/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=21420">Peace,love,happiness</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=21420">Pixabay</a>
+
+Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=27988">Pixabay</a>
+
 ## License
 GPL
 
